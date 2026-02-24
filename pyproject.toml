@@ -1,0 +1,13 @@
+[project]
+name = "chaquopy-stubs"
+version = "0.1.0"
+description = "Stub files for Chaquopy"
+authors = [
+    { name = "Tim Rid", email = "tim.rid@example.com" }
+]
+dependencies = [
+    "chaquopy-stubgen @ file:///Users/timrid/Documents/chaquopy-stubgen",
+    "cookiecutter>=2.6",
+    "lxml>=5.0",
+    "requests>=2.32",
+]
