@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "chaquopy-stubs-androidx-webkit-webkit"
-version = "1.15.0.20260225"
+version = "1.15.0.20260227"
 description = "Python type stubs for androidx.webkit:webkit:1.15.0 generated with chaquopy-stubgen"
 readme = {file = "README.md", content-type = "text/markdown"}
 license = "MIT"

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "chaquopy-stubs-androidx-swiperefreshlayout-swiperefreshlayout"
-version = "1.1.0.20260225"
+version = "1.1.0.20260227"
 description = "Python type stubs for androidx.swiperefreshlayout:swiperefreshlayout:1.1.0 generated with chaquopy-stubgen"
 readme = {file = "README.md", content-type = "text/markdown"}
 license = "MIT"

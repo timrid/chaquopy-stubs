@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "chaquopy-stubs-org-osmdroid-osmdroid-android"
-version = "6.1.20.20260225"
+version = "6.1.20.20260227"
 description = "Python type stubs for org.osmdroid:osmdroid-android:6.1.20 generated with chaquopy-stubgen"
 readme = {file = "README.md", content-type = "text/markdown"}
 license = "MIT"
