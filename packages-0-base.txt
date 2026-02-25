@@ -3,3 +3,4 @@ android-36
 com.google.android.material:material:1.13.0
 androidx.swiperefreshlayout:swiperefreshlayout:1.1.0
 org.osmdroid:osmdroid-android:6.1.20
+androidx.webkit:webkit:1.15.0

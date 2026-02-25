@@ -52,6 +52,7 @@ androidx.vectordrawable:vectordrawable:1.1.0
 androidx.versionedparcelable:versionedparcelable:1.1.1
 androidx.viewpager2:viewpager2:1.0.0
 androidx.viewpager:viewpager:1.0.0
+androidx.webkit:webkit:1.15.0
 com.google.android.material:material:1.13.0
 com.google.errorprone:error_prone_annotations:2.15.0
 com.google.guava:listenablefuture:1.0
