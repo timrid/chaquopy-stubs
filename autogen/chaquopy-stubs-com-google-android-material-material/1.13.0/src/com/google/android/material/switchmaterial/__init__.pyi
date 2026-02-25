@@ -1,0 +1,19 @@
+import android.content
+import android.util
+import androidx.appcompat.widget
+import java
+import java.lang
+import typing
+
+
+
+class SwitchMaterial(androidx.appcompat.widget.SwitchCompat):
+    @typing.overload
+    def __init__(self, context: android.content.Context, /) -> None: ...
+    @typing.overload
+    def __init__(self, context: android.content.Context, attrs: android.util.AttributeSet, /) -> None: ...
+    @typing.overload
+    def __init__(self, context: android.content.Context, attrs: android.util.AttributeSet, defStyleAttr: int | java.jint | java.lang.Integer, /) -> None: ...
+    def isUseMaterialThemeColors(self) -> bool: ...
+    def onAttachedToWindow(self) -> None: ...
+    def setUseMaterialThemeColors(self, useMaterialThemeColors: bool | java.jboolean | java.lang.Boolean, /) -> None: ...

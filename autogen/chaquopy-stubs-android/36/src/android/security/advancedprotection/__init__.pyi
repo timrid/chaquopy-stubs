@@ -1,0 +1,13 @@
+import java
+import java.lang
+import java.util.concurrent
+
+
+
+class AdvancedProtectionManager(java.lang.Object):
+    def isAdvancedProtectionEnabled(self) -> bool: ...
+    def registerAdvancedProtectionCallback(self, executor: java.util.concurrent.Executor, callback: AdvancedProtectionManager.Callback, /) -> None: ...
+    def unregisterAdvancedProtectionCallback(self, callback: AdvancedProtectionManager.Callback, /) -> None: ...
+
+    class Callback(java.lang.Object):
+        def onAdvancedProtectionChanged(self, arg1: bool | java.jboolean | java.lang.Boolean, /) -> None: ...
