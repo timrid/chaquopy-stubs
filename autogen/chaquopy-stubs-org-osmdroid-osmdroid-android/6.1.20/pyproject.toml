@@ -4,13 +4,15 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "chaquopy-stubs-org-osmdroid-osmdroid-android"
-version = "6.1.20.20260225"
+version = "6.1.20.20260226"
 description = "Python type stubs for org.osmdroid:osmdroid-android generated with chaquopy-stubgen"
+readme = {file = "README.md", content-type = "text/markdown"}
 license = { text = "MIT" }
 requires-python = ">=3.10"
 classifiers = [
     "Typing :: Stubs Only",
     "Programming Language :: Python :: 3",
+    "Operating System :: Android",
 ]
 
 [tool.setuptools.packages.find]
