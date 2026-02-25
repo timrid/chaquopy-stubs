@@ -1,0 +1,30 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+  workflow_call:
+
+jobs:
+  build:
+    name: Build packages
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+
+      - name: Build all packages
+        run: |
+          mkdir -p dist
+          for pkg_dir in autogen/*/*; do
+            [ -f "$pkg_dir/pyproject.toml" ] || continue
+            uv build "$pkg_dir" --out-dir dist
+          done
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist/
