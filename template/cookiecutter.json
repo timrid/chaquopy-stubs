@@ -3,6 +3,7 @@
     "group_id": "com.example",
     "artifact_id": "example",
     "readable_name": "com.example:example",
+    "maven_url": "https://mvnrepository.com/artifact/com.example/example/1.0.0",
     "version": "1.0.0",
     "stub_version": "1.0.0.20260224",
     "stubgen_version": "0.0.0"

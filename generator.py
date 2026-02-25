@@ -85,6 +85,10 @@ class PlatformCoord:
         return f"Android API Level {self.api_level}"
 
     @property
+    def maven_url(self) -> str:
+        return ""
+
+    @property
     def stubgen_coord(self) -> str:
         return self.name
 
@@ -108,7 +112,11 @@ class MavenCoord:
 
     @property
     def readable_name(self) -> str:
-        return f"{self.group_id}:{self.artifact_id}"
+        return f"{self.group_id}:{self.artifact_id}:{self.version}"
+
+    @property
+    def maven_url(self) -> str:
+        return f"https://mvnrepository.com/artifact/{self.group_id}/{self.artifact_id}/{self.version}"
 
     @property
     def stubgen_coord(self) -> str:
@@ -414,6 +422,7 @@ def render_template(
                 "group_id": group_id,
                 "artifact_id": artifact_id,
                 "readable_name": coord.readable_name,
+                "maven_url": coord.maven_url,
                 "version": coord.version,
                 "stub_version": stub_version,
                 "stubgen_version": stubgen_version,

@@ -1,13 +1,13 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=77.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "chaquopy-stubs-android"
-version = "36.20260226"
+version = "36.20260225"
 description = "Python type stubs for Android API Level 36 generated with chaquopy-stubgen"
 readme = {file = "README.md", content-type = "text/markdown"}
-license = { text = "MIT" }
+license = "MIT"
 requires-python = ">=3.10"
 classifiers = [
     "Typing :: Stubs Only",

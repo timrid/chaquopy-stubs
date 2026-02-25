@@ -1,13 +1,13 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=77.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "chaquopy-stubs-androidx-swiperefreshlayout-swiperefreshlayout"
-version = "1.1.0.20260226"
-description = "Python type stubs for androidx.swiperefreshlayout:swiperefreshlayout generated with chaquopy-stubgen"
+version = "1.1.0.20260225"
+description = "Python type stubs for androidx.swiperefreshlayout:swiperefreshlayout:1.1.0 generated with chaquopy-stubgen"
 readme = {file = "README.md", content-type = "text/markdown"}
-license = { text = "MIT" }
+license = "MIT"
 requires-python = ">=3.10"
 classifiers = [
     "Typing :: Stubs Only",

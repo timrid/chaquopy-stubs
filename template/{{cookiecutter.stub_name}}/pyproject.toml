@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=77.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -7,7 +7,7 @@ name = "{{ cookiecutter.stub_name }}"
 version = "{{ cookiecutter.stub_version }}"
 description = "Python type stubs for {{ cookiecutter.readable_name }} generated with chaquopy-stubgen"
 readme = {file = "README.md", content-type = "text/markdown"}
-license = { text = "MIT" }
+license = "MIT"
 requires-python = ">=3.10"
 classifiers = [
     "Typing :: Stubs Only",

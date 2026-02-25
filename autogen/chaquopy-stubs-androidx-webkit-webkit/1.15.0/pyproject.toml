@@ -1,13 +1,13 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=77.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "chaquopy-stubs-androidx-webkit-webkit"
-version = "1.15.0.20260226"
-description = "Python type stubs for androidx.webkit:webkit generated with chaquopy-stubgen"
+version = "1.15.0.20260225"
+description = "Python type stubs for androidx.webkit:webkit:1.15.0 generated with chaquopy-stubgen"
 readme = {file = "README.md", content-type = "text/markdown"}
-license = { text = "MIT" }
+license = "MIT"
 requires-python = ">=3.10"
 classifiers = [
     "Typing :: Stubs Only",
