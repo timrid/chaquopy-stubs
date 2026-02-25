@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "chaquopy-stubs-android"
-version = "35.20260227"
+version = "35.20260228"
 description = "Python type stubs for Android API Level 35 generated with chaquopy-stubgen"
 readme = {file = "README.md", content-type = "text/markdown"}
 license = "MIT"
@@ -14,6 +14,10 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: Android",
 ]
+
+[project.urls]
+Homepage = "https://github.com/timrid/chaquopy-stubs"
+Issues = "https://github.com/timrid/chaquopy-stubs/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]

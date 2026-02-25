@@ -15,6 +15,10 @@ classifiers = [
     "Operating System :: Android",
 ]
 
+[project.urls]
+Homepage = "https://github.com/timrid/chaquopy-stubs"
+Issues = "https://github.com/timrid/chaquopy-stubs/issues"
+
 [tool.setuptools.packages.find]
 where = ["src"]
 namespaces = true
