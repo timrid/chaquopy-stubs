@@ -38,19 +38,14 @@ wheels = [
 
 [[package]]
 name = "chaquopy-stubgen"
-source = { directory = "../chaquopy-stubgen" }
+version = "0.2.0"
+source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "jpype1" },
 ]
-
-[package.metadata]
-requires-dist = [{ name = "jpype1", specifier = ">=1.6.0,<2" }]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "mypy", specifier = "==1.19.1" },
-    { name = "pytest" },
-    { name = "towncrier", specifier = "==25.8.0" },
+sdist = { url = "https://files.pythonhosted.org/packages/0e/9d/d2d3f02ef15ab02bb6fdd711037eba2cf821dff3c46b595f1c350b0c3e2f/chaquopy_stubgen-0.2.0.tar.gz", hash = "sha256:790fd7381a251fc3d51ec2b1ed593653d30a7b1d0ef5ad895f8962f28b545dfc", size = 25141774, upload-time = "2026-03-19T21:45:51.564Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c5/6e/9e06ece8eddcea42867826832182e008f6d7d32f11fd49606e26f2a6ad97/chaquopy_stubgen-0.2.0-py3-none-any.whl", hash = "sha256:516df6cd695e7409314036243be2db2cbf771f0a913f87d0f56ad2ae2952ad00", size = 224902, upload-time = "2026-03-19T21:45:49.703Z" },
 ]
 
 [[package]]
@@ -66,7 +61,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "chaquopy-stubgen", directory = "../chaquopy-stubgen" },
+    { name = "chaquopy-stubgen", specifier = "==0.2.0" },
     { name = "cookiecutter", specifier = ">=2.6" },
     { name = "lxml", specifier = ">=5.0" },
     { name = "requests", specifier = ">=2.32" },
