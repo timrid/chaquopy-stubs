@@ -9,3 +9,7 @@
    This expands each resolved package to all of its available stable versions.
 4. Run `uv run generator.py generate` to generate stubs for all packages in `packages-2-all.txt`.
 5. Commit `packages-0-base.txt`, `packages-1-resolved.txt`, `packages-2-all.txt`, and the generated stubs, then push to GitHub and open a pull request.
+
+## Updating chaquopy-stubgen
+
+Run `uv run generator.py generate --clean` to regenerate stubs for all packages in `packages-2-all.txt`.
