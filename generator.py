@@ -15,6 +15,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import concurrent.futures
 import datetime
 import importlib.metadata
 import logging
@@ -542,11 +543,17 @@ def cmd_generate(args: argparse.Namespace) -> None:
         console=_console,
     ) as progress:
         task = progress.add_task("Generating stubs…", total=total)
-        for i, coord in enumerate(entries, 1):
-            ok = process_coordinate(coord, build_date, stubgen_version, i, total)
-            progress.advance(task)
-            if not ok:
-                failed.append(coord.name)
+        with concurrent.futures.ThreadPoolExecutor() as executor:
+            futures = {
+                executor.submit(process_coordinate, coord, build_date, stubgen_version, i, total): coord
+                for i, coord in enumerate(entries, 1)
+            }
+            for future in concurrent.futures.as_completed(futures):
+                coord = futures[future]
+                ok = future.result()
+                progress.advance(task)
+                if not ok:
+                    failed.append(coord.name)
 
     if failed:
         log.warning("%d coordinate(s) failed:", len(failed))
