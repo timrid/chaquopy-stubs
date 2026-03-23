@@ -10,4 +10,5 @@ dependencies = [
     "cookiecutter>=2.6",
     "lxml>=5.0",
     "requests>=2.32",
+    "rich>=13.0",
 ]

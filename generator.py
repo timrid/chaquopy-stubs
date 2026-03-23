@@ -29,6 +29,17 @@ from pathlib import Path
 import requests
 from cookiecutter.main import cookiecutter as _cookiecutter
 from lxml import etree
+from rich.console import Console
+from rich.logging import RichHandler
+from rich.progress import (
+    BarColumn,
+    MofNCompleteColumn,
+    Progress,
+    TaskProgressColumn,
+    TextColumn,
+    TimeElapsedColumn,
+    TimeRemainingColumn,
+)
 
 log = logging.getLogger(__name__)
 
@@ -510,11 +521,32 @@ def cmd_generate(args: argparse.Namespace) -> None:
     stubgen_version = importlib.metadata.version("chaquopy-stubgen")
     log.info("Build date: %s, chaquopy-stubgen: %s", build_date, stubgen_version)
 
+    # Reconfigure logging to go through a shared Rich console so that log
+    # messages appear above the progress bar rather than interrupting it.
+    _console = Console(stderr=True)
+    root_logger = logging.getLogger()
+    for _h in root_logger.handlers[:]:
+        root_logger.removeHandler(_h)
+    _rich_handler = RichHandler(console=_console, show_path=False, markup=False)
+    _rich_handler.setFormatter(logging.Formatter("%(message)s", datefmt="[%X]"))
+    root_logger.addHandler(_rich_handler)
+
     failed: list[str] = []
-    for i, coord in enumerate(entries, 1):
-        ok = process_coordinate(coord, build_date, stubgen_version, i, total)
-        if not ok:
-            failed.append(coord.name)
+    with Progress(
+        TextColumn("[progress.description]{task.description}"),
+        BarColumn(),
+        MofNCompleteColumn(),
+        TaskProgressColumn(),
+        TimeElapsedColumn(),
+        TimeRemainingColumn(),
+        console=_console,
+    ) as progress:
+        task = progress.add_task("Generating stubs…", total=total)
+        for i, coord in enumerate(entries, 1):
+            ok = process_coordinate(coord, build_date, stubgen_version, i, total)
+            progress.advance(task)
+            if not ok:
+                failed.append(coord.name)
 
     if failed:
         log.warning("%d coordinate(s) failed:", len(failed))

@@ -57,6 +57,7 @@ dependencies = [
     { name = "cookiecutter" },
     { name = "lxml" },
     { name = "requests" },
+    { name = "rich" },
 ]
 
 [package.metadata]
@@ -65,6 +66,7 @@ requires-dist = [
     { name = "cookiecutter", specifier = ">=2.6" },
     { name = "lxml", specifier = ">=5.0" },
     { name = "requests", specifier = ">=2.32" },
+    { name = "rich", specifier = ">=13.0" },
 ]
 
 [[package]]
