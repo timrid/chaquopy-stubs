@@ -53,6 +53,9 @@ CACHE_DIR = ROOT_DIR / ".cache" / "pom"
 AUTOGEN_DIR = ROOT_DIR / "autogen"
 TEMPLATE_DIR = ROOT_DIR / "template"
 
+# cookiecutter calls os.chdir() internally and is not thread-safe
+_COOKIECUTTER_LOCK = threading.Lock()
+
 MAVEN_REPOS = [
     "https://repo1.maven.org/maven2",
     "https://dl.google.com/dl/android/maven2",
@@ -426,22 +429,24 @@ def render_template(
     else:
         group_id, artifact_id = coord.group_id, coord.artifact_id
     with tempfile.TemporaryDirectory() as tmp:
-        _cookiecutter(
-            str(TEMPLATE_DIR),
-            no_input=True,
-            extra_context={
-                "stub_name": coord.stub_name,
-                "group_id": group_id,
-                "artifact_id": artifact_id,
-                "readable_name": coord.readable_name,
-                "maven_url": coord.maven_url,
-                "version": coord.version,
-                "stub_version": stub_version,
-                "stubgen_version": stubgen_version,
-            },
-            output_dir=tmp,
-            overwrite_if_exists=True,
-        )
+        # Cookiecutter is not thread-safe, because it uses os.chdir() internally. 
+        with _COOKIECUTTER_LOCK:
+            _cookiecutter(
+                str(TEMPLATE_DIR),
+                no_input=True,
+                extra_context={
+                    "stub_name": coord.stub_name,
+                    "group_id": group_id,
+                    "artifact_id": artifact_id,
+                    "readable_name": coord.readable_name,
+                    "maven_url": coord.maven_url,
+                    "version": coord.version,
+                    "stub_version": stub_version,
+                    "stubgen_version": stubgen_version,
+                },
+                output_dir=tmp,
+                overwrite_if_exists=True,
+            )
         src = Path(tmp) / coord.stub_name
         shutil.copytree(src, target_dir, dirs_exist_ok=True)
     log.debug("Rendered template → %s", target_dir.relative_to(ROOT_DIR))
