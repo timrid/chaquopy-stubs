@@ -543,17 +543,28 @@ def cmd_generate(args: argparse.Namespace) -> None:
         console=_console,
     ) as progress:
         task = progress.add_task("Generating stubs…", total=total)
-        with concurrent.futures.ThreadPoolExecutor() as executor:
-            futures = {
-                executor.submit(process_coordinate, coord, build_date, stubgen_version, i, total): coord
-                for i, coord in enumerate(entries, 1)
-            }
+        executor = concurrent.futures.ThreadPoolExecutor()
+        futures = {
+            executor.submit(process_coordinate, coord, build_date, stubgen_version, i, total): coord
+            for i, coord in enumerate(entries, 1)
+        }
+        try:
             for future in concurrent.futures.as_completed(futures):
                 coord = futures[future]
-                ok = future.result()
+                try:
+                    ok = future.result()
+                except Exception as e:
+                    log.error("Unexpected error for %s: %s", coord.name, e)
+                    ok = False
                 progress.advance(task)
                 if not ok:
                     failed.append(coord.name)
+        except KeyboardInterrupt:
+            executor.shutdown(wait=False, cancel_futures=True)
+            log.warning("Interrupted.")
+            sys.exit(130)
+        else:
+            executor.shutdown(wait=True)
 
     if failed:
         log.warning("%d coordinate(s) failed:", len(failed))
