@@ -502,6 +502,10 @@ def process_coordinate(
 
     # stubgen may delete+recreate output_dir; ensure it exists before writing template
     src_dir.mkdir(parents=True, exist_ok=True)
+    if not any(f for f in src_dir.rglob("*") if f.is_file()):
+        log.warning("  → no stubs generated for %s, skipping package creation", coord.name)
+        shutil.rmtree(version_dir)
+        return True
     stub_version = f"{coord.version}.{build_date}"
     render_template(coord, stub_version, stubgen_version, version_dir)
     log.debug("  → done: %s", version_dir.relative_to(ROOT_DIR))
