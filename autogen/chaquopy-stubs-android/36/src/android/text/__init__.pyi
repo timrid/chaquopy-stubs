@@ -1,3 +1,5 @@
+import typing
+
 import android
 import android.content
 import android.graphics
@@ -13,9 +15,6 @@ import java.lang
 import java.util
 import java.util.regex
 import org.xml.sax
-import typing
-
-
 
 class AlteredCharSequence(java.lang.CharSequence, GetChars):
     def charAt(self, off: int | java.jint | java.lang.Integer, /) -> str: ...
@@ -259,7 +258,7 @@ class Highlights(java.lang.Object):
     class Builder(java.lang.Object):
         def __init__(self) -> None: ...
         def addRange(self, paint: android.graphics.Paint, start: int | java.jint | java.lang.Integer, end: int | java.jint | java.lang.Integer, /) -> Highlights.Builder: ...
-        def addRanges(self, paint: android.graphics.Paint, /, *ranges: java.chaquopy.JavaArrayJInt) -> Highlights.Builder: ...
+        def addRanges(self, paint: android.graphics.Paint, /, *ranges: java.jint) -> Highlights.Builder: ...
         def build(self) -> Highlights: ...
 
 class Html(java.lang.Object):

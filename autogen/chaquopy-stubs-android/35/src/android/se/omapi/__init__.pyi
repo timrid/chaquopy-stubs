@@ -1,12 +1,11 @@
+import typing
+
 import android.content
 import java
 import java.chaquopy
 import java.lang
 import java.nio.channels
 import java.util.concurrent
-import typing
-
-
 
 class Channel(java.nio.channels.Channel):
     def close(self) -> None: ...

@@ -1,9 +1,8 @@
+import typing
+
 import java.io
 import java.lang
 import java.util
-import typing
-
-
 
 class NamespaceContext(java.lang.Object):
     def getNamespaceURI(self, arg1: str | java.lang.String, /) -> str: ...

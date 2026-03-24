@@ -1,3 +1,5 @@
+import typing
+
 import android.graphics
 import android.hardware.camera2.params
 import android.location
@@ -12,9 +14,6 @@ import java.lang
 import java.nio
 import java.util
 import java.util.concurrent
-import typing
-
-
 
 class CameraAccessException(android.util.AndroidException):
     CAMERA_DISABLED: typing.ClassVar[int] = ...

@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.content.res
 import android.graphics
@@ -13,9 +15,6 @@ import com.google.android.material.badge
 import java
 import java.lang
 import java.lang.annotation
-import typing
-
-
 
 class ElasticTabIndicatorInterpolator(TabIndicatorInterpolator): ...
 

@@ -1,3 +1,5 @@
+import typing
+
 import android
 import android.content
 import android.content.res
@@ -11,9 +13,6 @@ import java.chaquopy
 import java.io
 import java.lang
 import org.xmlpull.v1
-import typing
-
-
 
 class AdaptiveIconDrawable(Drawable, android.graphics.drawable.Drawable.Callback):
     @typing.overload

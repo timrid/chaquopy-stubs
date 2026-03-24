@@ -1,3 +1,5 @@
+import typing
+
 import android
 import android.icu.text
 import android.icu.util
@@ -5,9 +7,6 @@ import java
 import java.chaquopy
 import java.lang
 import java.util
-import typing
-
-
 
 class UCharacter(android.icu.lang.UCharacterEnums.ECharacterCategory, android.icu.lang.UCharacterEnums.ECharacterDirection):
     FOLD_CASE_DEFAULT: typing.ClassVar[int] = ...

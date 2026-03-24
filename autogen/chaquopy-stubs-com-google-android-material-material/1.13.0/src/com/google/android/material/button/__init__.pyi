@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.content.res
 import android.graphics
@@ -15,9 +17,6 @@ import java.chaquopy
 import java.lang
 import java.lang.annotation
 import java.util
-import typing
-
-
 
 class MaterialButton(androidx.appcompat.widget.AppCompatButton, android.widget.Checkable, com.google.android.material.shape.Shapeable):
     ICON_GRAVITY_START: typing.ClassVar[int] = ...

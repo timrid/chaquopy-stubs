@@ -1,7 +1,6 @@
-import java.lang
 import typing
 
-
+import java.lang
 
 class XMLConstants(java.lang.Object):
     DEFAULT_NS_PREFIX: typing.ClassVar[str] = ...

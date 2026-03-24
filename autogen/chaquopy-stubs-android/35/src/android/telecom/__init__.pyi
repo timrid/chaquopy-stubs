@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.bluetooth
 import android.content
@@ -11,9 +13,6 @@ import java.lang
 import java.util
 import java.util.concurrent
 import java.util.function
-import typing
-
-
 
 class Call(java.lang.Object):
     AVAILABLE_PHONE_ACCOUNTS: typing.ClassVar[str] = ...

@@ -1,3 +1,5 @@
+import typing
+
 import android.content.res
 import android.graphics
 import android.os
@@ -7,9 +9,6 @@ import java.io
 import java.lang
 import java.nio
 import java.util
-import typing
-
-
 
 class Font(java.lang.Object):
     def equals(self, o: java.lang.Object | int | bool | float | str, /) -> bool: ...

@@ -1,12 +1,11 @@
+import typing
+
 import android.graphics
 import android.view
 import java
 import java.lang
 import java.util
 import java.util.function
-import typing
-
-
 
 _InspectionCompanion__T = typing.TypeVar('_InspectionCompanion__T')  # <T>
 class InspectionCompanion(java.lang.Object, typing.Generic[_InspectionCompanion__T]):

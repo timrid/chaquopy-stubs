@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.content
 import android.os
@@ -5,9 +7,6 @@ import java
 import java.lang
 import java.util
 import java.util.concurrent
-import typing
-
-
 
 class GetValueRequest(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[GetValueRequest]] = ...

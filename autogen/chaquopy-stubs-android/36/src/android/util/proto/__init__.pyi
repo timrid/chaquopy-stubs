@@ -1,10 +1,9 @@
+import typing
+
 import java
 import java.chaquopy
 import java.io
 import java.lang
-import typing
-
-
 
 class ProtoOutputStream(java.lang.Object):
     FIELD_COUNT_MASK: typing.ClassVar[int] = ...

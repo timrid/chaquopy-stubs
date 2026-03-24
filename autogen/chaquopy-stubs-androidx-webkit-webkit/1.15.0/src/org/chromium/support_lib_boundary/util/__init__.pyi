@@ -1,3 +1,5 @@
+import typing
+
 import android.util
 import java.chaquopy
 import java.lang
@@ -5,9 +7,6 @@ import java.lang.annotation
 import java.lang.reflect
 import java.util
 import java.util.function
-import typing
-
-
 
 class BoundaryInterfaceReflectionUtil(java.lang.Object):
     def __init__(self) -> None: ...

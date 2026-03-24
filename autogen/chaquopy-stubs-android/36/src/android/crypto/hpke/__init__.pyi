@@ -4,8 +4,6 @@ import java.lang
 import java.security
 import java.security.spec
 
-
-
 class HpkeSpi(java.lang.Object):
     def engineExport(self, arg1: int | java.jint | java.lang.Integer, arg2: java.chaquopy.JavaArrayJByte, /) -> java.chaquopy.JavaArrayJByte: ...
     def engineInitRecipient(self, arg1: java.chaquopy.JavaArrayJByte, arg2: java.security.PrivateKey, arg3: java.chaquopy.JavaArrayJByte, arg4: java.security.PublicKey, arg5: java.chaquopy.JavaArrayJByte, arg6: java.chaquopy.JavaArrayJByte, /) -> None: ...

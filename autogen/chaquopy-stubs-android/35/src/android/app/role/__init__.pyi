@@ -1,8 +1,7 @@
-import android.content
-import java.lang
 import typing
 
-
+import android.content
+import java.lang
 
 class RoleManager(java.lang.Object):
     ROLE_ASSISTANT: typing.ClassVar[str] = ...

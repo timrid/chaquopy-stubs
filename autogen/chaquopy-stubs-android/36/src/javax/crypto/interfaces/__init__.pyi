@@ -1,12 +1,11 @@
+import typing
+
 import java.chaquopy
 import java.lang
 import java.math
 import java.security
 import javax.crypto
 import javax.crypto.spec
-import typing
-
-
 
 class DHKey(java.lang.Object):
     def getParams(self) -> javax.crypto.spec.DHParameterSpec: ...

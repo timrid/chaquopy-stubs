@@ -1,3 +1,5 @@
+import typing
+
 import java
 import java.chaquopy
 import java.lang
@@ -10,9 +12,6 @@ import java.nio.file
 import java.security
 import java.util
 import java.util.stream
-import typing
-
-
 
 class BufferedInputStream(FilterInputStream):
     buf: java.chaquopy.JavaArrayJByte = ...

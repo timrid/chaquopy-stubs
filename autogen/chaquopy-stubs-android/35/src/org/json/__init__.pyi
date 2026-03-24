@@ -1,10 +1,9 @@
+import typing
+
 import java
 import java.chaquopy
 import java.lang
 import java.util
-import typing
-
-
 
 class JSONArray(java.lang.Object):
     @typing.overload

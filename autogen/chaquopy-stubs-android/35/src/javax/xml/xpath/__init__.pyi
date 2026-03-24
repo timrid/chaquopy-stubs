@@ -1,12 +1,11 @@
+import typing
+
 import java
 import java.io
 import java.lang
 import java.util
 import javax.xml.namespace
 import org.xml.sax
-import typing
-
-
 
 class XPath(java.lang.Object):
     def compile(self, arg1: str | java.lang.String, /) -> XPathExpression: ...

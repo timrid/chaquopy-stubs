@@ -1,8 +1,7 @@
-import java
-import java.lang
 import typing
 
-
+import java
+import java.lang
 
 class Effect(java.lang.Object):
     def __init__(self) -> None: ...

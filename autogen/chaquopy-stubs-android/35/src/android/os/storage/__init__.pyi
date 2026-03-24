@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.content
 import android.net
@@ -7,9 +9,6 @@ import java.io
 import java.lang
 import java.util
 import java.util.concurrent
-import typing
-
-
 
 class OnObbStateChangeListener(java.lang.Object):
     ERROR_ALREADY_MOUNTED: typing.ClassVar[int] = ...

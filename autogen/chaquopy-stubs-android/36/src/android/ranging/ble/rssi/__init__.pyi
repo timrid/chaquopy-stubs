@@ -1,9 +1,8 @@
+import typing
+
 import android.os
 import java
 import java.lang
-import typing
-
-
 
 class BleRssiRangingParams(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[BleRssiRangingParams]] = ...

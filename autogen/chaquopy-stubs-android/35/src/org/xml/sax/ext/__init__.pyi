@@ -1,11 +1,10 @@
+import typing
+
 import java
 import java.chaquopy
 import java.lang
 import org.xml.sax
 import org.xml.sax.helpers
-import typing
-
-
 
 class Attributes2(org.xml.sax.Attributes):
     @typing.overload

@@ -1,3 +1,5 @@
+import typing
+
 import java
 import java.chaquopy
 import java.io
@@ -7,9 +9,6 @@ import javax.xml.transform
 import org.w3c.dom
 import org.w3c.dom.ls
 import org.xml.sax
-import typing
-
-
 
 class Schema(java.lang.Object):
     def __init__(self) -> None: ...

@@ -1,3 +1,5 @@
+import typing
+
 import android.net
 import android.os
 import java
@@ -7,9 +9,6 @@ import java.net
 import java.util
 import java.util.concurrent
 import java.util.function
-import typing
-
-
 
 class AttachCallback(java.lang.Object):
     def __init__(self) -> None: ...

@@ -1,3 +1,5 @@
+import typing
+
 import android.os
 import java
 import java.chaquopy
@@ -5,9 +7,6 @@ import java.lang
 import java.security
 import java.security.cert
 import java.util
-import typing
-
-
 
 class Credential(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[Credential]] = ...

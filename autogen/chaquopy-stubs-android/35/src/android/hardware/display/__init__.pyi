@@ -1,12 +1,11 @@
+import typing
+
 import android.os
 import android.view
 import java
 import java.chaquopy
 import java.lang
 import java.util
-import typing
-
-
 
 class DeviceProductInfo(android.os.Parcelable):
     CONNECTION_TO_SINK_BUILT_IN: typing.ClassVar[int] = ...

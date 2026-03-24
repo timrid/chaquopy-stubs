@@ -1,3 +1,5 @@
+import typing
+
 import android
 import android.content
 import android.net
@@ -14,9 +16,6 @@ import java.security.cert
 import java.util
 import java.util.concurrent
 import javax.security.auth.x500
-import typing
-
-
 
 class ChildSaProposal(SaProposal):
     def equals(self, o: java.lang.Object | int | bool | float | str, /) -> bool: ...

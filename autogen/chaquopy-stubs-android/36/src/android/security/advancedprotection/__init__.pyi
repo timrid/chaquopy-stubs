@@ -2,8 +2,6 @@ import java
 import java.lang
 import java.util.concurrent
 
-
-
 class AdvancedProtectionManager(java.lang.Object):
     def isAdvancedProtectionEnabled(self) -> bool: ...
     def registerAdvancedProtectionCallback(self, executor: java.util.concurrent.Executor, callback: AdvancedProtectionManager.Callback, /) -> None: ...

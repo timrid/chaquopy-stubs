@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.content
 import android.location.provider
@@ -9,9 +11,6 @@ import java.lang
 import java.util
 import java.util.concurrent
 import java.util.function
-import typing
-
-
 
 class Address(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[Address]] = ...

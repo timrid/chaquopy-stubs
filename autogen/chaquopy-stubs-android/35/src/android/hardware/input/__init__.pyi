@@ -1,11 +1,10 @@
+import typing
+
 import android.os
 import android.view
 import java
 import java.chaquopy
 import java.lang
-import typing
-
-
 
 class HostUsiVersion(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[HostUsiVersion]] = ...

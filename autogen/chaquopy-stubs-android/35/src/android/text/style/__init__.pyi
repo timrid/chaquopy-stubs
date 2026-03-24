@@ -1,3 +1,5 @@
+import typing
+
 import android
 import android.app
 import android.content
@@ -13,9 +15,6 @@ import java
 import java.chaquopy
 import java.lang
 import java.util
-import typing
-
-
 
 class AbsoluteSizeSpan(MetricAffectingSpan, android.text.ParcelableSpan):
     @typing.overload

@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.app.assist
 import android.app.slice
@@ -14,9 +16,6 @@ import java.chaquopy
 import java.lang
 import java.util
 import java.util.regex
-import typing
-
-
 
 class AutofillService(android.app.Service):
     EXTRA_FILL_RESPONSE: typing.ClassVar[str] = ...

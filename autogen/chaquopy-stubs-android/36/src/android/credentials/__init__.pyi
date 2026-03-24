@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.os
 import android.service.credentials
@@ -5,9 +7,6 @@ import java
 import java.lang
 import java.util
 import java.util.concurrent
-import typing
-
-
 
 class ClearCredentialStateException(java.lang.Exception):
     TYPE_UNKNOWN: typing.ClassVar[str] = ...

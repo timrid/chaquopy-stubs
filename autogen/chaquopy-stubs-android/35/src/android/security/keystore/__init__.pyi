@@ -1,3 +1,5 @@
+import typing
+
 import java
 import java.chaquopy
 import java.lang
@@ -6,9 +8,6 @@ import java.security
 import java.security.spec
 import java.util
 import javax.security.auth.x500
-import typing
-
-
 
 class BackendBusyException(java.security.ProviderException):
     @typing.overload

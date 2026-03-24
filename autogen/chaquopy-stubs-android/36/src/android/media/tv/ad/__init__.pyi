@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.content
 import android.content.pm
@@ -12,9 +14,6 @@ import java.chaquopy
 import java.lang
 import java.util
 import java.util.concurrent
-import typing
-
-
 
 class TvAdManager(java.lang.Object):
     ACTION_APP_LINK_COMMAND: typing.ClassVar[str] = ...

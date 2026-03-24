@@ -1,0 +1,3 @@
+import java.lang
+
+class JvmRepeatableKt(java.lang.Object): ...

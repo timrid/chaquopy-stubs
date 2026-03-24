@@ -1,3 +1,5 @@
+import typing
+
 import java
 import java.chaquopy
 import java.lang
@@ -5,9 +7,6 @@ import java.math
 import java.security
 import java.security.spec
 import java.util
-import typing
-
-
 
 class DSAKey(java.lang.Object):
     def getParams(self) -> DSAParams: ...

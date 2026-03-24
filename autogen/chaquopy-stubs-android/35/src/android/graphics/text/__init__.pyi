@@ -1,12 +1,11 @@
+import typing
+
 import android.graphics
 import android.graphics.fonts
 import android.os
 import java
 import java.chaquopy
 import java.lang
-import typing
-
-
 
 class LineBreakConfig(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[LineBreakConfig]] = ...

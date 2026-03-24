@@ -1,11 +1,10 @@
+import typing
+
 import android.content.res
 import android.os
 import java
 import java.lang
 import java.util
-import typing
-
-
 
 class FabricatedOverlay(java.lang.Object):
     def __init__(self, overlayName: str | java.lang.String, targetPackage: str | java.lang.String, /) -> None: ...

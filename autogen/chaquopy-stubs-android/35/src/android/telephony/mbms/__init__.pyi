@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.net
 import android.os
@@ -5,9 +7,6 @@ import java
 import java.chaquopy
 import java.lang
 import java.util
-import typing
-
-
 
 class DownloadProgressListener(java.lang.Object):
     def __init__(self) -> None: ...

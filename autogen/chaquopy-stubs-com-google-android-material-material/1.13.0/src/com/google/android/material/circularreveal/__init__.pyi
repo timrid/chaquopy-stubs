@@ -1,3 +1,5 @@
+import typing
+
 import android.animation
 import android.content
 import android.graphics
@@ -8,9 +10,6 @@ import com
 import java
 import java.lang
 import java.lang.annotation
-import typing
-
-
 
 class CircularRevealCompat(java.lang.Object):
     @typing.overload

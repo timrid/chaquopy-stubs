@@ -1,11 +1,10 @@
+import typing
+
 import java
 import java.chaquopy
 import java.lang
 import java.util
 import java.util.function
-import typing
-
-
 
 class Blend(java.lang.Object):
     @staticmethod

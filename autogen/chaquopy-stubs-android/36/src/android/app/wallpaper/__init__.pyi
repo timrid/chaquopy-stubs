@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.content
 import android.net
@@ -5,9 +7,6 @@ import android.os
 import java
 import java.lang
 import java.util
-import typing
-
-
 
 class WallpaperDescription(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[WallpaperDescription]] = ...

@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.content.res
 import android.net
@@ -7,9 +9,6 @@ import java
 import java.lang
 import java.util
 import java.util.concurrent
-import typing
-
-
 
 class EmbeddedPhotoPickerClient(java.lang.Object):
     def onSelectionComplete(self) -> None: ...

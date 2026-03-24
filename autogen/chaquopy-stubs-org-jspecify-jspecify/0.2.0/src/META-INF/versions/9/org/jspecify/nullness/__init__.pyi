@@ -1,0 +1,3 @@
+import java.lang.annotation
+
+class NullMarked(java.lang.annotation.Annotation): ...

@@ -1,3 +1,5 @@
+import typing
+
 import java
 import java.chaquopy
 import java.io
@@ -5,9 +7,6 @@ import java.lang
 import java.lang.reflect
 import java.nio
 import java.util
-import typing
-
-
 
 class CallSite(java.lang.Object):
     def dynamicInvoker(self) -> MethodHandle: ...
@@ -159,7 +158,7 @@ class MethodHandles(java.lang.Object):
     @staticmethod
     def loop(*clauses: java.chaquopy.JavaArray[MethodHandle]) -> MethodHandle: ...
     @staticmethod
-    def permuteArguments(target: MethodHandle, newType: MethodType, /, *reorder: java.chaquopy.JavaArrayJInt) -> MethodHandle: ...
+    def permuteArguments(target: MethodHandle, newType: MethodType, /, *reorder: java.jint) -> MethodHandle: ...
     @staticmethod
     def privateLookupIn(targetClass: typing.Type[java.lang.Object], lookup: MethodHandles.Lookup, /) -> MethodHandles.Lookup: ...
     @staticmethod

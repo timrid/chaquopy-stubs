@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.content.res
 import android.graphics.drawable
@@ -16,9 +18,6 @@ import java.nio
 import java.util
 import java.util.concurrent
 import java.util.function
-import typing
-
-
 
 class Bitmap(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[Bitmap]] = ...

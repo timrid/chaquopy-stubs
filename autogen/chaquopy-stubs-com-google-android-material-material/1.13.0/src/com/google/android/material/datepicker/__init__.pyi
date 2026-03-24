@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.content
 import android.content.res
@@ -18,9 +20,6 @@ import java.lang
 import java.lang.annotation
 import java.text
 import java.util
-import typing
-
-
 
 class CalendarConstraints(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[CalendarConstraints]] = ...

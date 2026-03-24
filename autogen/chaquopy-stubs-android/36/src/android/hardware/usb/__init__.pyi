@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.os
 import java
@@ -6,9 +8,6 @@ import java.io
 import java.lang
 import java.nio
 import java.util
-import typing
-
-
 
 class UsbAccessory(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[UsbAccessory]] = ...

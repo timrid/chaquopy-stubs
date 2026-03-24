@@ -1,3 +1,5 @@
+import typing
+
 import java
 import java.io
 import java.lang
@@ -5,9 +7,6 @@ import javax.xml.validation
 import org.w3c.dom
 import org.xml.sax
 import org.xml.sax.helpers
-import typing
-
-
 
 class DocumentBuilder(java.lang.Object):
     def __init__(self) -> None: ...

@@ -1,3 +1,5 @@
+import typing
+
 import java
 import java.chaquopy
 import java.io
@@ -7,9 +9,6 @@ import java.security
 import java.time
 import java.util
 import java.util.concurrent
-import typing
-
-
 
 class AclEntry(java.lang.Object):
     def equals(self, ob: java.lang.Object | int | bool | float | str, /) -> bool: ...

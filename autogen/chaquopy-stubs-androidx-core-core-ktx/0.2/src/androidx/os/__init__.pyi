@@ -1,0 +1,44 @@
+import typing
+
+import android.net
+import android.os
+import java
+import java.io
+import java.lang
+import java.time
+import java.util.concurrent
+import kotlin
+import kotlin.jvm.functions
+
+class BundleKt(java.lang.Object):
+    @staticmethod
+    def bundleOf(*pairs: kotlin.Pair[java.lang.String, java.lang.Object]) -> android.os.Bundle: ...
+
+class FileKt(java.lang.Object):
+    @staticmethod
+    def toUri(receiver: java.io.File, /) -> android.net.Uri: ...
+
+class HandlerKt(java.lang.Object):
+    @staticmethod
+    def postAtTime(receiver: android.os.Handler, uptimeMillis: int | java.jlong | java.lang.Long, token: java.lang.Object | int | bool | float | str, action: kotlin.jvm.functions.Function0[kotlin.Unit], /) -> java.lang.Runnable: ...
+    @typing.overload
+    @staticmethod
+    def postDelayed(receiver: android.os.Handler, delayInMillis: int | java.jlong | java.lang.Long, token: java.lang.Object | int | bool | float | str, action: kotlin.jvm.functions.Function0[kotlin.Unit], /) -> java.lang.Runnable: ...
+    @typing.overload
+    @staticmethod
+    def postDelayed(receiver: android.os.Handler, runnable: java.lang.Runnable, token: java.lang.Object | int | bool | float | str, delayInMillis: int | java.jlong | java.lang.Long, /) -> None: ...
+    @typing.overload
+    @staticmethod
+    def postDelayed(receiver: android.os.Handler, duration: java.time.Duration, token: java.lang.Object | int | bool | float | str, action: kotlin.jvm.functions.Function0[kotlin.Unit], /) -> java.lang.Runnable: ...
+    @typing.overload
+    @staticmethod
+    def postDelayed(receiver: android.os.Handler, amount: int | java.jlong | java.lang.Long, unit: java.util.concurrent.TimeUnit, token: java.lang.Object | int | bool | float | str, action: kotlin.jvm.functions.Function0[kotlin.Unit], /) -> java.lang.Runnable: ...
+
+class PersistableBundleKt(java.lang.Object):
+    @staticmethod
+    def persistableBundleOf(*pairs: kotlin.Pair[java.lang.String, java.lang.Object]) -> android.os.PersistableBundle: ...
+
+class TraceKt(java.lang.Object):
+    _trace__T = typing.TypeVar('_trace__T')  # <T>
+    @staticmethod
+    def trace(sectionName: str | java.lang.String, block: kotlin.jvm.functions.Function0[_trace__T], /) -> _trace__T: ...

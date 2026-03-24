@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import java
 import java.chaquopy
@@ -6,9 +8,6 @@ import java.security
 import java.security.cert
 import java.time
 import java.util
-import typing
-
-
 
 class AccessControlProfile(java.lang.Object):
 

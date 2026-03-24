@@ -1,12 +1,11 @@
+import typing
+
 import java
 import java.io
 import java.lang
 import java.math
 import java.util
 import javax.xml.namespace
-import typing
-
-
 
 class DatatypeConfigurationException(java.lang.Exception):
     @typing.overload

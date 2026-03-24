@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.content
 import android.os
@@ -5,9 +7,6 @@ import android.view.textservice
 import java
 import java.chaquopy
 import java.lang
-import typing
-
-
 
 class SpellCheckerService(android.app.Service):
     SERVICE_INTERFACE: typing.ClassVar[str] = ...

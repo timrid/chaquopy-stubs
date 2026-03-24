@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.os
 import android.view
@@ -5,9 +7,6 @@ import android.widget
 import java
 import java.lang
 import java.time
-import typing
-
-
 
 class BackEvent(java.lang.Object):
     EDGE_LEFT: typing.ClassVar[int] = ...

@@ -3,8 +3,6 @@ import java
 import java.chaquopy
 import java.lang
 
-
-
 class ArcShape(RectShape):
     def __init__(self, startAngle: float | java.jfloat | java.lang.Float, sweepAngle: float | java.jfloat | java.lang.Float, /) -> None: ...
     def clone(self) -> ArcShape: ...

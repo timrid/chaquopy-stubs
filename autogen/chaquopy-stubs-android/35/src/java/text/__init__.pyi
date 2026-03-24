@@ -1,12 +1,11 @@
+import typing
+
 import java
 import java.chaquopy
 import java.io
 import java.lang
 import java.math
 import java.util
-import typing
-
-
 
 class Annotation(java.lang.Object):
     def __init__(self, value: java.lang.Object | int | bool | float | str, /) -> None: ...

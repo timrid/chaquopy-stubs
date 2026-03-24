@@ -1,9 +1,8 @@
+import typing
+
 import java.chaquopy
 import java.lang
 import java.lang.reflect
-import typing
-
-
 
 class Annotation(java.lang.Object):
     def annotationType(self) -> typing.Type[Annotation]: ...

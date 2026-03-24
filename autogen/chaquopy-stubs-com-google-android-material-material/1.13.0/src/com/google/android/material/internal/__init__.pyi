@@ -1,3 +1,5 @@
+import typing
+
 import android.animation
 import android.app
 import android.content
@@ -20,9 +22,6 @@ import java.chaquopy
 import java.lang
 import java.lang.annotation
 import java.util
-import typing
-
-
 
 class BaselineLayout(android.view.ViewGroup):
     @typing.overload
@@ -555,9 +554,9 @@ class ThemeEnforcement(java.lang.Object):
     @staticmethod
     def isMaterialTheme(context: android.content.Context, /) -> bool: ...
     @staticmethod
-    def obtainStyledAttributes(context: android.content.Context, set: android.util.AttributeSet, attrs: java.chaquopy.JavaArrayJInt, defStyleAttr: int | java.jint | java.lang.Integer, defStyleRes: int | java.jint | java.lang.Integer, /, *textAppearanceResIndices: java.chaquopy.JavaArrayJInt) -> android.content.res.TypedArray: ...
+    def obtainStyledAttributes(context: android.content.Context, set: android.util.AttributeSet, attrs: java.chaquopy.JavaArrayJInt, defStyleAttr: int | java.jint | java.lang.Integer, defStyleRes: int | java.jint | java.lang.Integer, /, *textAppearanceResIndices: java.jint) -> android.content.res.TypedArray: ...
     @staticmethod
-    def obtainTintedStyledAttributes(context: android.content.Context, set: android.util.AttributeSet, attrs: java.chaquopy.JavaArrayJInt, defStyleAttr: int | java.jint | java.lang.Integer, defStyleRes: int | java.jint | java.lang.Integer, /, *textAppearanceResIndices: java.chaquopy.JavaArrayJInt) -> androidx.appcompat.widget.TintTypedArray: ...
+    def obtainTintedStyledAttributes(context: android.content.Context, set: android.util.AttributeSet, attrs: java.chaquopy.JavaArrayJInt, defStyleAttr: int | java.jint | java.lang.Integer, defStyleRes: int | java.jint | java.lang.Integer, /, *textAppearanceResIndices: java.jint) -> androidx.appcompat.widget.TintTypedArray: ...
 
 class ToolbarUtils(java.lang.Object):
     @staticmethod

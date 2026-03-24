@@ -1,12 +1,11 @@
+import typing
+
 import android.graphics
 import android.os
 import android.util
 import android.view
 import java
 import java.lang
-import typing
-
-
 
 class InlineContentView(android.view.ViewGroup):
     def getSurfaceControl(self) -> android.view.SurfaceControl | None: ...

@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.content
 import android.content.res
@@ -18,9 +20,6 @@ import java
 import java.chaquopy
 import java.lang
 import java.lang.annotation
-import typing
-
-
 
 class ChipTextInputComboView(android.widget.FrameLayout, android.widget.Checkable):
     @typing.overload

@@ -1,3 +1,5 @@
+import typing
+
 import android.animation
 import android.content
 import android.content.res
@@ -20,9 +22,6 @@ import java.chaquopy
 import java.lang
 import java.lang.annotation
 import java.util
-import typing
-
-
 
 class AnimatorTracker(java.lang.Object):
     def cancelCurrent(self) -> None: ...

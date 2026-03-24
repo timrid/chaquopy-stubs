@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.graphics
 import android.os
@@ -8,9 +10,6 @@ import java
 import java.chaquopy
 import java.lang
 import java.util
-import typing
-
-
 
 class AutofillId(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[AutofillId]] = ...

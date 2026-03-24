@@ -1,3 +1,5 @@
+import typing
+
 import android.graphics
 import android.os
 import android.view
@@ -7,9 +9,6 @@ import java.lang
 import java.nio.channels
 import java.time
 import java.util
-import typing
-
-
 
 class BatteryState(java.lang.Object):
     STATUS_CHARGING: typing.ClassVar[int] = ...

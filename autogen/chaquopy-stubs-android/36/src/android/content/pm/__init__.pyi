@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.app.appsearch
 import android.appwidget
@@ -18,9 +20,6 @@ import java.security.cert
 import java.util
 import java.util.concurrent
 import java.util.function
-import typing
-
-
 
 class ActivityInfo(ComponentInfo, android.os.Parcelable):
     COLOR_MODE_DEFAULT: typing.ClassVar[int] = ...

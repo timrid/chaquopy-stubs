@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.graphics
 import android.graphics.drawable
@@ -12,9 +14,6 @@ import java.chaquopy
 import java.lang
 import java.lang.annotation
 import java.util
-import typing
-
-
 
 class BadgeDrawable(android.graphics.drawable.Drawable, com.google.android.material.internal.TextDrawableHelper.TextDrawableDelegate):
     TOP_END: typing.ClassVar[int] = ...

@@ -2,8 +2,6 @@ import android.content
 import java.chaquopy
 import java.lang
 
-
-
 class CleartextNetworkViolation(Violation): ...
 
 class ContentUriWithoutPermissionViolation(Violation): ...

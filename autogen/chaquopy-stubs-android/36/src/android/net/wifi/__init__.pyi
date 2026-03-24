@@ -1,3 +1,5 @@
+import typing
+
 import android.net
 import android.net.wifi.hotspot2
 import android.os
@@ -12,9 +14,6 @@ import java.security.cert
 import java.util
 import java.util.concurrent
 import java.util.function
-import typing
-
-
 
 class BlockingOption(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[BlockingOption]] = ...

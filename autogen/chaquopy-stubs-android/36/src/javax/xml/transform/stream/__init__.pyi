@@ -1,9 +1,8 @@
+import typing
+
 import java.io
 import java.lang
 import javax.xml.transform
-import typing
-
-
 
 class StreamResult(javax.xml.transform.Result):
     FEATURE: typing.ClassVar[str] = ...

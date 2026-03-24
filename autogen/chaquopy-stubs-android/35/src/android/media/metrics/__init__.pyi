@@ -1,12 +1,11 @@
+import typing
+
 import android.os
 import android.util
 import java
 import java.chaquopy
 import java.lang
 import java.util
-import typing
-
-
 
 class BundleSession(java.lang.AutoCloseable):
     KEY_STATSD_ATOM: typing.ClassVar[str] = ...

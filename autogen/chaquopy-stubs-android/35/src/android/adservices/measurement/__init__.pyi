@@ -1,3 +1,5 @@
+import typing
+
 import android.adservices.common
 import android.content
 import android.net
@@ -8,9 +10,6 @@ import java.lang
 import java.time
 import java.util
 import java.util.concurrent
-import typing
-
-
 
 class DeletionRequest(java.lang.Object):
     DELETION_MODE_ALL: typing.ClassVar[int] = ...

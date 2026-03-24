@@ -1,3 +1,5 @@
+import typing
+
 import java
 import java.beans
 import java.chaquopy
@@ -6,9 +8,6 @@ import java.lang
 import java.security
 import java.util
 import java.util.function
-import typing
-
-
 
 class ConsoleHandler(StreamHandler):
     def __init__(self) -> None: ...

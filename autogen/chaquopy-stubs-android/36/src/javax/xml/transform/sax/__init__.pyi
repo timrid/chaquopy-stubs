@@ -1,10 +1,9 @@
+import typing
+
 import java.lang
 import javax.xml.transform
 import org.xml.sax
 import org.xml.sax.ext
-import typing
-
-
 
 class SAXResult(javax.xml.transform.Result):
     FEATURE: typing.ClassVar[str] = ...

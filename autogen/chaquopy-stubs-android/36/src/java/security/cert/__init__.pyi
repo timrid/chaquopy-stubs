@@ -1,3 +1,5 @@
+import typing
+
 import java
 import java.chaquopy
 import java.io
@@ -7,9 +9,6 @@ import java.net
 import java.security
 import java.util
 import javax.security.auth.x500
-import typing
-
-
 
 class CRL(java.lang.Object):
     def __init__(self, type: str | java.lang.String, /) -> None: ...

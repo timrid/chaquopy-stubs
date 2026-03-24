@@ -2,8 +2,6 @@ import java.chaquopy
 import java.lang
 import java.lang.annotation
 
-
-
 class FlaggedApi(java.lang.annotation.Annotation):
     def value(self) -> str: ...
 

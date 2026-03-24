@@ -1,11 +1,10 @@
+import typing
+
 import android.content
 import android.util
 import android.widget
 import java
 import java.lang
-import typing
-
-
 
 class DockedToolbarLayout(android.widget.FrameLayout):
     @typing.overload

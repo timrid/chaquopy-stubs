@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.graphics
 import android.net
@@ -7,9 +9,6 @@ import android.view.autofill
 import java
 import java.chaquopy
 import java.lang
-import typing
-
-
 
 class AssistContent(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[AssistContent]] = ...

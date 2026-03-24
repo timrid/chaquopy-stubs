@@ -1,12 +1,11 @@
+import typing
+
 import android.content
 import android.os
 import java
 import java.chaquopy
 import java.io
 import java.lang
-import typing
-
-
 
 class BackupAgent(android.content.ContextWrapper):
     FLAG_CLIENT_SIDE_ENCRYPTION_ENABLED: typing.ClassVar[int] = ...

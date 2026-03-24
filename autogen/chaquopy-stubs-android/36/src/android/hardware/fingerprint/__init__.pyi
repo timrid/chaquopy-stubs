@@ -1,11 +1,10 @@
+import typing
+
 import android.os
 import java
 import java.lang
 import java.security
 import javax.crypto
-import typing
-
-
 
 class FingerprintManager(java.lang.Object):
     FINGERPRINT_ACQUIRED_GOOD: typing.ClassVar[int] = ...

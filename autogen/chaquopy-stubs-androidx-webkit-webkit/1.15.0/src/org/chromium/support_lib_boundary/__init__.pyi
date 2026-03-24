@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.database
 import android.net
@@ -12,9 +14,6 @@ import java.lang.reflect
 import java.util
 import java.util.concurrent
 import java.util.function
-import typing
-
-
 
 class DropDataContentProviderBoundaryInterface(java.lang.Object):
     def cache(self, arg1: java.chaquopy.JavaArrayJByte, arg2: str | java.lang.String, arg3: str | java.lang.String, /) -> android.net.Uri: ...

@@ -1,3 +1,5 @@
+import typing
+
 import android.icu.text
 import android.icu.util
 import java
@@ -6,9 +8,6 @@ import java.lang
 import java.math
 import java.text
 import java.util
-import typing
-
-
 
 class CompactNotation(Notation): ...
 

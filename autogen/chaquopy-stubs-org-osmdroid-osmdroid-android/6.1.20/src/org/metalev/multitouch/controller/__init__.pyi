@@ -1,10 +1,9 @@
+import typing
+
 import android.view
 import java
 import java.chaquopy
 import java.lang
-import typing
-
-
 
 _MultiTouchController__T = typing.TypeVar('_MultiTouchController__T')  # <T>
 

@@ -1,3 +1,5 @@
+import typing
+
 import android.accounts
 import android.content.pm
 import android.content.res
@@ -19,9 +21,6 @@ import java.util
 import java.util.concurrent
 import java.util.function
 import org.xmlpull.v1
-import typing
-
-
 
 class AbstractThreadedSyncAdapter(java.lang.Object):
     LOG_SYNC_DETAILS: typing.ClassVar[int] = ...

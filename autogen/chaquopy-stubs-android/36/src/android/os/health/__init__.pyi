@@ -1,3 +1,5 @@
+import typing
+
 import android.os
 import android.util
 import java
@@ -6,9 +8,6 @@ import java.lang
 import java.util
 import java.util.concurrent
 import java.util.function
-import typing
-
-
 
 class HealthStats(java.lang.Object):
     def getDataType(self) -> str: ...

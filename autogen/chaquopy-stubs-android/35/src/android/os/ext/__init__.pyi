@@ -1,9 +1,8 @@
+import typing
+
 import java
 import java.lang
 import java.util
-import typing
-
-
 
 class SdkExtensions(java.lang.Object):
     AD_SERVICES: typing.ClassVar[int] = ...

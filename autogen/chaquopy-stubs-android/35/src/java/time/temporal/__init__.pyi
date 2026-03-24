@@ -1,3 +1,5 @@
+import typing
+
 import java
 import java.chaquopy
 import java.io
@@ -7,9 +9,6 @@ import java.time.chrono
 import java.time.format
 import java.util
 import java.util.function
-import typing
-
-
 
 class ChronoField(java.lang.Enum[ChronoField], TemporalField):
     NANO_OF_SECOND: typing.ClassVar[ChronoField] = ...

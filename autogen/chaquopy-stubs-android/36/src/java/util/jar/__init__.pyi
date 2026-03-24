@@ -1,3 +1,5 @@
+import typing
+
 import java
 import java.beans
 import java.chaquopy
@@ -8,9 +10,6 @@ import java.security.cert
 import java.util
 import java.util.stream
 import java.util.zip
-import typing
-
-
 
 class Attributes(java.lang.Cloneable, java.util.Map[java.lang.Object, java.lang.Object]):
     map: java.util.Map[java.lang.Object, java.lang.Object] = ...

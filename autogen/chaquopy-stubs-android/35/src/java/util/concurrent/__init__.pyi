@@ -1,3 +1,5 @@
+import typing
+
 import java
 import java.chaquopy
 import java.io
@@ -8,9 +10,6 @@ import java.time.temporal
 import java.util
 import java.util.function
 import java.util.stream
-import typing
-
-
 
 class AbstractExecutorService(ExecutorService):
     def __init__(self) -> None: ...

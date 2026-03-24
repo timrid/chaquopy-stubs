@@ -1,9 +1,8 @@
+import typing
+
 import java.chaquopy
 import java.lang
 import java.lang.annotation
-import typing
-
-
 
 class TestTarget(java.lang.annotation.Annotation):
     def conceptName(self) -> str: ...

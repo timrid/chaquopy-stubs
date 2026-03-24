@@ -1,3 +1,5 @@
+import typing
+
 import android.graphics
 import android.graphics.pdf.content
 import android.graphics.pdf.models
@@ -8,9 +10,6 @@ import java.chaquopy
 import java.io
 import java.lang
 import java.util
-import typing
-
-
 
 class LoadParams(java.lang.Object):
     def getPassword(self) -> str | None: ...

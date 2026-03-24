@@ -1,11 +1,10 @@
+import typing
+
 import android.content
 import android.util
 import java
 import java.chaquopy
 import java.lang
-import typing
-
-
 
 class MaterialThemeOverlay(java.lang.Object):
     @typing.overload

@@ -1,3 +1,5 @@
+import typing
+
 import android
 import android.accounts
 import android.app
@@ -17,9 +19,6 @@ import java.chaquopy
 import java.io
 import java.lang
 import java.util
-import typing
-
-
 
 class AlarmClock(java.lang.Object):
     ACTION_DISMISS_ALARM: typing.ClassVar[str] = ...

@@ -1,12 +1,11 @@
+import typing
+
 import android.net
 import android.os
 import java
 import java.lang
 import java.time
 import java.util
-import typing
-
-
 
 class AdData(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[AdData]] = ...

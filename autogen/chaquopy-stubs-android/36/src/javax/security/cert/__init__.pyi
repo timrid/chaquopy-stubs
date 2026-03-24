@@ -1,12 +1,11 @@
+import typing
+
 import java.chaquopy
 import java.io
 import java.lang
 import java.math
 import java.security
 import java.util
-import typing
-
-
 
 class Certificate(java.lang.Object):
     def __init__(self) -> None: ...

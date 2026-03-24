@@ -1,3 +1,5 @@
+import typing
+
 import java
 import java.chaquopy
 import java.io
@@ -6,9 +8,6 @@ import java.math
 import java.net
 import java.security
 import java.util
-import typing
-
-
 
 class Array(java.lang.Object):
     def free(self) -> None: ...

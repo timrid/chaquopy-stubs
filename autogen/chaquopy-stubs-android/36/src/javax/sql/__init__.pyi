@@ -1,3 +1,5 @@
+import typing
+
 import java
 import java.chaquopy
 import java.io
@@ -7,9 +9,6 @@ import java.net
 import java.sql
 import java.util
 import java.util.logging
-import typing
-
-
 
 class CommonDataSource(java.lang.Object):
     def getLogWriter(self) -> java.io.PrintWriter: ...

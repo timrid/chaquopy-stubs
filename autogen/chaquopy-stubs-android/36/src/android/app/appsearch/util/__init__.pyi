@@ -1,8 +1,7 @@
-import android.app.appsearch
-import java.lang
 import typing
 
-
+import android.app.appsearch
+import java.lang
 
 class DocumentIdUtil(java.lang.Object):
     @typing.overload

@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.content
 import android.graphics.drawable
@@ -6,9 +8,6 @@ import android.print_
 import java
 import java.lang
 import java.util
-import typing
-
-
 
 class CustomPrinterIconCallback(java.lang.Object):
     def onCustomPrinterIconLoaded(self, icon: android.graphics.drawable.Icon, /) -> bool: ...

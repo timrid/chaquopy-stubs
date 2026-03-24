@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.os
 import android.telephony
@@ -5,9 +7,6 @@ import java
 import java.chaquopy
 import java.lang
 import java.util
-import typing
-
-
 
 class GsmCellLocation(android.telephony.CellLocation):
     @typing.overload

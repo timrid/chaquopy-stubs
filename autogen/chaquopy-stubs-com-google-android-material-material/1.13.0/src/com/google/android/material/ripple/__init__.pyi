@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.content.res
 import android.graphics
@@ -8,9 +10,6 @@ import com.google.android.material.shape
 import java
 import java.chaquopy
 import java.lang
-import typing
-
-
 
 class RippleDrawableCompat(android.graphics.drawable.Drawable, com.google.android.material.shape.Shapeable, androidx.core.graphics.drawable.TintAwareDrawable):
     def __init__(self, shapeAppearanceModel: com.google.android.material.shape.ShapeAppearanceModel, /) -> None: ...

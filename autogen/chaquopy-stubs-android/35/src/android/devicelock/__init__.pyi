@@ -1,10 +1,9 @@
+import typing
+
 import android.os
 import java.lang
 import java.util
 import java.util.concurrent
-import typing
-
-
 
 class DeviceId(java.lang.Object):
     DEVICE_ID_TYPE_IMEI: typing.ClassVar[int] = ...

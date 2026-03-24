@@ -3,8 +3,6 @@ import java.lang
 import java.net
 import org.apache.http.params
 
-
-
 class HostNameResolver(java.lang.Object):
     def resolve(self, arg1: str | java.lang.String, /) -> java.net.InetAddress: ...
 

@@ -1,0 +1,19 @@
+import typing
+
+import java.chaquopy
+import java.lang
+import java.lang.annotation
+
+class Experimental(java.lang.annotation.Annotation):
+    def level(self) -> Experimental.Level: ...
+
+    class Level(java.lang.Enum[Experimental.Level]):
+        WARNING: typing.ClassVar[Experimental.Level] = ...
+        ERROR: typing.ClassVar[Experimental.Level] = ...
+        @staticmethod
+        def valueOf(name: str | java.lang.String, /) -> Experimental.Level: ...
+        @staticmethod
+        def values() -> java.chaquopy.JavaArray[Experimental.Level]: ...
+
+class UseExperimental(java.lang.annotation.Annotation):
+    def markerClass(self) -> typing.Type[java.lang.Object]: ...

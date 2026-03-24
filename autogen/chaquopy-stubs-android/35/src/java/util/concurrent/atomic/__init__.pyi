@@ -1,11 +1,10 @@
+import typing
+
 import java
 import java.chaquopy
 import java.io
 import java.lang
 import java.util.function
-import typing
-
-
 
 class AtomicBoolean(java.io.Serializable):
     @typing.overload

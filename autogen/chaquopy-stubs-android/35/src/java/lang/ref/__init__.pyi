@@ -1,9 +1,8 @@
+import typing
+
 import java
 import java.lang
 import java.util.concurrent
-import typing
-
-
 
 class Cleaner(java.lang.Object):
     @typing.overload

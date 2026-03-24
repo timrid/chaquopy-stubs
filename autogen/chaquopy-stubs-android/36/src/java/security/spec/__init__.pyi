@@ -1,3 +1,5 @@
+import typing
+
 import java
 import java.chaquopy
 import java.lang
@@ -5,9 +7,6 @@ import java.math
 import java.security
 import java.security.interfaces
 import java.util
-import typing
-
-
 
 class AlgorithmParameterSpec(java.lang.Object): ...
 

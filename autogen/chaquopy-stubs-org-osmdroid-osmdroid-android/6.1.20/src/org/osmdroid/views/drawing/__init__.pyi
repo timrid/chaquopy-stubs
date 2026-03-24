@@ -1,3 +1,5 @@
+import typing
+
 import android.graphics
 import android.os
 import java
@@ -8,9 +10,6 @@ import java.util
 import org.osmdroid.tileprovider
 import org.osmdroid.views
 import org.osmdroid.views.overlay
-import typing
-
-
 
 class MapSnapshot(java.lang.Runnable):
     INCLUDE_FLAG_UPTODATE: typing.ClassVar[int] = ...

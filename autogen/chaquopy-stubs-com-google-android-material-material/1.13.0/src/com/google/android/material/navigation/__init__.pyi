@@ -1,3 +1,5 @@
+import typing
+
 import android.animation
 import android.content
 import android.content.res
@@ -21,9 +23,6 @@ import java
 import java.chaquopy
 import java.lang
 import java.lang.annotation
-import typing
-
-
 
 class DividerMenuItem(android.view.MenuItem):
     def collapseActionView(self) -> bool: ...

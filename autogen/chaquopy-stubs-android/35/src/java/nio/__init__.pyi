@@ -1,10 +1,9 @@
+import typing
+
 import java
 import java.chaquopy
 import java.lang
 import java.util.stream
-import typing
-
-
 
 class Buffer(java.lang.Object):
     def array(self) -> java.lang.Object: ...

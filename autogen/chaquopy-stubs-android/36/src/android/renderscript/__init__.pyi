@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.content.res
 import android.graphics
@@ -6,9 +8,6 @@ import java
 import java.chaquopy
 import java.lang
 import java.nio
-import typing
-
-
 
 class Allocation(BaseObj):
     USAGE_GRAPHICS_CONSTANTS: typing.ClassVar[int] = ...

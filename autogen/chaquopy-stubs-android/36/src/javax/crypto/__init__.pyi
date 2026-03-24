@@ -1,3 +1,5 @@
+import typing
+
 import java
 import java.chaquopy
 import java.io
@@ -7,9 +9,6 @@ import java.security
 import java.security.cert
 import java.security.spec
 import javax.security.auth
-import typing
-
-
 
 class AEADBadTagException(BadPaddingException):
     @typing.overload

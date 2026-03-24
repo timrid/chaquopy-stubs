@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.net
 import java
@@ -5,9 +7,6 @@ import java.chaquopy
 import java.io
 import java.lang
 import java.util
-import typing
-
-
 
 class DrmConvertedStatus(java.lang.Object):
     STATUS_ERROR: typing.ClassVar[int] = ...

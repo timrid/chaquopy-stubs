@@ -1,3 +1,5 @@
+import typing
+
 import android.health.connect.changelog
 import android.health.connect.datatypes
 import android.net
@@ -7,9 +9,6 @@ import java.lang
 import java.time
 import java.util
 import java.util.concurrent
-import typing
-
-
 
 _AggregateRecordsGroupedByDurationResponse__T = typing.TypeVar('_AggregateRecordsGroupedByDurationResponse__T')  # <T>
 class AggregateRecordsGroupedByDurationResponse(java.lang.Object, typing.Generic[_AggregateRecordsGroupedByDurationResponse__T]):

@@ -1,12 +1,11 @@
+import typing
+
 import java
 import java.chaquopy
 import java.io
 import java.lang
 import java.nio
 import java.util
-import typing
-
-
 
 class CharacterCodingException(java.io.IOException):
     def __init__(self) -> None: ...

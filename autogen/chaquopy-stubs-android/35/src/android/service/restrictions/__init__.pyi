@@ -2,8 +2,6 @@ import android.content
 import android.os
 import java.lang
 
-
-
 class RestrictionsReceiver(android.content.BroadcastReceiver):
     def __init__(self) -> None: ...
     def onReceive(self, context: android.content.Context, intent: android.content.Intent, /) -> None: ...

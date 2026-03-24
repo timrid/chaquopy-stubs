@@ -1,10 +1,9 @@
+import typing
+
 import android.os
 import java
 import java.lang
 import java.util
-import typing
-
-
 
 class Light(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[Light]] = ...

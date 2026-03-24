@@ -1,12 +1,11 @@
+import typing
+
 import android.os
 import java
 import java.chaquopy
 import java.lang
 import java.util
 import java.util.concurrent
-import typing
-
-
 
 class VirtualDevice(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[VirtualDevice]] = ...

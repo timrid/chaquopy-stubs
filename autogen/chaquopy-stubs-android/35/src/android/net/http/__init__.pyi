@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.net
 import android.os
@@ -12,9 +14,6 @@ import java.time
 import java.util
 import java.util.concurrent
 import javax.net.ssl
-import typing
-
-
 
 class BidirectionalStream(java.lang.Object):
     STREAM_PRIORITY_HIGHEST: typing.ClassVar[int] = ...

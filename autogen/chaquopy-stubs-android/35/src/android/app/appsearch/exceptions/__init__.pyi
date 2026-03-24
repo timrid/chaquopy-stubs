@@ -1,9 +1,8 @@
+import typing
+
 import android.app.appsearch
 import java
 import java.lang
-import typing
-
-
 
 class AppSearchException(java.lang.Exception):
     @typing.overload

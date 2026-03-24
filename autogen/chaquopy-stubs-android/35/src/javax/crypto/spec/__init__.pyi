@@ -1,12 +1,11 @@
+import typing
+
 import java
 import java.chaquopy
 import java.lang
 import java.math
 import java.security.spec
 import javax.crypto
-import typing
-
-
 
 class ChaCha20ParameterSpec(java.security.spec.AlgorithmParameterSpec):
     def __init__(self, nonce: java.chaquopy.JavaArrayJByte, counter: int | java.jint | java.lang.Integer, /) -> None: ...

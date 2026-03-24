@@ -1,0 +1,16 @@
+import java.beans
+import java.lang
+import jet
+
+class BeansPackage-Listeners-b439239c(java.lang.Object):
+    @staticmethod
+    def propertyChangeListener(fn: jet.Function1[java.beans.PropertyChangeEvent, jet.Unit], /) -> java.beans.PropertyChangeListener: ...
+
+class BeansPackage(java.lang.Object):
+    @staticmethod
+    def propertyChangeListener(fn: jet.Function1[java.beans.PropertyChangeEvent, jet.Unit], /) -> java.beans.PropertyChangeListener: ...
+
+class FunctionPropertyChangeListener(jet.JetObject, java.beans.PropertyChangeListener):
+    def __init__(self, fn: jet.Function1[java.beans.PropertyChangeEvent, jet.Unit], /) -> None: ...
+    def getFn(self) -> jet.Function1[java.beans.PropertyChangeEvent, jet.Unit]: ...
+    def propertyChange(self, e: java.beans.PropertyChangeEvent, /) -> None: ...

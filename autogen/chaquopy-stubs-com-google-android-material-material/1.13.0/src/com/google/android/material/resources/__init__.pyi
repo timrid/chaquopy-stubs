@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.content.res
 import android.graphics
@@ -8,9 +10,6 @@ import android.view
 import androidx.appcompat.widget
 import java
 import java.lang
-import typing
-
-
 
 class CancelableFontCallback(TextAppearanceFontCallback):
     def __init__(self, applyFont: CancelableFontCallback.ApplyFont, fallbackFont: android.graphics.Typeface, /) -> None: ...

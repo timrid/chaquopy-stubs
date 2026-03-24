@@ -1,3 +1,5 @@
+import typing
+
 import android.adservices.common
 import android.content
 import android.net
@@ -8,9 +10,6 @@ import java.chaquopy
 import java.lang
 import java.util
 import java.util.concurrent
-import typing
-
-
 
 class AdSelectionConfig(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[AdSelectionConfig]] = ...

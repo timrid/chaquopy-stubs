@@ -1,3 +1,5 @@
+import typing
+
 import java.chaquopy
 import java.io
 import java.lang
@@ -5,9 +7,6 @@ import java.security
 import java.security.cert
 import java.util
 import javax.security.auth
-import typing
-
-
 
 class X500Principal(java.security.Principal, java.io.Serializable):
     CANONICAL: typing.ClassVar[str] = ...

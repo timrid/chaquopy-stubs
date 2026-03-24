@@ -1,9 +1,8 @@
+import typing
+
 import java
 import java.chaquopy
 import java.lang
-import typing
-
-
 
 class AppJankStats(java.lang.Object):
     WIDGET_CATEGORY_ANIMATION: typing.ClassVar[str] = ...

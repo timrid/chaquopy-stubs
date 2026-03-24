@@ -1,11 +1,10 @@
+import typing
+
 import java
 import java.chaquopy
 import java.lang
 import java.math
 import java.util.stream
-import typing
-
-
 
 class RandomGenerator(java.lang.Object):
     @typing.overload

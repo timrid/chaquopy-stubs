@@ -1,3 +1,5 @@
+import typing
+
 import java.io
 import java.lang
 import java.net
@@ -6,9 +8,6 @@ import java.nio.file
 import java.nio.file.attribute
 import java.util
 import java.util.concurrent
-import typing
-
-
 
 class FileSystemProvider(java.lang.Object):
     def __init__(self) -> None: ...

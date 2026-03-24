@@ -2,8 +2,6 @@ import java.lang
 import java.security
 import java.util
 
-
-
 class Acl(Owner):
     def addEntry(self, arg1: java.security.Principal, arg2: AclEntry, /) -> bool: ...
     def checkPermission(self, arg1: java.security.Principal, arg2: Permission, /) -> bool: ...

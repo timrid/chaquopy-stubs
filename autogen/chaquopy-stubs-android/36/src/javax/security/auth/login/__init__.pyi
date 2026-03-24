@@ -1,8 +1,7 @@
-import java.lang
-import java.security
 import typing
 
-
+import java.lang
+import java.security
 
 class LoginException(java.security.GeneralSecurityException):
     @typing.overload

@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.content.pm
 import android.net
@@ -12,9 +14,6 @@ import java.lang.reflect
 import java.util
 import java.util.concurrent
 import org.chromium.support_lib_boundary
-import typing
-
-
 
 class ApiFeature(ConditionallySupportedFeature):
     def getPublicFeatureName(self) -> str: ...

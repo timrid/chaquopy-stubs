@@ -1,8 +1,7 @@
-import java
-import java.lang
 import typing
 
-
+import java
+import java.lang
 
 class Attr(Node):
     def getName(self) -> str: ...

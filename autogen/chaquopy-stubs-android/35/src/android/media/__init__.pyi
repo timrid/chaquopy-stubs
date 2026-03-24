@@ -1,3 +1,5 @@
+import typing
+
 import android
 import android.app
 import android.content
@@ -25,9 +27,6 @@ import java.util
 import java.util.concurrent
 import java.util.function
 import org.xmlpull.v1
-import typing
-
-
 
 class ApplicationMediaCapabilities(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[ApplicationMediaCapabilities]] = ...

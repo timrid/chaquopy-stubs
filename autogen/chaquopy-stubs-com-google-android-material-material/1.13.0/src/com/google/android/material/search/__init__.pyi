@@ -1,3 +1,5 @@
+import typing
+
 import android.animation
 import android.content
 import android.graphics.drawable
@@ -15,9 +17,6 @@ import com.google.android.material.motion
 import java
 import java.chaquopy
 import java.lang
-import typing
-
-
 
 class SearchBar(androidx.appcompat.widget.Toolbar):
     @typing.overload

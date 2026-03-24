@@ -1,3 +1,5 @@
+import typing
+
 import android
 import android.animation
 import android.content
@@ -7,9 +9,6 @@ import android.view
 import java
 import java.lang
 import java.util
-import typing
-
-
 
 class AccelerateDecelerateInterpolator(BaseInterpolator):
     @typing.overload

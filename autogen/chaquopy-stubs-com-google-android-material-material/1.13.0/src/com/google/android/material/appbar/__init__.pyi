@@ -1,3 +1,5 @@
+import typing
+
 import android.animation
 import android.content
 import android.content.res
@@ -19,9 +21,6 @@ import java
 import java.chaquopy
 import java.lang
 import java.lang.annotation
-import typing
-
-
 
 
 _AppBarLayout__BaseOnOffsetChangedListener__T = typing.TypeVar('_AppBarLayout__BaseOnOffsetChangedListener__T', bound=AppBarLayout)  # <T>

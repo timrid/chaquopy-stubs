@@ -1,3 +1,5 @@
+import typing
+
 import java
 import java.chaquopy
 import java.io
@@ -8,9 +10,6 @@ import java.nio.file.attribute
 import java.time
 import java.util
 import java.util.stream
-import typing
-
-
 
 class Adler32(Checksum):
     def __init__(self) -> None: ...

@@ -1,3 +1,5 @@
+import typing
+
 import android.os
 import android.ranging.ble.cs
 import android.ranging.uwb
@@ -6,9 +8,6 @@ import java
 import java.lang
 import java.util
 import java.util.concurrent
-import typing
-
-
 
 class DataNotificationConfig(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[DataNotificationConfig]] = ...

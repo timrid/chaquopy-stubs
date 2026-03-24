@@ -1,9 +1,8 @@
+import typing
+
 import java.lang
 import javax.xml.transform
 import org.w3c.dom
-import typing
-
-
 
 class DOMLocator(javax.xml.transform.SourceLocator):
     def getOriginatingNode(self) -> org.w3c.dom.Node: ...

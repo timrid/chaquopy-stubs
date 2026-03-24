@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.content
 import android.graphics.drawable
@@ -6,9 +8,6 @@ import android.os
 import java
 import java.lang
 import java.util
-import typing
-
-
 
 class GetWalletCardsCallback(java.lang.Object):
     def onFailure(self, arg1: GetWalletCardsError, /) -> None: ...

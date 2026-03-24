@@ -1,8 +1,6 @@
 import java
 import java.lang
 
-
-
 class BloodGlucose(java.lang.Comparable[BloodGlucose]):
     def compareTo(self, other: BloodGlucose, /) -> int: ...
     def equals(self, object: java.lang.Object | int | bool | float | str, /) -> bool: ...

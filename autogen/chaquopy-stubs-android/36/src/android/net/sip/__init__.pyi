@@ -1,12 +1,11 @@
+import typing
+
 import android.app
 import android.content
 import android.os
 import java
 import java.io
 import java.lang
-import typing
-
-
 
 class SipAudioCall(java.lang.Object):
     def __init__(self, context: android.content.Context, localProfile: SipProfile, /) -> None: ...

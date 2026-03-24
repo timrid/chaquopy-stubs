@@ -1,12 +1,11 @@
+import typing
+
 import android.content
 import java
 import java.chaquopy
 import java.lang
 import java.text
 import java.util
-import typing
-
-
 
 class DateFormat(java.lang.Object):
     def __init__(self) -> None: ...

@@ -1,10 +1,9 @@
+import typing
+
 import android.os
 import java
 import java.chaquopy
 import java.lang
-import typing
-
-
 
 class RttRangingCapabilities(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[RttRangingCapabilities]] = ...

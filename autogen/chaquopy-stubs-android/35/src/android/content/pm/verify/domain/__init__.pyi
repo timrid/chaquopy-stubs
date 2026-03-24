@@ -1,10 +1,9 @@
+import typing
+
 import android.os
 import java
 import java.lang
 import java.util
-import typing
-
-
 
 class DomainVerificationManager(java.lang.Object):
     def getDomainVerificationUserState(self, packageName: str | java.lang.String, /) -> DomainVerificationUserState | None: ...

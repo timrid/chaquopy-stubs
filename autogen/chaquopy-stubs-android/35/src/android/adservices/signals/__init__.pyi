@@ -4,8 +4,6 @@ import android.os
 import java.lang
 import java.util.concurrent
 
-
-
 class ProtectedSignalsManager(java.lang.Object):
     @staticmethod
     def get(context: android.content.Context, /) -> ProtectedSignalsManager: ...

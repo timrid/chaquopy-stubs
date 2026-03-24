@@ -1,12 +1,11 @@
+import typing
+
 import java
 import java.chaquopy
 import java.io
 import java.lang
 import java.time
 import java.util
-import typing
-
-
 
 class ZoneOffsetTransition(java.lang.Comparable[ZoneOffsetTransition], java.io.Serializable):
     def compareTo(self, transition: ZoneOffsetTransition, /) -> int: ...

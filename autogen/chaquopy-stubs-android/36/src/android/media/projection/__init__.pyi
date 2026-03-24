@@ -1,12 +1,11 @@
+import typing
+
 import android.content
 import android.hardware.display
 import android.os
 import android.view
 import java
 import java.lang
-import typing
-
-
 
 class MediaProjection(java.lang.Object):
     def createVirtualDisplay(self, name: str | java.lang.String, width: int | java.jint | java.lang.Integer, height: int | java.jint | java.lang.Integer, dpi: int | java.jint | java.lang.Integer, flags: int | java.jint | java.lang.Integer, surface: android.view.Surface, callback: android.hardware.display.VirtualDisplay.Callback, handler: android.os.Handler, /) -> android.hardware.display.VirtualDisplay | None: ...

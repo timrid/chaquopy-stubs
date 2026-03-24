@@ -1,7 +1,6 @@
-import java.lang
 import typing
 
-
+import java.lang
 
 class OpcodeInfo(java.lang.Object):
     MAXIMUM_PACKED_VALUE: typing.ClassVar[int] = ...

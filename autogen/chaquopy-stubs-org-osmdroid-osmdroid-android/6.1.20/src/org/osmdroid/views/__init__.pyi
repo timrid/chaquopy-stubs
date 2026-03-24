@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.graphics
 import android.graphics.drawable
@@ -20,9 +22,6 @@ import org.osmdroid.tileprovider.tilesource
 import org.osmdroid.util
 import org.osmdroid.views.overlay
 import org.osmdroid.views.overlay.infowindow
-import typing
-
-
 
 class CustomZoomButtonsController(java.lang.Object):
     def __init__(self, pMapView: MapView, /) -> None: ...

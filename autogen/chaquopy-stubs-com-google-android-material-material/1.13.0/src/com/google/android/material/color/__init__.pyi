@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.content
 import android.content.res
@@ -8,9 +10,6 @@ import java
 import java.chaquopy
 import java.lang
 import java.util
-import typing
-
-
 
 class ColorContrast(java.lang.Object):
     @staticmethod

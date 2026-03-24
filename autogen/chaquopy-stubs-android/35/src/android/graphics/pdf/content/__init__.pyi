@@ -1,12 +1,11 @@
+import typing
+
 import android.graphics
 import android.net
 import android.os
 import java
 import java.lang
 import java.util
-import typing
-
-
 
 class PdfPageGotoLinkContent(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[PdfPageGotoLinkContent]] = ...

@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.content
 import android.os
@@ -7,9 +9,6 @@ import java
 import java.chaquopy
 import java.io
 import java.lang
-import typing
-
-
 
 class DreamService(android.app.Service, android.view.Window.Callback):
     DREAM_META_DATA: typing.ClassVar[str] = ...

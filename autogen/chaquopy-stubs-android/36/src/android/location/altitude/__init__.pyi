@@ -2,8 +2,6 @@ import android.content
 import android.location
 import java.lang
 
-
-
 class AltitudeConverter(java.lang.Object):
     def __init__(self) -> None: ...
     def addMslAltitudeToLocation(self, context: android.content.Context, location: android.location.Location, /) -> None: ...

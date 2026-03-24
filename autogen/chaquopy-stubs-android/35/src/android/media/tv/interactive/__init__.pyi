@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.content
 import android.content.pm
@@ -13,9 +15,6 @@ import java.chaquopy
 import java.lang
 import java.util
 import java.util.concurrent
-import typing
-
-
 
 class AppLinkInfo(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[AppLinkInfo]] = ...

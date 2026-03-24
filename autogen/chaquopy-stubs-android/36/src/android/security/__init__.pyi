@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.content
 import android.net
@@ -12,9 +14,6 @@ import java.security.spec
 import java.util
 import java.util.concurrent
 import javax.security.auth.x500
-import typing
-
-
 
 class AppUriAuthenticationPolicy(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[AppUriAuthenticationPolicy]] = ...

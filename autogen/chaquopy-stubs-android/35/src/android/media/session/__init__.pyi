@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.content
 import android.media
@@ -8,9 +10,6 @@ import java
 import java.lang
 import java.util
 import java.util.concurrent
-import typing
-
-
 
 class MediaController(java.lang.Object):
     def __init__(self, context: android.content.Context, token: MediaSession.Token, /) -> None: ...

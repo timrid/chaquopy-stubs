@@ -1,12 +1,11 @@
+import typing
+
 import java
 import java.chaquopy
 import java.io
 import java.lang
 import java.text
 import java.util
-import typing
-
-
 
 class NumericShaper(java.io.Serializable):
     ALL_RANGES: typing.ClassVar[int] = ...

@@ -1,3 +1,5 @@
+import typing
+
 import java
 import java.chaquopy
 import java.io
@@ -11,9 +13,6 @@ import java.util.function
 import javax.crypto
 import javax.security.auth
 import javax.security.auth.callback
-import typing
-
-
 
 class AccessControlContext(java.lang.Object):
     @typing.overload

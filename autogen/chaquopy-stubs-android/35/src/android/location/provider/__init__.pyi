@@ -1,9 +1,8 @@
+import typing
+
 import android.os
 import java
 import java.lang
-import typing
-
-
 
 class ProviderProperties(android.os.Parcelable):
     ACCURACY_COARSE: typing.ClassVar[int] = ...

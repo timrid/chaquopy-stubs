@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.content
 import android.nfc
@@ -7,9 +9,6 @@ import java.chaquopy
 import java.lang
 import java.util
 import java.util.concurrent
-import typing
-
-
 
 class CardEmulation(java.lang.Object):
     ACTION_CHANGE_DEFAULT: typing.ClassVar[str] = ...

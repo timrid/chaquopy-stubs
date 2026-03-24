@@ -1,0 +1,6 @@
+import java.lang
+import kotlin.internal
+
+class JDK7PlatformImplementations(kotlin.internal.PlatformImplementations):
+    def __init__(self) -> None: ...
+    def addSuppressed(self, cause: java.lang.Throwable, exception: java.lang.Throwable, /) -> None: ...

@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.graphics
 import android.util
@@ -9,9 +11,6 @@ import com.google.android.material.shape
 import java
 import java.chaquopy
 import java.lang
-import typing
-
-
 
 class Arrangement(java.lang.Object):
     def __init__(self, priority: int | java.jint | java.lang.Integer, targetSmallSize: float | java.jfloat | java.lang.Float, minSmallSize: float | java.jfloat | java.lang.Float, maxSmallSize: float | java.jfloat | java.lang.Float, smallCount: int | java.jint | java.lang.Integer, targetMediumSize: float | java.jfloat | java.lang.Float, mediumCount: int | java.jint | java.lang.Integer, targetLargeSize: float | java.jfloat | java.lang.Float, largeCount: int | java.jint | java.lang.Integer, availableSpace: float | java.jfloat | java.lang.Float, /) -> None: ...

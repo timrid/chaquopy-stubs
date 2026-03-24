@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.content
 import android.content.pm
@@ -15,9 +17,6 @@ import java.lang.reflect
 import java.util
 import java.util.concurrent
 import org.chromium.support_lib_boundary
-import typing
-
-
 
 class BackForwardCacheSettings(java.lang.Object):
     def getMaxPagesInCache(self) -> int: ...
@@ -338,7 +337,7 @@ class TracingConfig(java.lang.Object):
         @typing.overload
         def addCategories(self, categories: java.util.Collection[java.lang.String], /) -> TracingConfig.Builder: ...
         @typing.overload
-        def addCategories(self, *predefinedCategories: java.chaquopy.JavaArrayJInt) -> TracingConfig.Builder: ...
+        def addCategories(self, *predefinedCategories: java.jint) -> TracingConfig.Builder: ...
         @typing.overload
         def addCategories(self, *categories: java.lang.String) -> TracingConfig.Builder: ...
         def build(self) -> TracingConfig: ...

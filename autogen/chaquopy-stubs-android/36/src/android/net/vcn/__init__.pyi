@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.net.ipsec.ike
 import android.os
@@ -6,9 +8,6 @@ import java.chaquopy
 import java.lang
 import java.util
 import java.util.concurrent
-import typing
-
-
 
 class VcnCellUnderlyingNetworkTemplate(VcnUnderlyingNetworkTemplate):
     def equals(self, other: java.lang.Object | int | bool | float | str, /) -> bool: ...

@@ -1,3 +1,5 @@
+import typing
+
 import android
 import android.app
 import android.app.assist
@@ -13,9 +15,6 @@ import java.lang
 import java.util
 import java.util.concurrent
 import java.util.function
-import typing
-
-
 
 class VisibleActivityInfo(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[VisibleActivityInfo]] = ...

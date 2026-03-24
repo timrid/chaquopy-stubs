@@ -5,8 +5,6 @@ import android.print_
 import java
 import java.lang
 
-
-
 class PrintedPdfDocument(android.graphics.pdf.PdfDocument):
     def __init__(self, context: android.content.Context, attributes: android.print_.PrintAttributes, /) -> None: ...
     def getPageContentRect(self) -> android.graphics.Rect: ...

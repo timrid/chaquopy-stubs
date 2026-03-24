@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.database.sqlite
 import android.net
@@ -7,9 +9,6 @@ import java.chaquopy
 import java.io
 import java.lang
 import java.util
-import typing
-
-
 
 class AbstractCursor(CrossProcessCursor):
     mClosed: bool = ...

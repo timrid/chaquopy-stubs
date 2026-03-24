@@ -1,3 +1,5 @@
+import typing
+
 import android.accessibilityservice
 import android.content.pm
 import android.graphics
@@ -9,9 +11,6 @@ import java.lang
 import java.time
 import java.util
 import java.util.concurrent
-import typing
-
-
 
 class AccessibilityEvent(AccessibilityRecord, android.os.Parcelable):
     CONTENT_CHANGE_TYPE_CONTENT_DESCRIPTION: typing.ClassVar[int] = ...

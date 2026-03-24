@@ -1,12 +1,11 @@
+import typing
+
 import java
 import java.chaquopy
 import java.io
 import java.lang
 import java.lang.annotation
 import java.security
-import typing
-
-
 
 class AccessibleObject(AnnotatedElement):
     def __init__(self) -> None: ...
@@ -67,7 +66,7 @@ class Array(java.lang.Object):
     def newInstance(componentType: typing.Type[java.lang.Object], length: int | java.jint | java.lang.Integer, /) -> java.lang.Object: ...
     @typing.overload
     @staticmethod
-    def newInstance(componentType: typing.Type[java.lang.Object], /, *dimensions: java.chaquopy.JavaArrayJInt) -> java.lang.Object: ...
+    def newInstance(componentType: typing.Type[java.lang.Object], /, *dimensions: java.jint) -> java.lang.Object: ...
     @staticmethod
     def set(array: java.lang.Object | int | bool | float | str, index: int | java.jint | java.lang.Integer, value: java.lang.Object | int | bool | float | str, /) -> None: ...
     @staticmethod

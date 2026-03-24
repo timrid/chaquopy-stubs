@@ -1,3 +1,5 @@
+import typing
+
 import java
 import java.chaquopy
 import java.io
@@ -13,9 +15,6 @@ import java.util.function
 import java.util.random
 import java.util.regex
 import java.util.stream
-import typing
-
-
 
 _AbstractCollection__E = typing.TypeVar('_AbstractCollection__E')  # <E>
 class AbstractCollection(Collection[_AbstractCollection__E], typing.Generic[_AbstractCollection__E]):
@@ -1156,7 +1155,7 @@ class Calendar(java.io.Serializable, java.lang.Cloneable, java.lang.Comparable[C
         def set(self, field: int | java.jint | java.lang.Integer, value: int | java.jint | java.lang.Integer, /) -> Calendar.Builder: ...
         def setCalendarType(self, type: str | java.lang.String, /) -> Calendar.Builder: ...
         def setDate(self, year: int | java.jint | java.lang.Integer, month: int | java.jint | java.lang.Integer, dayOfMonth: int | java.jint | java.lang.Integer, /) -> Calendar.Builder: ...
-        def setFields(self, *fieldValuePairs: java.chaquopy.JavaArrayJInt) -> Calendar.Builder: ...
+        def setFields(self, *fieldValuePairs: java.jint) -> Calendar.Builder: ...
         @typing.overload
         def setInstant(self, instant: int | java.jlong | java.lang.Long, /) -> Calendar.Builder: ...
         @typing.overload

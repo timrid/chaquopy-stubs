@@ -1,11 +1,10 @@
+import typing
+
 import java
 import java.chaquopy
 import java.io
 import java.lang
 import java.util
-import typing
-
-
 
 class IndexedPropertyChangeEvent(PropertyChangeEvent):
     def __init__(self, source: java.lang.Object | int | bool | float | str, propertyName: str | java.lang.String, oldValue: java.lang.Object | int | bool | float | str, newValue: java.lang.Object | int | bool | float | str, index: int | java.jint | java.lang.Integer, /) -> None: ...

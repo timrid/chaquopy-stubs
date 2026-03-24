@@ -1,9 +1,8 @@
+import typing
+
 import android.app
 import android.content
 import android.os
-import typing
-
-
 
 class VrListenerService(android.app.Service):
     SERVICE_INTERFACE: typing.ClassVar[str] = ...

@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.bluetooth
 import android.bluetooth.le
@@ -13,9 +15,6 @@ import java.nio
 import java.util
 import java.util.concurrent
 import java.util.regex
-import typing
-
-
 
 class AssociatedDevice(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[AssociatedDevice]] = ...

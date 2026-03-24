@@ -1,7 +1,6 @@
-import java.lang
 import typing
 
-
+import java.lang
 
 class Manifest(java.lang.Object):
     def __init__(self) -> None: ...

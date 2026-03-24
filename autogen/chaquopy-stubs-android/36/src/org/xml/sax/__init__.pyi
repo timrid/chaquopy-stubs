@@ -1,11 +1,10 @@
+import typing
+
 import java
 import java.chaquopy
 import java.io
 import java.lang
 import java.util
-import typing
-
-
 
 class AttributeList(java.lang.Object):
     def getLength(self) -> int: ...

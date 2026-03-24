@@ -1,10 +1,9 @@
+import typing
+
 import java
 import java.chaquopy
 import java.io
 import java.lang
-import typing
-
-
 
 class Callback(java.lang.Object): ...
 

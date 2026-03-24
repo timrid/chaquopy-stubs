@@ -1,11 +1,10 @@
+import typing
+
 import android.os
 import java
 import java.chaquopy
 import java.lang
 import java.util
-import typing
-
-
 
 class WifiP2pDnsSdServiceInfo(WifiP2pServiceInfo):
     @staticmethod

@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.app.slice
 import android.content
@@ -7,9 +9,6 @@ import android.os
 import java
 import java.lang
 import java.util
-import typing
-
-
 
 class Action(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[Action]] = ...

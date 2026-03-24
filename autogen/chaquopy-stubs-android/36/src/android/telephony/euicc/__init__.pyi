@@ -1,11 +1,10 @@
+import typing
+
 import android.app
 import android.content
 import android.os
 import java
 import java.lang
-import typing
-
-
 
 class DownloadableSubscription(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[DownloadableSubscription]] = ...

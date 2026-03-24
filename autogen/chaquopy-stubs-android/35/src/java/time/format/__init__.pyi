@@ -1,3 +1,5 @@
+import typing
+
 import java
 import java.chaquopy
 import java.lang
@@ -6,9 +8,6 @@ import java.time
 import java.time.chrono
 import java.time.temporal
 import java.util
-import typing
-
-
 
 class DateTimeFormatter(java.lang.Object):
     BASIC_ISO_DATE: typing.ClassVar[DateTimeFormatter] = ...

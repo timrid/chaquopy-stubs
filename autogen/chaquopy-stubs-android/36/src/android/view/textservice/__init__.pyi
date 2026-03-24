@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.content.pm
 import android.graphics.drawable
@@ -7,9 +9,6 @@ import java.chaquopy
 import java.lang
 import java.util
 import java.util.concurrent
-import typing
-
-
 
 class SentenceSuggestionsInfo(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[SentenceSuggestionsInfo]] = ...

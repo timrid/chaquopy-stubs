@@ -1,3 +1,5 @@
+import typing
+
 import android.animation
 import android.content
 import android.graphics
@@ -7,9 +9,6 @@ import androidx.dynamicanimation.animation
 import java
 import java.chaquopy
 import java.lang
-import typing
-
-
 
 _MaterialBackAnimationHelper__V = typing.TypeVar('_MaterialBackAnimationHelper__V', bound=android.view.View)  # <V>
 class MaterialBackAnimationHelper(java.lang.Object, typing.Generic[_MaterialBackAnimationHelper__V]):

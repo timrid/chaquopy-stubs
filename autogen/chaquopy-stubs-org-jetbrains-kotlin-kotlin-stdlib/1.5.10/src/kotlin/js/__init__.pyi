@@ -1,0 +1,3 @@
+import java.lang.annotation
+
+class ExperimentalJsExport(java.lang.annotation.Annotation): ...

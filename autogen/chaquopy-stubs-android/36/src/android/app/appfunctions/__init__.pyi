@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.app.appsearch
 import android.content
@@ -6,9 +8,6 @@ import android.os
 import java
 import java.lang
 import java.util.concurrent
-import typing
-
-
 
 class AppFunctionException(java.lang.Exception, android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[AppFunctionException]] = ...

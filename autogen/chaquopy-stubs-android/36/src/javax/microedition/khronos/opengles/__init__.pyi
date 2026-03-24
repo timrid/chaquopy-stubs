@@ -1,10 +1,9 @@
+import typing
+
 import java
 import java.chaquopy
 import java.lang
 import java.nio
-import typing
-
-
 
 class GL(java.lang.Object): ...
 

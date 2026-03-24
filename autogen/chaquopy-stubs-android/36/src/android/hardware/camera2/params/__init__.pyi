@@ -1,3 +1,5 @@
+import typing
+
 import android.graphics
 import android.hardware.camera2
 import android.os
@@ -8,9 +10,6 @@ import java.chaquopy
 import java.lang
 import java.util
 import java.util.concurrent
-import typing
-
-
 
 class BlackLevelPattern(java.lang.Object):
     COUNT: typing.ClassVar[int] = ...

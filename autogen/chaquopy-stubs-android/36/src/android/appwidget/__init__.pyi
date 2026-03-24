@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.content
 import android.content.pm
@@ -12,9 +14,6 @@ import java.chaquopy
 import java.lang
 import java.util
 import java.util.concurrent
-import typing
-
-
 
 class AppWidgetHost(java.lang.Object):
     def __init__(self, context: android.content.Context, hostId: int | java.jint | java.lang.Integer, /) -> None: ...

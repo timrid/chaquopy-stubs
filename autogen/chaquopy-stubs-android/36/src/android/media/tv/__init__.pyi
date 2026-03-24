@@ -1,3 +1,5 @@
+import typing
+
 import android
 import android.app
 import android.content
@@ -15,9 +17,6 @@ import java
 import java.chaquopy
 import java.lang
 import java.util
-import typing
-
-
 
 class AdBuffer(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[AdBuffer]] = ...

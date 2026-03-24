@@ -1,12 +1,11 @@
+import typing
+
 import android.content
 import android.util
 import android.view
 import android.widget
 import java
 import java.lang
-import typing
-
-
 
 class FloatingToolbarLayout(android.widget.FrameLayout):
     @typing.overload

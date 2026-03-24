@@ -1,12 +1,11 @@
+import typing
+
 import android.graphics
 import android.graphics.pdf.content
 import android.os
 import java
 import java.lang
 import java.util
-import typing
-
-
 
 class PageSelection(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[PageSelection]] = ...

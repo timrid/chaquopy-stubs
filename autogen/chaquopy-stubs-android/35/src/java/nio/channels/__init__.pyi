@@ -1,3 +1,5 @@
+import typing
+
 import java
 import java.chaquopy
 import java.io
@@ -11,9 +13,6 @@ import java.nio.file.attribute
 import java.util
 import java.util.concurrent
 import java.util.function
-import typing
-
-
 
 class AcceptPendingException(java.lang.IllegalStateException):
     def __init__(self) -> None: ...

@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.graphics
 import android.os
@@ -9,9 +11,6 @@ import java.chaquopy
 import java.io
 import java.lang
 import java.util
-import typing
-
-
 
 class Gesture(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[Gesture]] = ...

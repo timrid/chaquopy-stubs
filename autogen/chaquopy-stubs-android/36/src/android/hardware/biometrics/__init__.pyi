@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.graphics
 import android.os
@@ -8,9 +10,6 @@ import java.security
 import java.util
 import java.util.concurrent
 import javax.crypto
-import typing
-
-
 
 class BiometricManager(java.lang.Object):
     BIOMETRIC_ERROR_HW_UNAVAILABLE: typing.ClassVar[int] = ...

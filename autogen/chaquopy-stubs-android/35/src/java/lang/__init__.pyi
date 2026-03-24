@@ -1,4 +1,6 @@
 import builtins
+import typing
+
 import java
 import java.chaquopy
 import java.io
@@ -14,9 +16,6 @@ import java.util
 import java.util.concurrent
 import java.util.function
 import java.util.stream
-import typing
-
-
 
 class AbstractMethodError(IncompatibleClassChangeError):
     @typing.overload

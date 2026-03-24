@@ -1,3 +1,5 @@
+import typing
+
 import android
 import android.app
 import android.content
@@ -16,9 +18,6 @@ import java.util
 import java.util.concurrent
 import javax.net
 import javax.net.ssl
-import typing
-
-
 
 class CaptivePortal(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[CaptivePortal]] = ...

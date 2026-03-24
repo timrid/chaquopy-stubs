@@ -1,3 +1,5 @@
+import typing
+
 import android.graphics
 import android.location
 import android.os
@@ -9,9 +11,6 @@ import java.util
 import org.osmdroid.api
 import org.osmdroid.util.constants
 import org.osmdroid.views.util.constants
-import typing
-
-
 
 class BoundingBox(android.os.Parcelable, java.io.Serializable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[BoundingBox]] = ...

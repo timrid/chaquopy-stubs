@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.graphics
 import android.graphics.drawable
@@ -7,9 +9,6 @@ import com.google.android.material.progressindicator
 import java
 import java.chaquopy
 import java.lang
-import typing
-
-
 
 class LoadingIndicator(android.view.View, android.graphics.drawable.Drawable.Callback):
     @typing.overload
@@ -35,7 +34,7 @@ class LoadingIndicator(android.view.View, android.graphics.drawable.Drawable.Cal
     def setContainerColor(self, containerColor: int | java.jint | java.lang.Integer, /) -> None: ...
     def setContainerHeight(self, containerHeight: int | java.jint | java.lang.Integer, /) -> None: ...
     def setContainerWidth(self, containerWidth: int | java.jint | java.lang.Integer, /) -> None: ...
-    def setIndicatorColor(self, *indicatorColors: java.chaquopy.JavaArrayJInt) -> None: ...
+    def setIndicatorColor(self, *indicatorColors: java.jint) -> None: ...
     def setIndicatorSize(self, indicatorSize: int | java.jint | java.lang.Integer, /) -> None: ...
 
 class LoadingIndicatorAnimatorDelegate(java.lang.Object):

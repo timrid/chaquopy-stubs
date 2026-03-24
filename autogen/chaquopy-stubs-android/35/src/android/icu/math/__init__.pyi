@@ -1,11 +1,10 @@
+import typing
+
 import java
 import java.chaquopy
 import java.io
 import java.lang
 import java.math
-import typing
-
-
 
 class BigDecimal(java.lang.Number, java.io.Serializable, java.lang.Comparable[BigDecimal]):
     ONE: typing.ClassVar[BigDecimal] = ...

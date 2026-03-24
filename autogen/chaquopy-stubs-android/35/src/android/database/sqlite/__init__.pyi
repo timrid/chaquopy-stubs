@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.database
 import android.os
@@ -9,9 +11,6 @@ import java.lang
 import java.util
 import java.util.function
 import java.util.regex
-import typing
-
-
 
 class SQLiteAbortException(SQLiteException):
     @typing.overload

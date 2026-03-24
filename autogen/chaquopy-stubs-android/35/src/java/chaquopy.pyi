@@ -1,18 +1,17 @@
 import typing
 
-from .primitive import (
+from java.lang import Object, Throwable
+from java.primitive import (
     Primitive,
     jboolean,
     jbyte,
-    jshort,
+    jchar,
+    jdouble,
+    jfloat,
     jint,
     jlong,
-    jfloat,
-    jdouble,
-    jchar,
+    jshort,
 )
-
-from java.lang import Object, Throwable
 
 # class.pxi #######################################################################################
 def jclass(clsname: str) -> type[Object]: ...

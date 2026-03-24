@@ -1,8 +1,7 @@
-import java.io
-import java.lang
 import typing
 
-
+import java.io
+import java.lang
 
 class ConnectTimeoutException(java.io.InterruptedIOException):
     @typing.overload

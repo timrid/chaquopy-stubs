@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.os
 import java
@@ -5,9 +7,6 @@ import java.chaquopy
 import java.lang
 import java.util
 import java.util.concurrent
-import typing
-
-
 
 class EncryptedTopic(java.lang.Object):
     def __init__(self, encryptedTopic: java.chaquopy.JavaArrayJByte, keyIdentifier: str | java.lang.String, encapsulatedKey: java.chaquopy.JavaArrayJByte, /) -> None: ...

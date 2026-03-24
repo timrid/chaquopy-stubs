@@ -1,3 +1,5 @@
+import typing
+
 import android.content.pm
 import android.content.res.loader
 import android.graphics
@@ -11,9 +13,6 @@ import java.lang
 import java.nio.channels
 import java.util
 import org.xmlpull.v1
-import typing
-
-
 
 class AssetFileDescriptor(android.os.Parcelable, java.io.Closeable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[AssetFileDescriptor]] = ...

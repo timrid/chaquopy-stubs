@@ -1,3 +1,5 @@
+import typing
+
 import java
 import java.chaquopy
 import java.io
@@ -8,9 +10,6 @@ import java.security
 import java.security.cert
 import java.util
 import java.util.jar
-import typing
-
-
 
 class Authenticator(java.lang.Object):
     def __init__(self) -> None: ...

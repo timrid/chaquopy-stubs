@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.bluetooth
 import android.os
@@ -6,9 +8,6 @@ import java
 import java.chaquopy
 import java.lang
 import java.util
-import typing
-
-
 
 class AdvertiseCallback(java.lang.Object):
     ADVERTISE_FAILED_ALREADY_STARTED: typing.ClassVar[int] = ...

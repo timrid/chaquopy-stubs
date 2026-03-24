@@ -1,9 +1,8 @@
+import typing
+
 import java
 import java.chaquopy
 import java.lang
-import typing
-
-
 
 class MathUtils(java.lang.Object):
     DEFAULT_EPSILON: typing.ClassVar[float] = ...

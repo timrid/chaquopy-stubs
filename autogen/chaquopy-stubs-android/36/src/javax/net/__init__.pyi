@@ -1,9 +1,8 @@
+import typing
+
 import java
 import java.lang
 import java.net
-import typing
-
-
 
 class ServerSocketFactory(java.lang.Object):
     def __init__(self) -> None: ...

@@ -1,12 +1,11 @@
+import typing
+
 import android.content.res
 import android.os
 import java
 import java.chaquopy
 import java.lang
 import java.util
-import typing
-
-
 
 class ConfigurationStats(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[ConfigurationStats]] = ...
@@ -170,7 +169,7 @@ class UsageEventsQuery(android.os.Parcelable):
     class Builder(java.lang.Object):
         def __init__(self, beginTimeMillis: int | java.jlong | java.lang.Long, endTimeMillis: int | java.jlong | java.lang.Long, /) -> None: ...
         def build(self) -> UsageEventsQuery: ...
-        def setEventTypes(self, *eventTypes: java.chaquopy.JavaArrayJInt) -> UsageEventsQuery.Builder: ...
+        def setEventTypes(self, *eventTypes: java.jint) -> UsageEventsQuery.Builder: ...
         def setPackageNames(self, *pkgNames: java.lang.String) -> UsageEventsQuery.Builder: ...
 
 class UsageStats(android.os.Parcelable):

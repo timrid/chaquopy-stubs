@@ -1,10 +1,9 @@
+import typing
+
 import java
 import java.chaquopy
 import java.lang
 import javax.microedition.khronos.opengles
-import typing
-
-
 
 class EGL(java.lang.Object): ...
 

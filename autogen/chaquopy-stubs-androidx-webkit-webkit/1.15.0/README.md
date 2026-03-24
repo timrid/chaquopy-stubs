@@ -1,6 +1,6 @@
 # chaquopy-stubs-androidx-webkit-webkit
 
-Python type stubs for [`androidx.webkit:webkit:1.15.0`](https://mvnrepository.com/artifact/androidx.webkit/webkit/1.15.0), generated with [chaquopy-stubgen](https://github.com/chaquo/chaquopy) `0.1.1.dev49+g21c8ee3f3.d20260224`.
+Python type stubs for [`androidx.webkit:webkit:1.15.0`](https://mvnrepository.com/artifact/androidx.webkit/webkit/1.15.0), generated with [chaquopy-stubgen](https://github.com/chaquo/chaquopy) `0.2.1`.
 
 ## Usage
 

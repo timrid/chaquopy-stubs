@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.content
 import android.os
@@ -6,9 +8,6 @@ import java.chaquopy
 import java.lang
 import java.util
 import java.util.concurrent
-import typing
-
-
 
 class AlternativeSpan(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[AlternativeSpan]] = ...

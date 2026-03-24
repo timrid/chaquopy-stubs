@@ -1,11 +1,10 @@
+import typing
+
 import android.os
 import android.view.autofill
 import java
 import java.lang
 import java.util
-import typing
-
-
 
 class FieldClassification(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[FieldClassification]] = ...

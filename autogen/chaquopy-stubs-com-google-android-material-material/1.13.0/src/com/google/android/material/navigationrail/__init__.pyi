@@ -1,3 +1,5 @@
+import typing
+
 import android.animation
 import android.content
 import android.util
@@ -7,9 +9,6 @@ import androidx.transition
 import com.google.android.material.navigation
 import java
 import java.lang
-import typing
-
-
 
 class LabelMoveTransition(androidx.transition.Transition):
     def captureEndValues(self, transitionValues: androidx.transition.TransitionValues, /) -> None: ...

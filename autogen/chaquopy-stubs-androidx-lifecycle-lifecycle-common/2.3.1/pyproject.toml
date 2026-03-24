@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=77.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chaquopy-stubs-androidx-lifecycle-lifecycle-common"
+version = "2.3.1.20260324"
+description = "Python type stubs for androidx.lifecycle:lifecycle-common:2.3.1 generated with chaquopy-stubgen"
+readme = {file = "README.md", content-type = "text/markdown"}
+license = "MIT"
+requires-python = ">=3.10"
+classifiers = [
+    "Typing :: Stubs Only",
+    "Programming Language :: Python :: 3",
+    "Operating System :: Android",
+]
+
+[project.urls]
+Homepage = "https://github.com/timrid/chaquopy-stubs"
+Issues = "https://github.com/timrid/chaquopy-stubs/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = true
+
+[tool.setuptools.package-data]
+"*" = ["*.pyi"]

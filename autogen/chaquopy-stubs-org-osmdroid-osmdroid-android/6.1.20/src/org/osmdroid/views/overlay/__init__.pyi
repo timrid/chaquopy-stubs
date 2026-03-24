@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.content.res
 import android.graphics
@@ -21,9 +23,6 @@ import org.osmdroid.views
 import org.osmdroid.views.overlay.infowindow
 import org.osmdroid.views.overlay.milestones
 import org.osmdroid.views.util.constants
-import typing
-
-
 
 _ClickableIconOverlay__DataType = typing.TypeVar('_ClickableIconOverlay__DataType')  # <DataType>
 class ClickableIconOverlay(IconOverlay, typing.Generic[_ClickableIconOverlay__DataType]):

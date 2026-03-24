@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.content
 import android.content.pm
@@ -6,9 +8,6 @@ import java
 import java.chaquopy
 import java.lang
 import java.util
-import typing
-
-
 
 class PageRange(android.os.Parcelable):
     ALL_PAGES: typing.ClassVar[PageRange] = ...

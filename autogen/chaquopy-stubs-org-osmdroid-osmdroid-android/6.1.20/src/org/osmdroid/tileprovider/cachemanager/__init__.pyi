@@ -1,8 +1,9 @@
+import typing
+
 import android.content
 import android.graphics
 import android.os
 import java
-import java.chaquopy
 import java.io
 import java.lang
 import java.util
@@ -12,9 +13,6 @@ import org.osmdroid.tileprovider.modules
 import org.osmdroid.tileprovider.tilesource
 import org.osmdroid.util
 import org.osmdroid.views
-import typing
-
-
 
 class CacheManager(java.lang.Object):
     mTileSource: org.osmdroid.tileprovider.tilesource.ITileSource = ...
@@ -105,7 +103,7 @@ class CacheManager(java.lang.Object):
         def onCancelled(self) -> None: ...
         def onPostExecute(self, specialCount: int | java.jint | java.lang.Integer, /) -> None: ...
         def onPreExecute(self) -> None: ...
-        def onProgressUpdate(self, *count: java.chaquopy.JavaArrayJInt) -> None: ...
+        def onProgressUpdate(self, *count: java.jint) -> None: ...
 
     class CacheManagerAction(java.lang.Object):
         def getProgressModulo(self) -> int: ...

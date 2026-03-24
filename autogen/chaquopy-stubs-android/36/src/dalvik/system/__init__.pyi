@@ -1,3 +1,5 @@
+import typing
+
 import java
 import java.chaquopy
 import java.io
@@ -5,9 +7,6 @@ import java.lang
 import java.net
 import java.nio
 import java.util
-import typing
-
-
 
 class ApplicationRuntime(java.lang.Object):
     @staticmethod

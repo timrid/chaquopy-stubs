@@ -1,3 +1,5 @@
+import typing
+
 import android.bluetooth.le
 import android.content
 import android.os
@@ -8,9 +10,6 @@ import java.lang
 import java.time
 import java.util
 import java.util.concurrent
-import typing
-
-
 
 class BluetoothA2dp(BluetoothProfile):
     ACTION_CONNECTION_STATE_CHANGED: typing.ClassVar[str] = ...

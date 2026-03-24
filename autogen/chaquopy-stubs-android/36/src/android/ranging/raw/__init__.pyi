@@ -1,3 +1,5 @@
+import typing
+
 import android.os
 import android.ranging
 import android.ranging.ble.cs
@@ -7,9 +9,6 @@ import android.ranging.wifi.rtt
 import java
 import java.lang
 import java.util
-import typing
-
-
 
 class RawInitiatorRangingConfig(android.ranging.RangingConfig, android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[RawInitiatorRangingConfig]] = ...

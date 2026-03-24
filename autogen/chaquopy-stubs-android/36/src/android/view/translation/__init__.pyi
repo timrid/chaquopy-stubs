@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.icu.util
 import android.os
@@ -9,9 +11,6 @@ import java.lang
 import java.util
 import java.util.concurrent
 import java.util.function
-import typing
-
-
 
 class TranslationCapability(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[TranslationCapability]] = ...

@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.content.pm
 import android.graphics
@@ -16,9 +18,6 @@ import java.lang
 import java.util
 import java.util.concurrent
 import java.util.function
-import typing
-
-
 
 class BaseInputConnection(InputConnection):
     def __init__(self, targetView: android.view.View, fullEditor: bool | java.jboolean | java.lang.Boolean, /) -> None: ...

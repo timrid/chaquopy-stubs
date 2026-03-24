@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.net
 import android.net.wifi
@@ -10,9 +12,6 @@ import java.net
 import java.util
 import java.util.concurrent
 import java.util.function
-import typing
-
-
 
 class WifiP2pConfig(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[WifiP2pConfig]] = ...

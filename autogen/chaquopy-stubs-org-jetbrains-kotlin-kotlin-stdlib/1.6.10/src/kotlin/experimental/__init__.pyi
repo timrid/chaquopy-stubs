@@ -1,0 +1,6 @@
+import java.lang
+import java.lang.annotation
+
+class BitwiseOperationsKt(java.lang.Object): ...
+
+class ExperimentalTypeInference(java.lang.annotation.Annotation): ...

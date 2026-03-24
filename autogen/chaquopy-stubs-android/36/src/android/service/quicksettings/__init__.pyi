@@ -1,12 +1,11 @@
+import typing
+
 import android.app
 import android.content
 import android.graphics.drawable
 import android.os
 import java
 import java.lang
-import typing
-
-
 
 class Tile(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[Tile]] = ...

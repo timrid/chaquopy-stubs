@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.content.res
 import android.graphics
@@ -11,9 +13,6 @@ import java
 import java.chaquopy
 import java.lang
 import java.lang.annotation
-import typing
-
-
 
 class MaterialCheckBox(androidx.appcompat.widget.AppCompatCheckBox):
     STATE_UNCHECKED: typing.ClassVar[int] = ...

@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.util
 import android.view
@@ -6,9 +8,6 @@ import java
 import java.chaquopy
 import java.lang
 import java.lang.annotation
-import typing
-
-
 
 _HideBottomViewOnScrollBehavior__V = typing.TypeVar('_HideBottomViewOnScrollBehavior__V', bound=android.view.View)  # <V>
 class HideBottomViewOnScrollBehavior(androidx.coordinatorlayout.widget.CoordinatorLayout.Behavior[_HideBottomViewOnScrollBehavior__V], typing.Generic[_HideBottomViewOnScrollBehavior__V]):

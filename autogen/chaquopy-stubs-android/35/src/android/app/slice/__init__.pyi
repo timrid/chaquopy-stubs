@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.content
 import android.content.pm
@@ -9,9 +11,6 @@ import java
 import java.chaquopy
 import java.lang
 import java.util
-import typing
-
-
 
 class Slice(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[Slice]] = ...

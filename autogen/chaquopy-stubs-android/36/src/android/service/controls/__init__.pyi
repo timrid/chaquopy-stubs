@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.content
 import android.content.res
@@ -10,9 +12,6 @@ import java.lang
 import java.util
 import java.util.concurrent
 import java.util.function
-import typing
-
-
 
 class Control(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[Control]] = ...

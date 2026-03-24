@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.util
 import android.view
@@ -5,9 +7,6 @@ import com.google.android.material.navigation
 import java
 import java.lang
 import java.lang.annotation
-import typing
-
-
 
 class BottomNavigationItemView(com.google.android.material.navigation.NavigationBarItemView):
     def __init__(self, context: android.content.Context, /) -> None: ...

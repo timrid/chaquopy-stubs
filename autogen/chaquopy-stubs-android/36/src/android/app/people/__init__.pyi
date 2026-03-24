@@ -1,11 +1,10 @@
+import typing
+
 import android.graphics.drawable
 import android.os
 import java
 import java.lang
 import java.util
-import typing
-
-
 
 class ConversationStatus(android.os.Parcelable):
     ACTIVITY_ANNIVERSARY: typing.ClassVar[int] = ...

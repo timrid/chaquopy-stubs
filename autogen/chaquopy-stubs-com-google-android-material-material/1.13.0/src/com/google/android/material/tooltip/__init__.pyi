@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.graphics
 import android.util
@@ -8,9 +10,6 @@ import com.google.android.material.shape
 import java
 import java.chaquopy
 import java.lang
-import typing
-
-
 
 class TooltipDrawable(com.google.android.material.shape.MaterialShapeDrawable, com.google.android.material.internal.TextDrawableHelper.TextDrawableDelegate):
     @staticmethod

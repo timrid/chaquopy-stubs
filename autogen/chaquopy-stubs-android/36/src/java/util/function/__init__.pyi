@@ -1,9 +1,8 @@
+import typing
+
 import java
 import java.lang
 import java.util
-import typing
-
-
 
 _BiConsumer__T = typing.TypeVar('_BiConsumer__T')  # <T>
 _BiConsumer__U = typing.TypeVar('_BiConsumer__U')  # <U>

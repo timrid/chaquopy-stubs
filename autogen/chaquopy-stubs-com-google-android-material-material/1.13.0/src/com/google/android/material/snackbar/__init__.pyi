@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.content.res
 import android.graphics
@@ -11,9 +13,6 @@ import com.google.android.material.behavior
 import java
 import java.lang
 import java.lang.annotation
-import typing
-
-
 
 _BaseTransientBottomBar__B = typing.TypeVar('_BaseTransientBottomBar__B', bound=BaseTransientBottomBar[B])  # <B>
 

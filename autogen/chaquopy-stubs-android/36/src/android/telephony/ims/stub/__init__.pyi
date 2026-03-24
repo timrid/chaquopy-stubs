@@ -1,7 +1,6 @@
-import java.lang
 import typing
 
-
+import java.lang
 
 class ImsRegistrationImplBase(java.lang.Object):
     REGISTRATION_TECH_3G: typing.ClassVar[int] = ...

@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.content
 import android.content.pm
@@ -20,9 +22,6 @@ import java.time
 import java.util
 import java.util.concurrent
 import java.util.function
-import typing
-
-
 
 class ConnectEvent(NetworkEvent, android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[ConnectEvent]] = ...

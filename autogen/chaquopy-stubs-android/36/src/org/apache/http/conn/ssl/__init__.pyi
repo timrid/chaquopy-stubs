@@ -1,3 +1,5 @@
+import typing
+
 import java
 import java.chaquopy
 import java.lang
@@ -7,9 +9,6 @@ import java.security.cert
 import javax.net.ssl
 import org.apache.http.conn.scheme
 import org.apache.http.params
-import typing
-
-
 
 class AbstractVerifier(X509HostnameVerifier):
     def __init__(self) -> None: ...

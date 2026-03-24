@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.content.om
 import android.content.res
@@ -6,9 +8,6 @@ import java
 import java.io
 import java.lang
 import java.util
-import typing
-
-
 
 class AssetsProvider(java.lang.Object):
     def loadAssetFd(self, path: str | java.lang.String, accessMode: int | java.jint | java.lang.Integer, /) -> android.content.res.AssetFileDescriptor | None: ...

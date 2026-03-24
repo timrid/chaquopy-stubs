@@ -1,3 +1,5 @@
+import typing
+
 import android.os
 import java
 import java.chaquopy
@@ -9,9 +11,6 @@ import java.util.function
 import java.util.regex
 import org.xml.sax
 import org.xmlpull.v1
-import typing
-
-
 
 class AndroidException(java.lang.Exception):
     @typing.overload

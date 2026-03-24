@@ -1,3 +1,5 @@
+import typing
+
 import android.os
 import android.telephony.ims.feature
 import java
@@ -5,9 +7,6 @@ import java.lang
 import java.util
 import java.util.concurrent
 import java.util.function
-import typing
-
-
 
 class ImsException(java.lang.Exception):
     CODE_ERROR_INVALID_SUBSCRIPTION: typing.ClassVar[int] = ...

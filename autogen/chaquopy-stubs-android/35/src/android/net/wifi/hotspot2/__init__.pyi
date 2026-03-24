@@ -1,11 +1,10 @@
+import typing
+
 import android.net.wifi.hotspot2.pps
 import android.os
 import java
 import java.chaquopy
 import java.lang
-import typing
-
-
 
 class ConfigParser(java.lang.Object):
     @staticmethod

@@ -1,11 +1,10 @@
+import typing
+
 import android.content
 import java
 import java.chaquopy
 import java.lang
 import java.net
-import typing
-
-
 
 class AudioCodec(java.lang.Object):
     AMR: typing.ClassVar[AudioCodec] = ...

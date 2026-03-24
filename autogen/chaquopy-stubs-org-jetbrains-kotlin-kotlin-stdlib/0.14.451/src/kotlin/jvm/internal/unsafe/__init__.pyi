@@ -1,0 +1,13 @@
+import java.lang
+
+class MonitorKt(java.lang.Object):
+    @staticmethod
+    def monitorEnter(monitor: java.lang.Object | int | bool | float | str, /) -> None: ...
+    @staticmethod
+    def monitorExit(monitor: java.lang.Object | int | bool | float | str, /) -> None: ...
+
+class UnsafePackage(java.lang.Object):
+    @staticmethod
+    def monitorEnter(monitor: java.lang.Object | int | bool | float | str, /) -> None: ...
+    @staticmethod
+    def monitorExit(monitor: java.lang.Object | int | bool | float | str, /) -> None: ...

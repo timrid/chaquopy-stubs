@@ -1,10 +1,9 @@
+import typing
+
 import java
 import java.io
 import java.lang
 import org.w3c.dom
-import typing
-
-
 
 class DOMImplementationLS(java.lang.Object):
     MODE_ASYNCHRONOUS: typing.ClassVar[int] = ...

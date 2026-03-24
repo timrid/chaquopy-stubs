@@ -1,3 +1,5 @@
+import typing
+
 import android.net
 import android.net.wifi.hotspot2
 import android.os
@@ -11,9 +13,6 @@ import java.security.cert
 import java.util
 import java.util.concurrent
 import java.util.function
-import typing
-
-
 
 class EasyConnectStatusCallback(java.lang.Object):
     EASY_CONNECT_EVENT_FAILURE_AUTHENTICATION: typing.ClassVar[int] = ...

@@ -1,11 +1,10 @@
+import typing
+
 import java
 import java.io
 import java.lang
 import java.util
 import java.util.concurrent
-import typing
-
-
 
 class AbstractOwnableSynchronizer(java.io.Serializable):
     def __init__(self) -> None: ...

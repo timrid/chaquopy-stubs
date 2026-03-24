@@ -1,12 +1,11 @@
+import typing
+
 import java
 import java.lang
 import java.net
 import java.nio.channels
 import java.util
 import java.util.concurrent
-import typing
-
-
 
 class AbstractInterruptibleChannel(java.nio.channels.Channel, java.nio.channels.InterruptibleChannel):
     def __init__(self) -> None: ...

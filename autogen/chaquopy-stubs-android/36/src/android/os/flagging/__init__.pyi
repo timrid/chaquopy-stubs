@@ -1,8 +1,7 @@
-import java
-import java.lang
 import typing
 
-
+import java
+import java.lang
 
 class AconfigPackage(java.lang.Object):
     def getBooleanFlagValue(self, flagName: str | java.lang.String, defaultValue: bool | java.jboolean | java.lang.Boolean, /) -> bool: ...

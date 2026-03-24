@@ -1,3 +1,5 @@
+import typing
+
 import android
 import android.app
 import android.content
@@ -22,9 +24,6 @@ import java.time
 import java.util
 import java.util.concurrent
 import java.util.function
-import typing
-
-
 
 class AccessNetworkConstants(java.lang.Object):
     TRANSPORT_TYPE_WLAN: typing.ClassVar[int] = ...

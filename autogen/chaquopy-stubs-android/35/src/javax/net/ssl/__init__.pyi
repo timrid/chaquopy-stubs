@@ -1,3 +1,5 @@
+import typing
+
 import java
 import java.chaquopy
 import java.io
@@ -10,9 +12,6 @@ import java.util
 import java.util.function
 import javax.net
 import javax.security.cert
-import typing
-
-
 
 class CertPathTrustManagerParameters(ManagerFactoryParameters):
     def __init__(self, parameters: java.security.cert.CertPathParameters, /) -> None: ...

@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.content.res
 import android.graphics
@@ -17,9 +19,6 @@ import java
 import java.chaquopy
 import java.lang
 import java.lang.annotation
-import typing
-
-
 
 class ClearTextEndIconDelegate(EndIconDelegate):
     def onEditTextAttached(self, editText: android.widget.EditText, /) -> None: ...

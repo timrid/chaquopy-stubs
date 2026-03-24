@@ -1,3 +1,5 @@
+import typing
+
 import android.os
 import java
 import java.chaquopy
@@ -6,9 +8,6 @@ import java.lang
 import java.util
 import java.util.concurrent
 import java.util.function
-import typing
-
-
 
 class BlobHandle(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[BlobHandle]] = ...

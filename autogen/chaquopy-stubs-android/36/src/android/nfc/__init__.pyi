@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.content
 import android.net
@@ -7,9 +9,6 @@ import java.chaquopy
 import java.io
 import java.lang
 import java.util
-import typing
-
-
 
 class AvailableNfcAntenna(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[AvailableNfcAntenna]] = ...

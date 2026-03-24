@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.content.res
 import android.graphics
@@ -9,13 +11,9 @@ import android.view.accessibility
 import androidx.core.view.accessibility
 import androidx.customview.widget
 import java
-import java.chaquopy
 import java.lang
 import java.lang.annotation
 import java.util
-import typing
-
-
 
 _BaseOnChangeListener__S = typing.TypeVar('_BaseOnChangeListener__S')  # <S>
 class BaseOnChangeListener(java.lang.Object, typing.Generic[_BaseOnChangeListener__S]):
@@ -202,7 +200,7 @@ class RangeSlider(BaseSlider[RangeSlider, RangeSlider.OnChangeListener, RangeSli
     @typing.overload
     def setCustomThumbDrawable(self, drawable: android.graphics.drawable.Drawable, /) -> None: ...
     @typing.overload
-    def setCustomThumbDrawablesForValues(self, *drawableResIds: java.chaquopy.JavaArrayJInt) -> None: ...
+    def setCustomThumbDrawablesForValues(self, *drawableResIds: java.jint) -> None: ...
     @typing.overload
     def setCustomThumbDrawablesForValues(self, *drawables: android.graphics.drawable.Drawable) -> None: ...
     def setMinSeparation(self, minSeparation: float | java.jfloat | java.lang.Float, /) -> None: ...
@@ -210,7 +208,7 @@ class RangeSlider(BaseSlider[RangeSlider, RangeSlider.OnChangeListener, RangeSli
     @typing.overload
     def setValues(self, values: java.util.List[java.lang.Float], /) -> None: ...
     @typing.overload
-    def setValues(self, *values: java.chaquopy.JavaArrayJFloat) -> None: ...
+    def setValues(self, *values: java.jfloat) -> None: ...
 
     class OnSliderTouchListener(BaseOnSliderTouchListener[RangeSlider]):
         def onStartTrackingTouch(self, arg1: RangeSlider, /) -> None: ...

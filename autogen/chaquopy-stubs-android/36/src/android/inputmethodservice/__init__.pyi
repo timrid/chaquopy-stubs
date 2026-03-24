@@ -1,3 +1,5 @@
+import typing
+
 import android
 import android.app
 import android.content
@@ -15,9 +17,6 @@ import java.io
 import java.lang
 import java.time
 import java.util
-import typing
-
-
 
 class AbstractInputMethodService(android.app.Service, android.view.KeyEvent.Callback):
     def __init__(self) -> None: ...

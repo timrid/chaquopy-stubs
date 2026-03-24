@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.content
 import android.os
@@ -6,9 +8,6 @@ import java
 import java.chaquopy
 import java.io
 import java.lang
-import typing
-
-
 
 class WallpaperService(android.app.Service):
     SERVICE_INTERFACE: typing.ClassVar[str] = ...

@@ -1,11 +1,10 @@
+import typing
+
 import android.hardware.usb
 import android.os
 import java
 import java.chaquopy
 import java.lang
-import typing
-
-
 
 class MtpConstants(java.lang.Object):
     ASSOCIATION_TYPE_GENERIC_FOLDER: typing.ClassVar[int] = ...

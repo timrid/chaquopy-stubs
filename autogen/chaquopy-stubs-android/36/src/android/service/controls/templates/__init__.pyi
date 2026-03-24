@@ -1,10 +1,9 @@
+import typing
+
 import android.graphics.drawable
 import android.os
 import java
 import java.lang
-import typing
-
-
 
 class ControlButton(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[ControlButton]] = ...

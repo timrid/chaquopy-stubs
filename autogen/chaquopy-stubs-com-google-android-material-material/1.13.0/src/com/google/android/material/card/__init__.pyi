@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.content.res
 import android.graphics.drawable
@@ -10,9 +12,6 @@ import java
 import java.chaquopy
 import java.lang
 import java.lang.annotation
-import typing
-
-
 
 class MaterialCardView(androidx.cardview.widget.CardView, android.widget.Checkable, com.google.android.material.shape.Shapeable):
     CHECKED_ICON_GRAVITY_TOP_START: typing.ClassVar[int] = ...

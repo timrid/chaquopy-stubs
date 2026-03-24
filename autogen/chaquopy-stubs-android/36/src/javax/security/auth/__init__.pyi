@@ -1,12 +1,11 @@
+import typing
+
 import java
 import java.chaquopy
 import java.io
 import java.lang
 import java.security
 import java.util
-import typing
-
-
 
 class AuthPermission(java.security.BasicPermission):
     @typing.overload

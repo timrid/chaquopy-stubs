@@ -1,10 +1,9 @@
+import typing
+
 import android.os
 import android.util
 import java
 import java.lang
-import typing
-
-
 
 class VibratorEnvelopeEffectInfo(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[VibratorEnvelopeEffectInfo]] = ...

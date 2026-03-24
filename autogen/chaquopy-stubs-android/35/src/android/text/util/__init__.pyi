@@ -1,3 +1,5 @@
+import typing
+
 import android.text
 import android.text.style
 import android.widget
@@ -7,9 +9,6 @@ import java.lang
 import java.util
 import java.util.function
 import java.util.regex
-import typing
-
-
 
 class Linkify(java.lang.Object):
     ALL: typing.ClassVar[int] = ...

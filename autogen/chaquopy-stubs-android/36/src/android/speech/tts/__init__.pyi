@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.content
 import android.media
@@ -8,9 +10,6 @@ import java.chaquopy
 import java.io
 import java.lang
 import java.util
-import typing
-
-
 
 class SynthesisCallback(java.lang.Object):
     def audioAvailable(self, arg1: java.chaquopy.JavaArrayJByte, arg2: int | java.jint | java.lang.Integer, arg3: int | java.jint | java.lang.Integer, /) -> int: ...

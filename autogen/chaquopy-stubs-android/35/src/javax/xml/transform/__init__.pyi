@@ -1,10 +1,9 @@
+import typing
+
 import java
 import java.io
 import java.lang
 import java.util
-import typing
-
-
 
 class ErrorListener(java.lang.Object):
     def error(self, arg1: TransformerException, /) -> None: ...

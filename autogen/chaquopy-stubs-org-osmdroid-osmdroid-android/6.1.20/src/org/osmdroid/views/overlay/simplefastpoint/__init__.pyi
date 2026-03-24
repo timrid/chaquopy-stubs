@@ -1,3 +1,5 @@
+import typing
+
 import android.graphics
 import android.location
 import android.os
@@ -11,9 +13,6 @@ import org.osmdroid.api
 import org.osmdroid.util
 import org.osmdroid.views
 import org.osmdroid.views.overlay
-import typing
-
-
 
 class LabelledGeoPoint(org.osmdroid.util.GeoPoint):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[LabelledGeoPoint]] = ...

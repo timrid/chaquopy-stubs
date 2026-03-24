@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.content
 import android.media.browse
@@ -8,9 +10,6 @@ import java.chaquopy
 import java.io
 import java.lang
 import java.util
-import typing
-
-
 
 class CameraPrewarmService(android.app.Service):
     def __init__(self) -> None: ...

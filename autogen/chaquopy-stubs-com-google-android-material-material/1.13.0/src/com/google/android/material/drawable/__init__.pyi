@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.content.res
 import android.graphics
@@ -7,9 +9,6 @@ import androidx.appcompat.graphics.drawable
 import java
 import java.chaquopy
 import java.lang
-import typing
-
-
 
 class DrawableUtils(java.lang.Object):
     INTRINSIC_SIZE: typing.ClassVar[int] = ...

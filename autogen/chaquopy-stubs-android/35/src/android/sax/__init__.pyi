@@ -1,8 +1,7 @@
-import java.lang
-import org.xml.sax
 import typing
 
-
+import java.lang
+import org.xml.sax
 
 class Element(java.lang.Object):
     @typing.overload

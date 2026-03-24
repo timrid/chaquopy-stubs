@@ -1,11 +1,10 @@
+import typing
+
 import android.content
 import android.os
 import java
 import java.lang
 import java.util.concurrent
-import typing
-
-
 
 class AppSetId(java.lang.Object):
     SCOPE_APP: typing.ClassVar[int] = ...

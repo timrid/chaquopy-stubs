@@ -1,8 +1,7 @@
-import java
-import java.lang
 import typing
 
-
+import java
+import java.lang
 
 class BooleanAction(ControlAction):
     @typing.overload

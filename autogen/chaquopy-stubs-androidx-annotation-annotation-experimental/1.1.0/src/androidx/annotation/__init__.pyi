@@ -1,0 +1,19 @@
+import typing
+
+import java.chaquopy
+import java.lang
+import java.lang.annotation
+
+class OptIn(java.lang.annotation.Annotation):
+    def markerClass(self) -> java.chaquopy.JavaArray[typing.Type[java.lang.annotation.Annotation]]: ...
+
+class RequiresOptIn(java.lang.annotation.Annotation):
+    def level(self) -> RequiresOptIn.Level: ...
+
+    class Level(java.lang.Enum[RequiresOptIn.Level]):
+        WARNING: typing.ClassVar[RequiresOptIn.Level] = ...
+        ERROR: typing.ClassVar[RequiresOptIn.Level] = ...
+        @staticmethod
+        def valueOf(arg1: str | java.lang.String, /) -> RequiresOptIn.Level: ...
+        @staticmethod
+        def values() -> java.chaquopy.JavaArray[RequiresOptIn.Level]: ...

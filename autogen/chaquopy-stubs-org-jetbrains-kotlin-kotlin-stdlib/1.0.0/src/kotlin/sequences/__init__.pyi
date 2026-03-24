@@ -1,0 +1,544 @@
+import typing
+
+import java
+import java.chaquopy
+import java.lang
+import java.util
+import kotlin
+import kotlin.collections
+import kotlin.jvm.functions
+
+_ConstrainedOnceSequence__T = typing.TypeVar('_ConstrainedOnceSequence__T')  # <T>
+class ConstrainedOnceSequence(Sequence[_ConstrainedOnceSequence__T], typing.Generic[_ConstrainedOnceSequence__T]):
+    def __init__(self, sequence: Sequence[_ConstrainedOnceSequence__T], /) -> None: ...
+    def iterator(self) -> java.util.Iterator[_ConstrainedOnceSequence__T]: ...
+
+_DistinctIterator__T = typing.TypeVar('_DistinctIterator__T')  # <T>
+_DistinctIterator__K = typing.TypeVar('_DistinctIterator__K')  # <K>
+class DistinctIterator(kotlin.collections.AbstractIterator[_DistinctIterator__T], typing.Generic[_DistinctIterator__T, _DistinctIterator__K]):
+    def __init__(self, source: java.util.Iterator[_DistinctIterator__T], keySelector: kotlin.jvm.functions.Function1[_DistinctIterator__T, _DistinctIterator__K], /) -> None: ...
+    def computeNext(self) -> None: ...
+    def remove(self) -> None: ...
+
+_DistinctSequence__T = typing.TypeVar('_DistinctSequence__T')  # <T>
+_DistinctSequence__K = typing.TypeVar('_DistinctSequence__K')  # <K>
+class DistinctSequence(Sequence[_DistinctSequence__T], typing.Generic[_DistinctSequence__T, _DistinctSequence__K]):
+    def __init__(self, source: Sequence[_DistinctSequence__T], keySelector: kotlin.jvm.functions.Function1[_DistinctSequence__T, _DistinctSequence__K], /) -> None: ...
+    def iterator(self) -> java.util.Iterator[_DistinctSequence__T]: ...
+
+_DropSequence__T = typing.TypeVar('_DropSequence__T')  # <T>
+class DropSequence(Sequence[_DropSequence__T], typing.Generic[_DropSequence__T]):
+    def __init__(self, sequence: Sequence[_DropSequence__T], count: int | java.jint | java.lang.Integer, /) -> None: ...
+    def iterator(self) -> java.util.Iterator[_DropSequence__T]: ...
+
+_DropWhileSequence__T = typing.TypeVar('_DropWhileSequence__T')  # <T>
+class DropWhileSequence(Sequence[_DropWhileSequence__T], typing.Generic[_DropWhileSequence__T]):
+    def __init__(self, sequence: Sequence[_DropWhileSequence__T], predicate: kotlin.jvm.functions.Function1[_DropWhileSequence__T, java.lang.Boolean], /) -> None: ...
+    def iterator(self) -> java.util.Iterator[_DropWhileSequence__T]: ...
+
+class EmptySequence(Sequence):
+    INSTANCE: typing.ClassVar[EmptySequence] = ...
+    def iterator(self) -> java.util.Iterator: ...
+
+_FilteringSequence__T = typing.TypeVar('_FilteringSequence__T')  # <T>
+class FilteringSequence(Sequence[_FilteringSequence__T], typing.Generic[_FilteringSequence__T]):
+    def __init__(self, sequence: Sequence[_FilteringSequence__T], sendWhen: bool | java.jboolean | java.lang.Boolean, predicate: kotlin.jvm.functions.Function1[_FilteringSequence__T, java.lang.Boolean], /) -> None: ...
+    def iterator(self) -> java.util.Iterator[_FilteringSequence__T]: ...
+
+_FlatteningSequence__T = typing.TypeVar('_FlatteningSequence__T')  # <T>
+_FlatteningSequence__R = typing.TypeVar('_FlatteningSequence__R')  # <R>
+_FlatteningSequence__E = typing.TypeVar('_FlatteningSequence__E')  # <E>
+class FlatteningSequence(Sequence[_FlatteningSequence__E], typing.Generic[_FlatteningSequence__T, _FlatteningSequence__R, _FlatteningSequence__E]):
+    def __init__(self, sequence: Sequence[_FlatteningSequence__T], transformer: kotlin.jvm.functions.Function1[_FlatteningSequence__T, _FlatteningSequence__R], iterator: kotlin.jvm.functions.Function1[_FlatteningSequence__R, java.util.Iterator[_FlatteningSequence__E]], /) -> None: ...
+    def iterator(self) -> java.util.Iterator[_FlatteningSequence__E]: ...
+
+_GeneratorSequence__T = typing.TypeVar('_GeneratorSequence__T')  # <T>
+class GeneratorSequence(Sequence[_GeneratorSequence__T], typing.Generic[_GeneratorSequence__T]):
+    def __init__(self, getInitialValue: kotlin.jvm.functions.Function0[_GeneratorSequence__T], getNextValue: kotlin.jvm.functions.Function1[_GeneratorSequence__T, _GeneratorSequence__T], /) -> None: ...
+    def iterator(self) -> java.util.Iterator[_GeneratorSequence__T]: ...
+
+_IndexingSequence__T = typing.TypeVar('_IndexingSequence__T')  # <T>
+class IndexingSequence(Sequence[kotlin.collections.IndexedValue[_IndexingSequence__T]], typing.Generic[_IndexingSequence__T]):
+    def __init__(self, sequence: Sequence[_IndexingSequence__T], /) -> None: ...
+    def iterator(self) -> java.util.Iterator[kotlin.collections.IndexedValue[_IndexingSequence__T]]: ...
+
+_MergingSequence__T1 = typing.TypeVar('_MergingSequence__T1')  # <T1>
+_MergingSequence__T2 = typing.TypeVar('_MergingSequence__T2')  # <T2>
+_MergingSequence__V = typing.TypeVar('_MergingSequence__V')  # <V>
+class MergingSequence(Sequence[_MergingSequence__V], typing.Generic[_MergingSequence__T1, _MergingSequence__T2, _MergingSequence__V]):
+    def __init__(self, sequence1: Sequence[_MergingSequence__T1], sequence2: Sequence[_MergingSequence__T2], transform: kotlin.jvm.functions.Function2[_MergingSequence__T1, _MergingSequence__T2, _MergingSequence__V], /) -> None: ...
+    def iterator(self) -> java.util.Iterator[_MergingSequence__V]: ...
+
+_Sequence__T = typing.TypeVar('_Sequence__T')  # <T>
+class Sequence(java.lang.Object, typing.Generic[_Sequence__T]):
+    def iterator(self) -> java.util.Iterator[_Sequence__T]: ...
+
+class SequencesKt(java.lang.Object):
+    _all__T = typing.TypeVar('_all__T')  # <T>
+    @staticmethod
+    def all(receiver: Sequence[_all__T], predicate: kotlin.jvm.functions.Function1[_all__T, java.lang.Boolean], /) -> bool: ...
+    _any_1__T = typing.TypeVar('_any_1__T')  # <T>
+    @typing.overload
+    @staticmethod
+    def any(receiver: Sequence[java.lang.Object], /) -> bool: ...
+    @typing.overload
+    @staticmethod
+    def any(receiver: Sequence[_any_1__T], predicate: kotlin.jvm.functions.Function1[_any_1__T, java.lang.Boolean], /) -> bool: ...
+    _asIterable__T = typing.TypeVar('_asIterable__T')  # <T>
+    @staticmethod
+    def asIterable(receiver: Sequence[_asIterable__T], /) -> java.lang.Iterable[_asIterable__T]: ...
+    _asSequence__T = typing.TypeVar('_asSequence__T')  # <T>
+    @staticmethod
+    def asSequence(receiver: java.util.Iterator[_asSequence__T], /) -> Sequence[_asSequence__T]: ...
+    _associate__T = typing.TypeVar('_associate__T')  # <T>
+    _associate__K = typing.TypeVar('_associate__K')  # <K>
+    _associate__V = typing.TypeVar('_associate__V')  # <V>
+    @staticmethod
+    def associate(receiver: Sequence[_associate__T], transform: kotlin.jvm.functions.Function1[_associate__T, kotlin.Pair[_associate__K, _associate__V]], /) -> java.util.Map[_associate__K, _associate__V]: ...
+    _associateBy_0__T = typing.TypeVar('_associateBy_0__T')  # <T>
+    _associateBy_0__K = typing.TypeVar('_associateBy_0__K')  # <K>
+    _associateBy_1__T = typing.TypeVar('_associateBy_1__T')  # <T>
+    _associateBy_1__K = typing.TypeVar('_associateBy_1__K')  # <K>
+    _associateBy_1__V = typing.TypeVar('_associateBy_1__V')  # <V>
+    @typing.overload
+    @staticmethod
+    def associateBy(receiver: Sequence[_associateBy_0__T], keySelector: kotlin.jvm.functions.Function1[_associateBy_0__T, _associateBy_0__K], /) -> java.util.Map[_associateBy_0__K, _associateBy_0__T]: ...
+    @typing.overload
+    @staticmethod
+    def associateBy(receiver: Sequence[_associateBy_1__T], keySelector: kotlin.jvm.functions.Function1[_associateBy_1__T, _associateBy_1__K], valueTransform: kotlin.jvm.functions.Function1[_associateBy_1__T, _associateBy_1__V], /) -> java.util.Map[_associateBy_1__K, _associateBy_1__V]: ...
+    _associateByTo_0__T = typing.TypeVar('_associateByTo_0__T')  # <T>
+    _associateByTo_0__M = typing.TypeVar('_associateByTo_0__M')  # <M>
+    _associateByTo_1__T = typing.TypeVar('_associateByTo_1__T')  # <T>
+    _associateByTo_1__M = typing.TypeVar('_associateByTo_1__M')  # <M>
+    @typing.overload
+    @staticmethod
+    def associateByTo(receiver: Sequence[_associateByTo_0__T], destination: _associateByTo_0__M, keySelector: kotlin.jvm.functions.Function1[_associateByTo_0__T, java.lang.Object], /) -> _associateByTo_0__M: ...
+    @typing.overload
+    @staticmethod
+    def associateByTo(receiver: Sequence[_associateByTo_1__T], destination: _associateByTo_1__M, keySelector: kotlin.jvm.functions.Function1[_associateByTo_1__T, java.lang.Object], valueTransform: kotlin.jvm.functions.Function1[_associateByTo_1__T, java.lang.Object], /) -> _associateByTo_1__M: ...
+    _associateTo__T = typing.TypeVar('_associateTo__T')  # <T>
+    _associateTo__M = typing.TypeVar('_associateTo__M')  # <M>
+    @staticmethod
+    def associateTo(receiver: Sequence[_associateTo__T], destination: _associateTo__M, transform: kotlin.jvm.functions.Function1[_associateTo__T, kotlin.Pair[java.lang.Object, java.lang.Object]], /) -> _associateTo__M: ...
+    @staticmethod
+    def averageOfByte(receiver: Sequence[java.lang.Byte], /) -> float: ...
+    @staticmethod
+    def averageOfDouble(receiver: Sequence[java.lang.Double], /) -> float: ...
+    @staticmethod
+    def averageOfFloat(receiver: Sequence[java.lang.Float], /) -> float: ...
+    @staticmethod
+    def averageOfInt(receiver: Sequence[java.lang.Integer], /) -> float: ...
+    @staticmethod
+    def averageOfLong(receiver: Sequence[java.lang.Long], /) -> float: ...
+    @staticmethod
+    def averageOfShort(receiver: Sequence[java.lang.Short], /) -> float: ...
+    _constrainOnce__T = typing.TypeVar('_constrainOnce__T')  # <T>
+    @staticmethod
+    def constrainOnce(receiver: Sequence[_constrainOnce__T], /) -> Sequence[_constrainOnce__T]: ...
+    _contains__T = typing.TypeVar('_contains__T')  # <T>
+    @staticmethod
+    def contains(receiver: Sequence[_contains__T], element: _contains__T, /) -> bool: ...
+    _count_1__T = typing.TypeVar('_count_1__T')  # <T>
+    @typing.overload
+    @staticmethod
+    def count(receiver: Sequence[java.lang.Object], /) -> int: ...
+    @typing.overload
+    @staticmethod
+    def count(receiver: Sequence[_count_1__T], predicate: kotlin.jvm.functions.Function1[_count_1__T, java.lang.Boolean], /) -> int: ...
+    _distinct__T = typing.TypeVar('_distinct__T')  # <T>
+    @staticmethod
+    def distinct(receiver: Sequence[_distinct__T], /) -> Sequence[_distinct__T]: ...
+    _distinctBy__T = typing.TypeVar('_distinctBy__T')  # <T>
+    @staticmethod
+    def distinctBy(receiver: Sequence[_distinctBy__T], selector: kotlin.jvm.functions.Function1[_distinctBy__T, java.lang.Object], /) -> Sequence[_distinctBy__T]: ...
+    _drop__T = typing.TypeVar('_drop__T')  # <T>
+    @staticmethod
+    def drop(receiver: Sequence[_drop__T], n: int | java.jint | java.lang.Integer, /) -> Sequence[_drop__T]: ...
+    _dropWhile__T = typing.TypeVar('_dropWhile__T')  # <T>
+    @staticmethod
+    def dropWhile(receiver: Sequence[_dropWhile__T], predicate: kotlin.jvm.functions.Function1[_dropWhile__T, java.lang.Boolean], /) -> Sequence[_dropWhile__T]: ...
+    _elementAt__T = typing.TypeVar('_elementAt__T')  # <T>
+    @staticmethod
+    def elementAt(receiver: Sequence[_elementAt__T], index: int | java.jint | java.lang.Integer, /) -> _elementAt__T: ...
+    _elementAtOrElse__T = typing.TypeVar('_elementAtOrElse__T')  # <T>
+    @staticmethod
+    def elementAtOrElse(receiver: Sequence[_elementAtOrElse__T], index: int | java.jint | java.lang.Integer, defaultValue: kotlin.jvm.functions.Function1[int, _elementAtOrElse__T], /) -> _elementAtOrElse__T: ...
+    _elementAtOrNull__T = typing.TypeVar('_elementAtOrNull__T')  # <T>
+    @staticmethod
+    def elementAtOrNull(receiver: Sequence[_elementAtOrNull__T], index: int | java.jint | java.lang.Integer, /) -> _elementAtOrNull__T: ...
+    @staticmethod
+    def emptySequence() -> Sequence[java.lang.Object]: ...
+    _filter__T = typing.TypeVar('_filter__T')  # <T>
+    @staticmethod
+    def filter(receiver: Sequence[_filter__T], predicate: kotlin.jvm.functions.Function1[_filter__T, java.lang.Boolean], /) -> Sequence[_filter__T]: ...
+    _filterIndexed__T = typing.TypeVar('_filterIndexed__T')  # <T>
+    @staticmethod
+    def filterIndexed(receiver: Sequence[_filterIndexed__T], predicate: kotlin.jvm.functions.Function2[int, _filterIndexed__T, java.lang.Boolean], /) -> Sequence[_filterIndexed__T]: ...
+    _filterIndexedTo__T = typing.TypeVar('_filterIndexedTo__T')  # <T>
+    _filterIndexedTo__C = typing.TypeVar('_filterIndexedTo__C')  # <C>
+    @staticmethod
+    def filterIndexedTo(receiver: Sequence[_filterIndexedTo__T], destination: _filterIndexedTo__C, predicate: kotlin.jvm.functions.Function2[int, _filterIndexedTo__T, java.lang.Boolean], /) -> _filterIndexedTo__C: ...
+    _filterIsInstance__R = typing.TypeVar('_filterIsInstance__R')  # <R>
+    @staticmethod
+    def filterIsInstance(receiver: Sequence[java.lang.Object], klass: typing.Type[_filterIsInstance__R], /) -> Sequence[_filterIsInstance__R]: ...
+    _filterIsInstanceTo__C = typing.TypeVar('_filterIsInstanceTo__C')  # <C>
+    @staticmethod
+    def filterIsInstanceTo(receiver: Sequence[java.lang.Object], destination: _filterIsInstanceTo__C, klass: typing.Type[java.lang.Object], /) -> _filterIsInstanceTo__C: ...
+    _filterNot__T = typing.TypeVar('_filterNot__T')  # <T>
+    @staticmethod
+    def filterNot(receiver: Sequence[_filterNot__T], predicate: kotlin.jvm.functions.Function1[_filterNot__T, java.lang.Boolean], /) -> Sequence[_filterNot__T]: ...
+    _filterNotNull__T = typing.TypeVar('_filterNotNull__T')  # <T>
+    @staticmethod
+    def filterNotNull(receiver: Sequence[_filterNotNull__T], /) -> Sequence[_filterNotNull__T]: ...
+    _filterNotNullTo__C = typing.TypeVar('_filterNotNullTo__C')  # <C>
+    @staticmethod
+    def filterNotNullTo(receiver: Sequence[java.lang.Object], destination: _filterNotNullTo__C, /) -> _filterNotNullTo__C: ...
+    _filterNotTo__T = typing.TypeVar('_filterNotTo__T')  # <T>
+    _filterNotTo__C = typing.TypeVar('_filterNotTo__C')  # <C>
+    @staticmethod
+    def filterNotTo(receiver: Sequence[_filterNotTo__T], destination: _filterNotTo__C, predicate: kotlin.jvm.functions.Function1[_filterNotTo__T, java.lang.Boolean], /) -> _filterNotTo__C: ...
+    _filterTo__T = typing.TypeVar('_filterTo__T')  # <T>
+    _filterTo__C = typing.TypeVar('_filterTo__C')  # <C>
+    @staticmethod
+    def filterTo(receiver: Sequence[_filterTo__T], destination: _filterTo__C, predicate: kotlin.jvm.functions.Function1[_filterTo__T, java.lang.Boolean], /) -> _filterTo__C: ...
+    _first_0__T = typing.TypeVar('_first_0__T')  # <T>
+    _first_1__T = typing.TypeVar('_first_1__T')  # <T>
+    @typing.overload
+    @staticmethod
+    def first(receiver: Sequence[_first_0__T], /) -> _first_0__T: ...
+    @typing.overload
+    @staticmethod
+    def first(receiver: Sequence[_first_1__T], predicate: kotlin.jvm.functions.Function1[_first_1__T, java.lang.Boolean], /) -> _first_1__T: ...
+    _firstOrNull_0__T = typing.TypeVar('_firstOrNull_0__T')  # <T>
+    _firstOrNull_1__T = typing.TypeVar('_firstOrNull_1__T')  # <T>
+    @typing.overload
+    @staticmethod
+    def firstOrNull(receiver: Sequence[_firstOrNull_0__T], /) -> _firstOrNull_0__T: ...
+    @typing.overload
+    @staticmethod
+    def firstOrNull(receiver: Sequence[_firstOrNull_1__T], predicate: kotlin.jvm.functions.Function1[_firstOrNull_1__T, java.lang.Boolean], /) -> _firstOrNull_1__T: ...
+    _flatMap__T = typing.TypeVar('_flatMap__T')  # <T>
+    _flatMap__R = typing.TypeVar('_flatMap__R')  # <R>
+    @staticmethod
+    def flatMap(receiver: Sequence[_flatMap__T], transform: kotlin.jvm.functions.Function1[_flatMap__T, Sequence[_flatMap__R]], /) -> Sequence[_flatMap__R]: ...
+    _flatMapTo__T = typing.TypeVar('_flatMapTo__T')  # <T>
+    _flatMapTo__C = typing.TypeVar('_flatMapTo__C')  # <C>
+    @staticmethod
+    def flatMapTo(receiver: Sequence[_flatMapTo__T], destination: _flatMapTo__C, transform: kotlin.jvm.functions.Function1[_flatMapTo__T, Sequence[java.lang.Object]], /) -> _flatMapTo__C: ...
+    _flatten__T = typing.TypeVar('_flatten__T')  # <T>
+    @staticmethod
+    def flatten(receiver: Sequence[Sequence[_flatten__T]], /) -> Sequence[_flatten__T]: ...
+    _flattenSequenceOfIterable__T = typing.TypeVar('_flattenSequenceOfIterable__T')  # <T>
+    @staticmethod
+    def flattenSequenceOfIterable(receiver: Sequence[java.lang.Iterable[_flattenSequenceOfIterable__T]], /) -> Sequence[_flattenSequenceOfIterable__T]: ...
+    _fold__T = typing.TypeVar('_fold__T')  # <T>
+    _fold__R = typing.TypeVar('_fold__R')  # <R>
+    @staticmethod
+    def fold(receiver: Sequence[_fold__T], initial: _fold__R, operation: kotlin.jvm.functions.Function2[_fold__R, _fold__T, _fold__R], /) -> _fold__R: ...
+    _foldIndexed__T = typing.TypeVar('_foldIndexed__T')  # <T>
+    _foldIndexed__R = typing.TypeVar('_foldIndexed__R')  # <R>
+    @staticmethod
+    def foldIndexed(receiver: Sequence[_foldIndexed__T], initial: _foldIndexed__R, operation: kotlin.jvm.functions.Function3[int, _foldIndexed__R, _foldIndexed__T, _foldIndexed__R], /) -> _foldIndexed__R: ...
+    _forEach__T = typing.TypeVar('_forEach__T')  # <T>
+    @staticmethod
+    def forEach(receiver: Sequence[_forEach__T], action: kotlin.jvm.functions.Function1[_forEach__T, kotlin.Unit], /) -> None: ...
+    _forEachIndexed__T = typing.TypeVar('_forEachIndexed__T')  # <T>
+    @staticmethod
+    def forEachIndexed(receiver: Sequence[_forEachIndexed__T], action: kotlin.jvm.functions.Function2[int, _forEachIndexed__T, kotlin.Unit], /) -> None: ...
+    _generateSequence_0__T = typing.TypeVar('_generateSequence_0__T')  # <T>
+    _generateSequence_1__T = typing.TypeVar('_generateSequence_1__T')  # <T>
+    _generateSequence_2__T = typing.TypeVar('_generateSequence_2__T')  # <T>
+    @typing.overload
+    @staticmethod
+    def generateSequence(nextFunction: kotlin.jvm.functions.Function0[_generateSequence_0__T], /) -> Sequence[_generateSequence_0__T]: ...
+    @typing.overload
+    @staticmethod
+    def generateSequence(seed: _generateSequence_1__T, nextFunction: kotlin.jvm.functions.Function1[_generateSequence_1__T, _generateSequence_1__T], /) -> Sequence[_generateSequence_1__T]: ...
+    @typing.overload
+    @staticmethod
+    def generateSequence(seedFunction: kotlin.jvm.functions.Function0[_generateSequence_2__T], nextFunction: kotlin.jvm.functions.Function1[_generateSequence_2__T, _generateSequence_2__T], /) -> Sequence[_generateSequence_2__T]: ...
+    _groupBy_0__T = typing.TypeVar('_groupBy_0__T')  # <T>
+    _groupBy_0__K = typing.TypeVar('_groupBy_0__K')  # <K>
+    _groupBy_1__T = typing.TypeVar('_groupBy_1__T')  # <T>
+    _groupBy_1__K = typing.TypeVar('_groupBy_1__K')  # <K>
+    _groupBy_1__V = typing.TypeVar('_groupBy_1__V')  # <V>
+    @typing.overload
+    @staticmethod
+    def groupBy(receiver: Sequence[_groupBy_0__T], keySelector: kotlin.jvm.functions.Function1[_groupBy_0__T, _groupBy_0__K], /) -> java.util.Map[_groupBy_0__K, java.util.List[_groupBy_0__T]]: ...
+    @typing.overload
+    @staticmethod
+    def groupBy(receiver: Sequence[_groupBy_1__T], keySelector: kotlin.jvm.functions.Function1[_groupBy_1__T, _groupBy_1__K], valueTransform: kotlin.jvm.functions.Function1[_groupBy_1__T, _groupBy_1__V], /) -> java.util.Map[_groupBy_1__K, java.util.List[_groupBy_1__V]]: ...
+    _groupByTo_0__T = typing.TypeVar('_groupByTo_0__T')  # <T>
+    _groupByTo_0__M = typing.TypeVar('_groupByTo_0__M')  # <M>
+    _groupByTo_1__T = typing.TypeVar('_groupByTo_1__T')  # <T>
+    _groupByTo_1__M = typing.TypeVar('_groupByTo_1__M')  # <M>
+    @typing.overload
+    @staticmethod
+    def groupByTo(receiver: Sequence[_groupByTo_0__T], destination: _groupByTo_0__M, keySelector: kotlin.jvm.functions.Function1[_groupByTo_0__T, java.lang.Object], /) -> _groupByTo_0__M: ...
+    @typing.overload
+    @staticmethod
+    def groupByTo(receiver: Sequence[_groupByTo_1__T], destination: _groupByTo_1__M, keySelector: kotlin.jvm.functions.Function1[_groupByTo_1__T, java.lang.Object], valueTransform: kotlin.jvm.functions.Function1[_groupByTo_1__T, java.lang.Object], /) -> _groupByTo_1__M: ...
+    _indexOf__T = typing.TypeVar('_indexOf__T')  # <T>
+    @staticmethod
+    def indexOf(receiver: Sequence[_indexOf__T], element: _indexOf__T, /) -> int: ...
+    _indexOfFirst__T = typing.TypeVar('_indexOfFirst__T')  # <T>
+    @staticmethod
+    def indexOfFirst(receiver: Sequence[_indexOfFirst__T], predicate: kotlin.jvm.functions.Function1[_indexOfFirst__T, java.lang.Boolean], /) -> int: ...
+    _indexOfLast__T = typing.TypeVar('_indexOfLast__T')  # <T>
+    @staticmethod
+    def indexOfLast(receiver: Sequence[_indexOfLast__T], predicate: kotlin.jvm.functions.Function1[_indexOfLast__T, java.lang.Boolean], /) -> int: ...
+    _joinTo__T = typing.TypeVar('_joinTo__T')  # <T>
+    _joinTo__A = typing.TypeVar('_joinTo__A')  # <A>
+    @staticmethod
+    def joinTo(receiver: Sequence[_joinTo__T], buffer: _joinTo__A, separator: java.lang.CharSequence, prefix: java.lang.CharSequence, postfix: java.lang.CharSequence, limit: int | java.jint | java.lang.Integer, truncated: java.lang.CharSequence, transform: kotlin.jvm.functions.Function1[_joinTo__T, java.lang.CharSequence], /) -> _joinTo__A: ...
+    _joinToString__T = typing.TypeVar('_joinToString__T')  # <T>
+    @staticmethod
+    def joinToString(receiver: Sequence[_joinToString__T], separator: java.lang.CharSequence, prefix: java.lang.CharSequence, postfix: java.lang.CharSequence, limit: int | java.jint | java.lang.Integer, truncated: java.lang.CharSequence, transform: kotlin.jvm.functions.Function1[_joinToString__T, java.lang.CharSequence], /) -> str: ...
+    _last_0__T = typing.TypeVar('_last_0__T')  # <T>
+    _last_1__T = typing.TypeVar('_last_1__T')  # <T>
+    @typing.overload
+    @staticmethod
+    def last(receiver: Sequence[_last_0__T], /) -> _last_0__T: ...
+    @typing.overload
+    @staticmethod
+    def last(receiver: Sequence[_last_1__T], predicate: kotlin.jvm.functions.Function1[_last_1__T, java.lang.Boolean], /) -> _last_1__T: ...
+    _lastIndexOf__T = typing.TypeVar('_lastIndexOf__T')  # <T>
+    @staticmethod
+    def lastIndexOf(receiver: Sequence[_lastIndexOf__T], element: _lastIndexOf__T, /) -> int: ...
+    _lastOrNull_0__T = typing.TypeVar('_lastOrNull_0__T')  # <T>
+    _lastOrNull_1__T = typing.TypeVar('_lastOrNull_1__T')  # <T>
+    @typing.overload
+    @staticmethod
+    def lastOrNull(receiver: Sequence[_lastOrNull_0__T], /) -> _lastOrNull_0__T: ...
+    @typing.overload
+    @staticmethod
+    def lastOrNull(receiver: Sequence[_lastOrNull_1__T], predicate: kotlin.jvm.functions.Function1[_lastOrNull_1__T, java.lang.Boolean], /) -> _lastOrNull_1__T: ...
+    _map__T = typing.TypeVar('_map__T')  # <T>
+    _map__R = typing.TypeVar('_map__R')  # <R>
+    @staticmethod
+    def map(receiver: Sequence[_map__T], transform: kotlin.jvm.functions.Function1[_map__T, _map__R], /) -> Sequence[_map__R]: ...
+    _mapIndexed__T = typing.TypeVar('_mapIndexed__T')  # <T>
+    _mapIndexed__R = typing.TypeVar('_mapIndexed__R')  # <R>
+    @staticmethod
+    def mapIndexed(receiver: Sequence[_mapIndexed__T], transform: kotlin.jvm.functions.Function2[int, _mapIndexed__T, _mapIndexed__R], /) -> Sequence[_mapIndexed__R]: ...
+    _mapIndexedNotNull__T = typing.TypeVar('_mapIndexedNotNull__T')  # <T>
+    _mapIndexedNotNull__R = typing.TypeVar('_mapIndexedNotNull__R')  # <R>
+    @staticmethod
+    def mapIndexedNotNull(receiver: Sequence[_mapIndexedNotNull__T], transform: kotlin.jvm.functions.Function2[int, _mapIndexedNotNull__T, _mapIndexedNotNull__R], /) -> Sequence[_mapIndexedNotNull__R]: ...
+    _mapIndexedNotNullTo__T = typing.TypeVar('_mapIndexedNotNullTo__T')  # <T>
+    _mapIndexedNotNullTo__C = typing.TypeVar('_mapIndexedNotNullTo__C')  # <C>
+    @staticmethod
+    def mapIndexedNotNullTo(receiver: Sequence[_mapIndexedNotNullTo__T], destination: _mapIndexedNotNullTo__C, transform: kotlin.jvm.functions.Function2[int, _mapIndexedNotNullTo__T, java.lang.Object], /) -> _mapIndexedNotNullTo__C: ...
+    _mapIndexedTo__T = typing.TypeVar('_mapIndexedTo__T')  # <T>
+    _mapIndexedTo__C = typing.TypeVar('_mapIndexedTo__C')  # <C>
+    @staticmethod
+    def mapIndexedTo(receiver: Sequence[_mapIndexedTo__T], destination: _mapIndexedTo__C, transform: kotlin.jvm.functions.Function2[int, _mapIndexedTo__T, java.lang.Object], /) -> _mapIndexedTo__C: ...
+    _mapNotNull__T = typing.TypeVar('_mapNotNull__T')  # <T>
+    _mapNotNull__R = typing.TypeVar('_mapNotNull__R')  # <R>
+    @staticmethod
+    def mapNotNull(receiver: Sequence[_mapNotNull__T], transform: kotlin.jvm.functions.Function1[_mapNotNull__T, _mapNotNull__R], /) -> Sequence[_mapNotNull__R]: ...
+    _mapNotNullTo__T = typing.TypeVar('_mapNotNullTo__T')  # <T>
+    _mapNotNullTo__C = typing.TypeVar('_mapNotNullTo__C')  # <C>
+    @staticmethod
+    def mapNotNullTo(receiver: Sequence[_mapNotNullTo__T], destination: _mapNotNullTo__C, transform: kotlin.jvm.functions.Function1[_mapNotNullTo__T, java.lang.Object], /) -> _mapNotNullTo__C: ...
+    _mapTo__T = typing.TypeVar('_mapTo__T')  # <T>
+    _mapTo__C = typing.TypeVar('_mapTo__C')  # <C>
+    @staticmethod
+    def mapTo(receiver: Sequence[_mapTo__T], destination: _mapTo__C, transform: kotlin.jvm.functions.Function1[_mapTo__T, java.lang.Object], /) -> _mapTo__C: ...
+    _max__T = typing.TypeVar('_max__T')  # <T>
+    @staticmethod
+    def max(receiver: Sequence[_max__T], /) -> _max__T: ...
+    _maxBy__T = typing.TypeVar('_maxBy__T')  # <T>
+    @staticmethod
+    def maxBy(receiver: Sequence[_maxBy__T], selector: kotlin.jvm.functions.Function1[_maxBy__T, java.lang.Object], /) -> _maxBy__T: ...
+    _maxWith__T = typing.TypeVar('_maxWith__T')  # <T>
+    @staticmethod
+    def maxWith(receiver: Sequence[_maxWith__T], comparator: java.util.Comparator[_maxWith__T], /) -> _maxWith__T: ...
+    _min__T = typing.TypeVar('_min__T')  # <T>
+    @staticmethod
+    def min(receiver: Sequence[_min__T], /) -> _min__T: ...
+    _minBy__T = typing.TypeVar('_minBy__T')  # <T>
+    @staticmethod
+    def minBy(receiver: Sequence[_minBy__T], selector: kotlin.jvm.functions.Function1[_minBy__T, java.lang.Object], /) -> _minBy__T: ...
+    _minWith__T = typing.TypeVar('_minWith__T')  # <T>
+    @staticmethod
+    def minWith(receiver: Sequence[_minWith__T], comparator: java.util.Comparator[_minWith__T], /) -> _minWith__T: ...
+    _minus_0__T = typing.TypeVar('_minus_0__T')  # <T>
+    _minus_1__T = typing.TypeVar('_minus_1__T')  # <T>
+    _minus_2__T = typing.TypeVar('_minus_2__T')  # <T>
+    _minus_3__T = typing.TypeVar('_minus_3__T')  # <T>
+    @typing.overload
+    @staticmethod
+    def minus(receiver: Sequence[_minus_0__T], elements: java.lang.Iterable[_minus_0__T], /) -> Sequence[_minus_0__T]: ...
+    @typing.overload
+    @staticmethod
+    def minus(receiver: Sequence[_minus_1__T], element: _minus_1__T, /) -> Sequence[_minus_1__T]: ...
+    @typing.overload
+    @staticmethod
+    def minus(receiver: Sequence[_minus_2__T], elements: Sequence[_minus_2__T], /) -> Sequence[_minus_2__T]: ...
+    @typing.overload
+    @staticmethod
+    def minus(receiver: Sequence[_minus_3__T], elements: java.chaquopy.JavaArray[_minus_3__T], /) -> Sequence[_minus_3__T]: ...
+    _none_1__T = typing.TypeVar('_none_1__T')  # <T>
+    @typing.overload
+    @staticmethod
+    def none(receiver: Sequence[java.lang.Object], /) -> bool: ...
+    @typing.overload
+    @staticmethod
+    def none(receiver: Sequence[_none_1__T], predicate: kotlin.jvm.functions.Function1[_none_1__T, java.lang.Boolean], /) -> bool: ...
+    _partition__T = typing.TypeVar('_partition__T')  # <T>
+    @staticmethod
+    def partition(receiver: Sequence[_partition__T], predicate: kotlin.jvm.functions.Function1[_partition__T, java.lang.Boolean], /) -> kotlin.Pair[java.util.List[_partition__T], java.util.List[_partition__T]]: ...
+    _plus_0__T = typing.TypeVar('_plus_0__T')  # <T>
+    _plus_1__T = typing.TypeVar('_plus_1__T')  # <T>
+    _plus_2__T = typing.TypeVar('_plus_2__T')  # <T>
+    _plus_3__T = typing.TypeVar('_plus_3__T')  # <T>
+    @typing.overload
+    @staticmethod
+    def plus(receiver: Sequence[_plus_0__T], elements: java.lang.Iterable[_plus_0__T], /) -> Sequence[_plus_0__T]: ...
+    @typing.overload
+    @staticmethod
+    def plus(receiver: Sequence[_plus_1__T], element: _plus_1__T, /) -> Sequence[_plus_1__T]: ...
+    @typing.overload
+    @staticmethod
+    def plus(receiver: Sequence[_plus_2__T], elements: Sequence[_plus_2__T], /) -> Sequence[_plus_2__T]: ...
+    @typing.overload
+    @staticmethod
+    def plus(receiver: Sequence[_plus_3__T], elements: java.chaquopy.JavaArray[_plus_3__T], /) -> Sequence[_plus_3__T]: ...
+    _reduce__S = typing.TypeVar('_reduce__S')  # <S>
+    _reduce__T = typing.TypeVar('_reduce__T')  # <T>
+    @staticmethod
+    def reduce(receiver: Sequence[_reduce__T], operation: kotlin.jvm.functions.Function2[_reduce__S, _reduce__T, _reduce__S], /) -> _reduce__S: ...
+    _reduceIndexed__S = typing.TypeVar('_reduceIndexed__S')  # <S>
+    _reduceIndexed__T = typing.TypeVar('_reduceIndexed__T')  # <T>
+    @staticmethod
+    def reduceIndexed(receiver: Sequence[_reduceIndexed__T], operation: kotlin.jvm.functions.Function3[int, _reduceIndexed__S, _reduceIndexed__T, _reduceIndexed__S], /) -> _reduceIndexed__S: ...
+    _requireNoNulls__T = typing.TypeVar('_requireNoNulls__T')  # <T>
+    @staticmethod
+    def requireNoNulls(receiver: Sequence[_requireNoNulls__T], /) -> Sequence[_requireNoNulls__T]: ...
+    _sequenceOf__T = typing.TypeVar('_sequenceOf__T')  # <T>
+    @staticmethod
+    def sequenceOf(*elements: _sequenceOf__T) -> Sequence[_sequenceOf__T]: ...
+    _single_0__T = typing.TypeVar('_single_0__T')  # <T>
+    _single_1__T = typing.TypeVar('_single_1__T')  # <T>
+    @typing.overload
+    @staticmethod
+    def single(receiver: Sequence[_single_0__T], /) -> _single_0__T: ...
+    @typing.overload
+    @staticmethod
+    def single(receiver: Sequence[_single_1__T], predicate: kotlin.jvm.functions.Function1[_single_1__T, java.lang.Boolean], /) -> _single_1__T: ...
+    _singleOrNull_0__T = typing.TypeVar('_singleOrNull_0__T')  # <T>
+    _singleOrNull_1__T = typing.TypeVar('_singleOrNull_1__T')  # <T>
+    @typing.overload
+    @staticmethod
+    def singleOrNull(receiver: Sequence[_singleOrNull_0__T], /) -> _singleOrNull_0__T: ...
+    @typing.overload
+    @staticmethod
+    def singleOrNull(receiver: Sequence[_singleOrNull_1__T], predicate: kotlin.jvm.functions.Function1[_singleOrNull_1__T, java.lang.Boolean], /) -> _singleOrNull_1__T: ...
+    _sorted__T = typing.TypeVar('_sorted__T')  # <T>
+    @staticmethod
+    def sorted(receiver: Sequence[_sorted__T], /) -> Sequence[_sorted__T]: ...
+    _sortedBy__T = typing.TypeVar('_sortedBy__T')  # <T>
+    @staticmethod
+    def sortedBy(receiver: Sequence[_sortedBy__T], selector: kotlin.jvm.functions.Function1[_sortedBy__T, java.lang.Object], /) -> Sequence[_sortedBy__T]: ...
+    _sortedByDescending__T = typing.TypeVar('_sortedByDescending__T')  # <T>
+    @staticmethod
+    def sortedByDescending(receiver: Sequence[_sortedByDescending__T], selector: kotlin.jvm.functions.Function1[_sortedByDescending__T, java.lang.Object], /) -> Sequence[_sortedByDescending__T]: ...
+    _sortedDescending__T = typing.TypeVar('_sortedDescending__T')  # <T>
+    @staticmethod
+    def sortedDescending(receiver: Sequence[_sortedDescending__T], /) -> Sequence[_sortedDescending__T]: ...
+    _sortedWith__T = typing.TypeVar('_sortedWith__T')  # <T>
+    @staticmethod
+    def sortedWith(receiver: Sequence[_sortedWith__T], comparator: java.util.Comparator[_sortedWith__T], /) -> Sequence[_sortedWith__T]: ...
+    _sumBy__T = typing.TypeVar('_sumBy__T')  # <T>
+    @staticmethod
+    def sumBy(receiver: Sequence[_sumBy__T], selector: kotlin.jvm.functions.Function1[_sumBy__T, java.lang.Integer], /) -> int: ...
+    _sumByDouble__T = typing.TypeVar('_sumByDouble__T')  # <T>
+    @staticmethod
+    def sumByDouble(receiver: Sequence[_sumByDouble__T], selector: kotlin.jvm.functions.Function1[_sumByDouble__T, java.lang.Double], /) -> float: ...
+    @staticmethod
+    def sumOfByte(receiver: Sequence[java.lang.Byte], /) -> int: ...
+    @staticmethod
+    def sumOfDouble(receiver: Sequence[java.lang.Double], /) -> float: ...
+    @staticmethod
+    def sumOfFloat(receiver: Sequence[java.lang.Float], /) -> float: ...
+    @staticmethod
+    def sumOfInt(receiver: Sequence[java.lang.Integer], /) -> int: ...
+    @staticmethod
+    def sumOfLong(receiver: Sequence[java.lang.Long], /) -> int: ...
+    @staticmethod
+    def sumOfShort(receiver: Sequence[java.lang.Short], /) -> int: ...
+    _take__T = typing.TypeVar('_take__T')  # <T>
+    @staticmethod
+    def take(receiver: Sequence[_take__T], n: int | java.jint | java.lang.Integer, /) -> Sequence[_take__T]: ...
+    _takeWhile__T = typing.TypeVar('_takeWhile__T')  # <T>
+    @staticmethod
+    def takeWhile(receiver: Sequence[_takeWhile__T], predicate: kotlin.jvm.functions.Function1[_takeWhile__T, java.lang.Boolean], /) -> Sequence[_takeWhile__T]: ...
+    _toCollection__C = typing.TypeVar('_toCollection__C')  # <C>
+    @staticmethod
+    def toCollection(receiver: Sequence[java.lang.Object], destination: _toCollection__C, /) -> _toCollection__C: ...
+    _toHashSet__T = typing.TypeVar('_toHashSet__T')  # <T>
+    @staticmethod
+    def toHashSet(receiver: Sequence[_toHashSet__T], /) -> java.util.HashSet[_toHashSet__T]: ...
+    _toList__T = typing.TypeVar('_toList__T')  # <T>
+    @staticmethod
+    def toList(receiver: Sequence[_toList__T], /) -> java.util.List[_toList__T]: ...
+    _toMutableList__T = typing.TypeVar('_toMutableList__T')  # <T>
+    @staticmethod
+    def toMutableList(receiver: Sequence[_toMutableList__T], /) -> java.util.List[_toMutableList__T]: ...
+    _toMutableSet__T = typing.TypeVar('_toMutableSet__T')  # <T>
+    @staticmethod
+    def toMutableSet(receiver: Sequence[_toMutableSet__T], /) -> java.util.Set[_toMutableSet__T]: ...
+    _toSet__T = typing.TypeVar('_toSet__T')  # <T>
+    @staticmethod
+    def toSet(receiver: Sequence[_toSet__T], /) -> java.util.Set[_toSet__T]: ...
+    _toSortedSet_0__T = typing.TypeVar('_toSortedSet_0__T')  # <T>
+    _toSortedSet_1__T = typing.TypeVar('_toSortedSet_1__T')  # <T>
+    @typing.overload
+    @staticmethod
+    def toSortedSet(receiver: Sequence[_toSortedSet_0__T], /) -> java.util.SortedSet[_toSortedSet_0__T]: ...
+    @typing.overload
+    @staticmethod
+    def toSortedSet(receiver: Sequence[_toSortedSet_1__T], comparator: java.util.Comparator[_toSortedSet_1__T], /) -> java.util.SortedSet[_toSortedSet_1__T]: ...
+    _unzip__T = typing.TypeVar('_unzip__T')  # <T>
+    _unzip__R = typing.TypeVar('_unzip__R')  # <R>
+    @staticmethod
+    def unzip(receiver: Sequence[kotlin.Pair[_unzip__T, _unzip__R]], /) -> kotlin.Pair[java.util.List[_unzip__T], java.util.List[_unzip__R]]: ...
+    _withIndex__T = typing.TypeVar('_withIndex__T')  # <T>
+    @staticmethod
+    def withIndex(receiver: Sequence[_withIndex__T], /) -> Sequence[kotlin.collections.IndexedValue[_withIndex__T]]: ...
+    _zip_0__T = typing.TypeVar('_zip_0__T')  # <T>
+    _zip_0__R = typing.TypeVar('_zip_0__R')  # <R>
+    _zip_1__T = typing.TypeVar('_zip_1__T')  # <T>
+    _zip_1__R = typing.TypeVar('_zip_1__R')  # <R>
+    _zip_1__V = typing.TypeVar('_zip_1__V')  # <V>
+    @typing.overload
+    @staticmethod
+    def zip(receiver: Sequence[_zip_0__T], other: Sequence[_zip_0__R], /) -> Sequence[kotlin.Pair[_zip_0__T, _zip_0__R]]: ...
+    @typing.overload
+    @staticmethod
+    def zip(receiver: Sequence[_zip_1__T], other: Sequence[_zip_1__R], transform: kotlin.jvm.functions.Function2[_zip_1__T, _zip_1__R, _zip_1__V], /) -> Sequence[_zip_1__V]: ...
+
+_TakeSequence__T = typing.TypeVar('_TakeSequence__T')  # <T>
+class TakeSequence(Sequence[_TakeSequence__T], typing.Generic[_TakeSequence__T]):
+    def __init__(self, sequence: Sequence[_TakeSequence__T], count: int | java.jint | java.lang.Integer, /) -> None: ...
+    def iterator(self) -> java.util.Iterator[_TakeSequence__T]: ...
+
+_TakeWhileSequence__T = typing.TypeVar('_TakeWhileSequence__T')  # <T>
+class TakeWhileSequence(Sequence[_TakeWhileSequence__T], typing.Generic[_TakeWhileSequence__T]):
+    def __init__(self, sequence: Sequence[_TakeWhileSequence__T], predicate: kotlin.jvm.functions.Function1[_TakeWhileSequence__T, java.lang.Boolean], /) -> None: ...
+    def iterator(self) -> java.util.Iterator[_TakeWhileSequence__T]: ...
+
+_TransformingIndexedSequence__T = typing.TypeVar('_TransformingIndexedSequence__T')  # <T>
+_TransformingIndexedSequence__R = typing.TypeVar('_TransformingIndexedSequence__R')  # <R>
+class TransformingIndexedSequence(Sequence[_TransformingIndexedSequence__R], typing.Generic[_TransformingIndexedSequence__T, _TransformingIndexedSequence__R]):
+    def __init__(self, sequence: Sequence[_TransformingIndexedSequence__T], transformer: kotlin.jvm.functions.Function2[int, _TransformingIndexedSequence__T, _TransformingIndexedSequence__R], /) -> None: ...
+    def iterator(self) -> java.util.Iterator[_TransformingIndexedSequence__R]: ...
+
+_TransformingSequence__T = typing.TypeVar('_TransformingSequence__T')  # <T>
+_TransformingSequence__R = typing.TypeVar('_TransformingSequence__R')  # <R>
+class TransformingSequence(Sequence[_TransformingSequence__R], typing.Generic[_TransformingSequence__T, _TransformingSequence__R]):
+    def __init__(self, sequence: Sequence[_TransformingSequence__T], transformer: kotlin.jvm.functions.Function1[_TransformingSequence__T, _TransformingSequence__R], /) -> None: ...
+    _flatten$kotlin_stdlib__E = typing.TypeVar('_flatten$kotlin_stdlib__E')  # <E>
+    def flatten$kotlin_stdlib(self, iterator: kotlin.jvm.functions.Function1[_TransformingSequence__R, java.util.Iterator[_flatten.kotlin_stdlib__E]], /) -> Sequence[_flatten.kotlin_stdlib__E]: ...
+    def iterator(self) -> java.util.Iterator[_TransformingSequence__R]: ...

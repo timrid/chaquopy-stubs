@@ -1,10 +1,9 @@
+import typing
+
 import java
 import java.lang
 import org.xml.sax
 import org.xmlpull.v1
-import typing
-
-
 
 class Driver(org.xml.sax.Attributes, org.xml.sax.Locator, org.xml.sax.XMLReader):
     APACHE_DYNAMIC_VALIDATION_FEATURE: typing.ClassVar[str] = ...

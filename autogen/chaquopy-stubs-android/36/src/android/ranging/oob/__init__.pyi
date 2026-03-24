@@ -1,3 +1,5 @@
+import typing
+
 import android.os
 import android.ranging
 import android.util
@@ -7,9 +9,6 @@ import java.lang
 import java.time
 import java.util
 import java.util.concurrent
-import typing
-
-
 
 class DeviceHandle(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[DeviceHandle]] = ...

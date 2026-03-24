@@ -1,10 +1,9 @@
+import typing
+
 import android.os
 import java
 import java.lang
 import java.util
-import typing
-
-
 
 class DocumentChangeInfo(java.lang.Object):
     def __init__(self, packageName: str | java.lang.String, database: str | java.lang.String, namespace: str | java.lang.String, schemaName: str | java.lang.String, changedDocumentIds: java.util.Set[java.lang.String], /) -> None: ...

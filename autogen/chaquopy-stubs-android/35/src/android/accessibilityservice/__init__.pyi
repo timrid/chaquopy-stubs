@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.bluetooth
 import android.content
@@ -15,9 +17,6 @@ import java.chaquopy
 import java.lang
 import java.util
 import java.util.concurrent
-import typing
-
-
 
 class AccessibilityButtonController(java.lang.Object):
     def isAccessibilityButtonAvailable(self) -> bool: ...

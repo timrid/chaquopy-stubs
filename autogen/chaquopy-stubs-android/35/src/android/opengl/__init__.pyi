@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.graphics
 import android.hardware
@@ -10,9 +12,6 @@ import java.lang
 import java.nio
 import javax.microedition.khronos.egl
 import javax.microedition.khronos.opengles
-import typing
-
-
 
 class EGL14(java.lang.Object):
     EGL_ALPHA_MASK_SIZE: typing.ClassVar[int] = ...

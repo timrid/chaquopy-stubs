@@ -1,12 +1,11 @@
+import typing
+
 import android.os
 import java
 import java.chaquopy
 import java.lang
 import java.time
 import java.util
-import typing
-
-
 
 class UwbAddress(android.os.Parcelable):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[UwbAddress]] = ...

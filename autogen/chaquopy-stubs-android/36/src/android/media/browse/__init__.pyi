@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.media
 import android.media.session
@@ -5,9 +7,6 @@ import android.os
 import java
 import java.lang
 import java.util
-import typing
-
-
 
 class MediaBrowser(java.lang.Object):
     EXTRA_PAGE: typing.ClassVar[str] = ...

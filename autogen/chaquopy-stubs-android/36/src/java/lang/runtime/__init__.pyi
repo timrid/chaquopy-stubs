@@ -1,8 +1,7 @@
-import java.lang
-import java.lang.invoke
 import typing
 
-
+import java.lang
+import java.lang.invoke
 
 class ObjectMethods(java.lang.Object):
     @staticmethod

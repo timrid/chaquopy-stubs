@@ -1,3 +1,5 @@
+import typing
+
 import android.content
 import android.content.res
 import android.graphics
@@ -15,9 +17,6 @@ import java
 import java.chaquopy
 import java.lang
 import java.lang.annotation
-import typing
-
-
 
 class AbsoluteCornerSize(CornerSize):
     def __init__(self, size: float | java.jfloat | java.lang.Float, /) -> None: ...

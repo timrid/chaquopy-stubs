@@ -1,10 +1,9 @@
+import typing
+
 import android.os
 import android.telephony
 import java
 import java.lang
-import typing
-
-
 
 class CdmaCellLocation(android.telephony.CellLocation):
     @typing.overload

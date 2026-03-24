@@ -1,11 +1,10 @@
+import typing
+
 import android.nfc
 import java
 import java.chaquopy
 import java.io
 import java.lang
-import typing
-
-
 
 class IsoDep(TagTechnology):
     def close(self) -> None: ...

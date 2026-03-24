@@ -1,12 +1,11 @@
+import typing
+
 import java
 import java.chaquopy
 import java.io
 import java.lang
 import java.util.function
 import java.util.stream
-import typing
-
-
 
 class MatchResult(java.lang.Object):
     @typing.overload

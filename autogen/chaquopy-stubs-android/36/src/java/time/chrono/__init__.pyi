@@ -1,3 +1,5 @@
+import typing
+
 import java
 import java.chaquopy
 import java.io
@@ -6,9 +8,6 @@ import java.time
 import java.time.format
 import java.time.temporal
 import java.util
-import typing
-
-
 
 class AbstractChronology(Chronology):
     def __init__(self) -> None: ...

@@ -1,3 +1,5 @@
+import typing
+
 import android.icu.math
 import android.icu.text
 import java
@@ -5,9 +7,6 @@ import java.chaquopy
 import java.io
 import java.lang
 import java.util
-import typing
-
-
 
 class BuddhistCalendar(GregorianCalendar):
     BE: typing.ClassVar[int] = ...

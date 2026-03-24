@@ -1,3 +1,5 @@
+import typing
+
 import android.net
 import android.os
 import java
@@ -5,9 +7,6 @@ import java.chaquopy
 import java.lang
 import java.net
 import java.util
-import typing
-
-
 
 class ApnSetting(android.os.Parcelable):
     AUTH_TYPE_CHAP: typing.ClassVar[int] = ...

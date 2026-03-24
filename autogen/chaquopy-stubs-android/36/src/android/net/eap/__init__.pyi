@@ -1,11 +1,10 @@
+import typing
+
 import android
 import java
 import java.chaquopy
 import java.lang
 import java.security.cert
-import typing
-
-
 
 class EapAkaInfo(EapInfo):
     def getReauthId(self) -> java.chaquopy.JavaArrayJByte | None: ...

@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.bluetooth
 import android.content
@@ -8,9 +10,6 @@ import java.io
 import java.lang
 import java.util
 import java.util.concurrent
-import typing
-
-
 
 class MidiDevice(java.io.Closeable):
     def close(self) -> None: ...

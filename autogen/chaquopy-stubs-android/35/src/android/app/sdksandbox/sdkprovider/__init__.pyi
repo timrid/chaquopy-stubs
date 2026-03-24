@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.app.sdksandbox
 import android.content
@@ -5,9 +7,6 @@ import android.os
 import java.lang
 import java.util
 import java.util.concurrent
-import typing
-
-
 
 class SdkSandboxActivityHandler(java.lang.Object):
     def onActivityCreated(self, arg1: android.app.Activity, /) -> None: ...

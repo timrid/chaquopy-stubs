@@ -1,3 +1,5 @@
+import typing
+
 import android.location
 import android.net
 import android.net.wifi
@@ -9,9 +11,6 @@ import java.chaquopy
 import java.lang
 import java.util
 import java.util.concurrent
-import typing
-
-
 
 class CivicLocationKeys(java.lang.Object):
     ADDITIONAL_CODE: typing.ClassVar[int] = ...

@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.content
 import android.content.pm
@@ -25,9 +27,6 @@ import java.security.cert
 import java.util
 import java.util.concurrent
 import java.util.function
-import typing
-
-
 
 class ClientCertRequest(java.lang.Object):
     def __init__(self) -> None: ...
@@ -213,7 +212,7 @@ class TracingConfig(java.lang.Object):
         @typing.overload
         def addCategories(self, categories: java.util.Collection[java.lang.String], /) -> TracingConfig.Builder: ...
         @typing.overload
-        def addCategories(self, *predefinedCategories: java.chaquopy.JavaArrayJInt) -> TracingConfig.Builder: ...
+        def addCategories(self, *predefinedCategories: java.jint) -> TracingConfig.Builder: ...
         @typing.overload
         def addCategories(self, *categories: java.lang.String) -> TracingConfig.Builder: ...
         def build(self) -> TracingConfig: ...

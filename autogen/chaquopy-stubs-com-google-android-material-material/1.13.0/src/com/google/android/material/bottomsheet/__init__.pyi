@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.content
 import android.os
@@ -17,9 +19,6 @@ import java.chaquopy
 import java.lang
 import java.lang.annotation
 import java.util
-import typing
-
-
 
 _BottomSheetBehavior__V = typing.TypeVar('_BottomSheetBehavior__V', bound=android.view.View)  # <V>
 class BottomSheetBehavior(androidx.coordinatorlayout.widget.CoordinatorLayout.Behavior[_BottomSheetBehavior__V], com.google.android.material.motion.MaterialBackHandler, typing.Generic[_BottomSheetBehavior__V]):

@@ -1,27 +1,26 @@
 from java.chaquopy import (
+    Override,
     cast,
+    constructor,
     detach,
+    dynamic_proxy,
     jarray,
     jclass,
-    set_import_enabled,
-    dynamic_proxy,
-    static_proxy,
-    constructor,
     method,
-    Override,
+    set_import_enabled,
+    static_proxy,
 )
 from java.primitive import (
-    jvoid,
     jboolean,
     jbyte,
-    jshort,
+    jchar,
+    jdouble,
+    jfloat,
     jint,
     jlong,
-    jfloat,
-    jdouble,
-    jchar,
+    jshort,
+    jvoid,
 )
-
 
 __all__ = [
     "cast",

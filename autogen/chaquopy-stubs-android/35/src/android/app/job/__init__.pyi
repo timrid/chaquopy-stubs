@@ -1,3 +1,5 @@
+import typing
+
 import android.app
 import android.content
 import android.net
@@ -6,9 +8,6 @@ import java
 import java.chaquopy
 import java.lang
 import java.util
-import typing
-
-
 
 class JobInfo(android.os.Parcelable):
     BACKOFF_POLICY_EXPONENTIAL: typing.ClassVar[int] = ...

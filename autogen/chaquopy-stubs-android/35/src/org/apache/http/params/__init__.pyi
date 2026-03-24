@@ -1,8 +1,7 @@
-import java
-import java.lang
 import typing
 
-
+import java
+import java.lang
 
 class CoreConnectionPNames(java.lang.Object):
     CONNECTION_TIMEOUT: typing.ClassVar[str] = ...
