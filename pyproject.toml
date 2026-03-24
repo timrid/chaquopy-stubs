@@ -6,7 +6,7 @@ authors = [
     { name = "Tim Riddermann" }
 ]
 dependencies = [
-    "chaquopy-stubgen==0.2.0",
+    "chaquopy-stubgen==0.2.1",
     "cookiecutter>=2.6",
     "lxml>=5.0",
     "requests>=2.32",

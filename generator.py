@@ -50,7 +50,8 @@ log = logging.getLogger(__name__)
 # ---------------------------------------------------------------------------
 
 ROOT_DIR = Path(__file__).parent
-CACHE_DIR = ROOT_DIR / ".cache" / "pom"
+CACHE_DIR_POM = ROOT_DIR / ".cache" / "pom"
+CACHE_DIR_STUBGEN = ROOT_DIR / ".cache" / "stubgen"
 AUTOGEN_DIR = ROOT_DIR / "autogen"
 TEMPLATE_DIR = ROOT_DIR / "template"
 
@@ -227,7 +228,7 @@ def fetch_pom(group_id: str, artifact_id: str, version: str) -> etree._Element |
     """Fetch and cache a POM from Maven Central or Google Maven."""
     group_path = group_id.replace(".", "/")
     pom_file = f"{artifact_id}-{version}.pom"
-    cache_path = CACHE_DIR / group_path / artifact_id / version / pom_file
+    cache_path = CACHE_DIR_POM / group_path / artifact_id / version / pom_file
 
     if cache_path.exists():
         log.debug("POM cache hit: %s:%s:%s", group_id, artifact_id, version)
@@ -460,6 +461,7 @@ def run_stubgen(coordinate: str, output_dir: Path) -> bool:
         "-m", "chaquopy_stubgen",
         coordinate,
         "--output-dir", str(output_dir),
+        "--cache-dir", str(CACHE_DIR_STUBGEN),
     ]
     log.debug("Running: %s", " ".join(cmd))
     result = subprocess.run(cmd, capture_output=True, text=True)
