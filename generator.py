@@ -559,7 +559,7 @@ def cmd_generate(args: argparse.Namespace) -> None:
                 try:
                     ok = future.result()
                 except Exception as e:
-                    log.error("Unexpected error for %s: %s", coord.name, e)
+                    log.error("Unexpected error for %s: %s", coord.name, e, exc_info=True)
                     ok = False
                 progress.advance(task)
                 if not ok:
