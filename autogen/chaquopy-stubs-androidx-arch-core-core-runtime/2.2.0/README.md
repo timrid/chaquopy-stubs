@@ -1,6 +1,6 @@
 # chaquopy-stubs-androidx-arch-core-core-runtime
 
-Python type stubs for [`androidx.arch.core:core-runtime:2.2.0`](https://mvnrepository.com/artifact/androidx.arch.core/core-runtime/2.2.0), generated with [chaquopy-stubgen](https://github.com/chaquo/chaquopy) `0.2.1`.
+Python type stubs for [`androidx.arch.core:core-runtime:2.2.0`](https://mvnrepository.com/artifact/androidx.arch.core/core-runtime/2.2.0), generated with [chaquopy-stubgen](https://github.com/chaquo/chaquopy) `0.2.2`.
 
 ## Usage
 

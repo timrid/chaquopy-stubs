@@ -8,7 +8,6 @@ import android.os
 import android.util
 import android.view
 import android.widget
-import androidx
 import androidx.appcompat.widget
 import androidx.core.internal.view
 import androidx.core.view
@@ -91,7 +90,7 @@ class ActionMenuItem(androidx.core.internal.view.SupportMenuItem):
     def setTooltipText(self, tooltipText: java.lang.CharSequence, /) -> androidx.core.internal.view.SupportMenuItem: ...
     def setVisible(self, visible: bool | java.jboolean | java.lang.Boolean, /) -> android.view.MenuItem: ...
 
-class ActionMenuItemView(androidx.appcompat.widget.AppCompatTextView, androidx.appcompat.view.menu.MenuView.ItemView, android.view.View.OnClickListener, androidx.appcompat.widget.ActionMenuView.ActionMenuChildView):
+class ActionMenuItemView(androidx.appcompat.widget.AppCompatTextView, MenuView.ItemView, android.view.View.OnClickListener, androidx.appcompat.widget.ActionMenuView.ActionMenuChildView):
     @typing.overload
     def __init__(self, context: android.content.Context, /) -> None: ...
     @typing.overload
@@ -185,7 +184,7 @@ class CascadingMenuPopup(MenuPopup, MenuPresenter, android.view.View.OnKeyListen
 
     class HorizPosition(java.lang.annotation.Annotation): ...
 
-class ExpandedMenuView(android.widget.ListView, androidx.appcompat.view.menu.MenuBuilder.ItemInvoker, MenuView, android.widget.AdapterView.OnItemClickListener):
+class ExpandedMenuView(android.widget.ListView, MenuBuilder.ItemInvoker, MenuView, android.widget.AdapterView.OnItemClickListener):
     @typing.overload
     def __init__(self, context: android.content.Context, attrs: android.util.AttributeSet, /) -> None: ...
     @typing.overload
@@ -196,7 +195,7 @@ class ExpandedMenuView(android.widget.ListView, androidx.appcompat.view.menu.Men
     def onDetachedFromWindow(self) -> None: ...
     def onItemClick(self, parent: android.widget.AdapterView, v: android.view.View, position: int | java.jint | java.lang.Integer, id: int | java.jlong | java.lang.Long, /) -> None: ...
 
-class ListMenuItemView(android.widget.LinearLayout, androidx.appcompat.view.menu.MenuView.ItemView, android.widget.AbsListView.SelectionBoundsAdjuster):
+class ListMenuItemView(android.widget.LinearLayout, MenuView.ItemView, android.widget.AbsListView.SelectionBoundsAdjuster):
     @typing.overload
     def __init__(self, context: android.content.Context, attrs: android.util.AttributeSet, /) -> None: ...
     @typing.overload
@@ -354,7 +353,7 @@ class MenuBuilder(androidx.core.internal.view.SupportMenu):
         def onMenuItemSelected(self, arg1: MenuBuilder, arg2: android.view.MenuItem, /) -> bool: ...
         def onMenuModeChange(self, arg1: MenuBuilder, /) -> None: ...
 
-class MenuDialogHelper(android.content.DialogInterface.OnKeyListener, android.content.DialogInterface.OnClickListener, android.content.DialogInterface.OnDismissListener, androidx.appcompat.view.menu.MenuPresenter.Callback):
+class MenuDialogHelper(android.content.DialogInterface.OnKeyListener, android.content.DialogInterface.OnClickListener, android.content.DialogInterface.OnDismissListener, MenuPresenter.Callback):
     def __init__(self, menu: MenuBuilder, /) -> None: ...
     def dismiss(self) -> None: ...
     def onClick(self, dialog: android.content.DialogInterface, which: int | java.jint | java.lang.Integer, /) -> None: ...

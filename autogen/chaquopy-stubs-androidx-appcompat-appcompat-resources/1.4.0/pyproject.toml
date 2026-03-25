@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "chaquopy-stubs-androidx-appcompat-appcompat-resources"
-version = "1.4.0.20260324"
+version = "1.4.0.20260325"
 description = "Python type stubs for androidx.appcompat:appcompat-resources:1.4.0 generated with chaquopy-stubgen"
 readme = {file = "README.md", content-type = "text/markdown"}
 license = "MIT"

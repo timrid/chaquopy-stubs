@@ -6,7 +6,6 @@ import android.graphics
 import android.graphics.drawable
 import android.os
 import android.util
-import androidx
 import androidx.core.provider
 import java
 import java.chaquopy
@@ -57,7 +56,7 @@ class FontResourcesParserCompat(java.lang.Object):
 
     class FamilyResourceEntry(java.lang.Object): ...
 
-    class ProviderResourceEntry(androidx.core.content.res.FontResourcesParserCompat.FamilyResourceEntry):
+    class ProviderResourceEntry(FontResourcesParserCompat.FamilyResourceEntry):
         @typing.overload
         def __init__(self, request: androidx.core.provider.FontRequest, strategy: int | java.jint | java.lang.Integer, timeoutMs: int | java.jint | java.lang.Integer, /) -> None: ...
         @typing.overload
@@ -76,7 +75,7 @@ class FontResourcesParserCompat(java.lang.Object):
         def getWeight(self) -> int: ...
         def isItalic(self) -> bool: ...
 
-    class FontFamilyFilesResourceEntry(androidx.core.content.res.FontResourcesParserCompat.FamilyResourceEntry):
+    class FontFamilyFilesResourceEntry(FontResourcesParserCompat.FamilyResourceEntry):
         def __init__(self, entries: java.chaquopy.JavaArray[FontResourcesParserCompat.FontFileResourceEntry], /) -> None: ...
         def getEntries(self) -> java.chaquopy.JavaArray[FontResourcesParserCompat.FontFileResourceEntry]: ...
 

@@ -11,7 +11,6 @@ import android.text
 import android.text.style
 import android.view
 import android.view.inputmethod
-import androidx
 import androidx.core.provider
 import androidx.emoji2.text.flatbuffer
 import androidx.startup
@@ -30,11 +29,11 @@ class DefaultEmojiCompatConfig(java.lang.Object):
     @staticmethod
     def create(context: android.content.Context, /) -> FontRequestEmojiCompatConfig: ...
 
-    class DefaultEmojiCompatConfigHelper_API28(androidx.emoji2.text.DefaultEmojiCompatConfig.DefaultEmojiCompatConfigHelper_API19):
+    class DefaultEmojiCompatConfigHelper_API28(DefaultEmojiCompatConfig.DefaultEmojiCompatConfigHelper_API19):
         def __init__(self) -> None: ...
         def getSigningSignatures(self, packageManager: android.content.pm.PackageManager, providerPackage: str | java.lang.String, /) -> java.chaquopy.JavaArray[android.content.pm.Signature]: ...
 
-    class DefaultEmojiCompatConfigHelper_API19(androidx.emoji2.text.DefaultEmojiCompatConfig.DefaultEmojiCompatConfigHelper):
+    class DefaultEmojiCompatConfigHelper_API19(DefaultEmojiCompatConfig.DefaultEmojiCompatConfigHelper):
         def __init__(self) -> None: ...
         def getProviderInfo(self, resolveInfo: android.content.pm.ResolveInfo, /) -> android.content.pm.ProviderInfo: ...
         def queryIntentContentProviders(self, packageManager: android.content.pm.PackageManager, intent: android.content.Intent, flags: int | java.jint | java.lang.Integer, /) -> java.util.List[android.content.pm.ResolveInfo]: ...
@@ -179,7 +178,7 @@ class EmojiMetadata(java.lang.Object):
 
 class EmojiProcessor(java.lang.Object):
 
-    class DefaultGlyphChecker(androidx.emoji2.text.EmojiCompat.GlyphChecker):
+    class DefaultGlyphChecker(EmojiCompat.GlyphChecker):
         def hasGlyph(self, charSequence: java.lang.CharSequence, start: int | java.jint | java.lang.Integer, end: int | java.jint | java.lang.Integer, sdkAdded: int | java.jint | java.lang.Integer, /) -> bool: ...
 
 class EmojiSpan(android.text.style.ReplacementSpan):
@@ -188,7 +187,7 @@ class EmojiSpan(android.text.style.ReplacementSpan):
     def getMetadata(self) -> EmojiMetadata: ...
     def getSize(self, paint: android.graphics.Paint, text: java.lang.CharSequence, start: int | java.jint | java.lang.Integer, end: int | java.jint | java.lang.Integer, fm: android.graphics.Paint.FontMetricsInt, /) -> int: ...
 
-class FontRequestEmojiCompatConfig(androidx.emoji2.text.EmojiCompat.Config):
+class FontRequestEmojiCompatConfig(EmojiCompat.Config):
     @typing.overload
     def __init__(self, context: android.content.Context, request: androidx.core.provider.FontRequest, /) -> None: ...
     @typing.overload
@@ -204,7 +203,7 @@ class FontRequestEmojiCompatConfig(androidx.emoji2.text.EmojiCompat.Config):
         def registerObserver(self, context: android.content.Context, uri: android.net.Uri, observer: android.database.ContentObserver, /) -> None: ...
         def unregisterObserver(self, context: android.content.Context, observer: android.database.ContentObserver, /) -> None: ...
 
-    class ExponentialBackoffRetryPolicy(androidx.emoji2.text.FontRequestEmojiCompatConfig.RetryPolicy):
+    class ExponentialBackoffRetryPolicy(FontRequestEmojiCompatConfig.RetryPolicy):
         def __init__(self, totalMs: int | java.jlong | java.lang.Long, /) -> None: ...
         def getRetryDelay(self) -> int: ...
 

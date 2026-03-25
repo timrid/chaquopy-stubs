@@ -256,9 +256,6 @@ class FlowKt(java.lang.Object):
     _debounce__T = typing.TypeVar('_debounce__T')  # <T>
     @staticmethod
     def debounce(this_debounce: Flow[_debounce__T], timeoutMillis: int | java.jlong | java.lang.Long, /) -> Flow[_debounce__T]: ...
-    _debounce-8GFy2Ro__T = typing.TypeVar('_debounce-8GFy2Ro__T')  # <T>
-    @staticmethod
-    def debounce-8GFy2Ro(this_debounce: Flow[_debounce-8GFy2Ro__T], timeout: float | java.jdouble | java.lang.Double, /) -> Flow[_debounce-8GFy2Ro__T]: ...
     _delayEach__T = typing.TypeVar('_delayEach__T')  # <T>
     @staticmethod
     def delayEach(this_delayEach: Flow[_delayEach__T], timeMillis: int | java.jlong | java.lang.Long, /) -> Flow[_delayEach__T]: ...
@@ -469,9 +466,6 @@ class FlowKt(java.lang.Object):
     _sample__T = typing.TypeVar('_sample__T')  # <T>
     @staticmethod
     def sample(this_sample: Flow[_sample__T], periodMillis: int | java.jlong | java.lang.Long, /) -> Flow[_sample__T]: ...
-    _sample-8GFy2Ro__T = typing.TypeVar('_sample-8GFy2Ro__T')  # <T>
-    @staticmethod
-    def sample-8GFy2Ro(this_sample: Flow[_sample-8GFy2Ro__T], period: float | java.jdouble | java.lang.Double, /) -> Flow[_sample-8GFy2Ro__T]: ...
     _scan__T = typing.TypeVar('_scan__T')  # <T>
     _scan__R = typing.TypeVar('_scan__R')  # <R>
     @staticmethod

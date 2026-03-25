@@ -17,9 +17,6 @@ class OnTimeoutKt(java.lang.Object):
     _onTimeout__R = typing.TypeVar('_onTimeout__R')  # <R>
     @staticmethod
     def onTimeout(this_onTimeout: SelectBuilder[_onTimeout__R], timeMillis: int | java.jlong | java.lang.Long, block: kotlin.jvm.functions.Function1[kotlin.coroutines.Continuation[_onTimeout__R], java.lang.Object], /) -> None: ...
-    _onTimeout-8Mi8wO0__R = typing.TypeVar('_onTimeout-8Mi8wO0__R')  # <R>
-    @staticmethod
-    def onTimeout-8Mi8wO0(this_onTimeout_u2d8Mi8wO0: SelectBuilder[_onTimeout-8Mi8wO0__R], timeout: int | java.jlong | java.lang.Long, block: kotlin.jvm.functions.Function1[kotlin.coroutines.Continuation[_onTimeout-8Mi8wO0__R], java.lang.Object], /) -> None: ...
 
 _SelectBuilder__R = typing.TypeVar('_SelectBuilder__R')  # <R>
 class SelectBuilder(java.lang.Object, typing.Generic[_SelectBuilder__R]):

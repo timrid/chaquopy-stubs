@@ -9,7 +9,6 @@ import android.util
 import android.view
 import android.view.accessibility
 import android.widget
-import androidx
 import androidx.customview.view
 import java
 import java.lang
@@ -188,7 +187,7 @@ class ViewPager(android.view.ViewGroup):
 
     class DecorView(java.lang.annotation.Annotation): ...
 
-    class SimpleOnPageChangeListener(androidx.viewpager.widget.ViewPager.OnPageChangeListener):
+    class SimpleOnPageChangeListener(ViewPager.OnPageChangeListener):
         def __init__(self) -> None: ...
         def onPageScrollStateChanged(self, state: int | java.jint | java.lang.Integer, /) -> None: ...
         def onPageScrolled(self, position: int | java.jint | java.lang.Integer, positionOffset: float | java.jfloat | java.lang.Float, positionOffsetPixels: int | java.jint | java.lang.Integer, /) -> None: ...

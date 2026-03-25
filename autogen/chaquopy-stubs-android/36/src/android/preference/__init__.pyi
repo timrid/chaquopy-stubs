@@ -1,6 +1,5 @@
 import typing
 
-import android
 import android.app
 import android.content
 import android.content.res
@@ -26,7 +25,7 @@ class CheckBoxPreference(TwoStatePreference):
     def __init__(self, context: android.content.Context, attrs: android.util.AttributeSet, defStyleAttr: int | java.jint | java.lang.Integer, defStyleRes: int | java.jint | java.lang.Integer, /) -> None: ...
     def onBindView(self, view: android.view.View, /) -> None: ...
 
-class DialogPreference(Preference, android.content.DialogInterface.OnClickListener, android.content.DialogInterface.OnDismissListener, android.preference.PreferenceManager.OnActivityDestroyListener):
+class DialogPreference(Preference, android.content.DialogInterface.OnClickListener, android.content.DialogInterface.OnDismissListener, PreferenceManager.OnActivityDestroyListener):
     @typing.overload
     def __init__(self, context: android.content.Context, /) -> None: ...
     @typing.overload
@@ -280,7 +279,7 @@ class Preference(java.lang.Comparable[Preference]):
         @typing.overload
         def __init__(self, superState: android.os.Parcelable, /) -> None: ...
 
-class PreferenceActivity(android.app.ListActivity, android.preference.PreferenceFragment.OnPreferenceStartFragmentCallback):
+class PreferenceActivity(android.app.ListActivity, PreferenceFragment.OnPreferenceStartFragmentCallback):
     EXTRA_NO_HEADERS: typing.ClassVar[str] = ...
     EXTRA_SHOW_FRAGMENT: typing.ClassVar[str] = ...
     EXTRA_SHOW_FRAGMENT_ARGUMENTS: typing.ClassVar[str] = ...
@@ -481,7 +480,7 @@ class PreferenceScreen(PreferenceGroup, android.widget.AdapterView.OnItemClickLi
     def onRestoreInstanceState(self, state: android.os.Parcelable, /) -> None: ...
     def onSaveInstanceState(self) -> android.os.Parcelable: ...
 
-class RingtonePreference(Preference, android.preference.PreferenceManager.OnActivityResultListener):
+class RingtonePreference(Preference, PreferenceManager.OnActivityResultListener):
     @typing.overload
     def __init__(self, context: android.content.Context, /) -> None: ...
     @typing.overload

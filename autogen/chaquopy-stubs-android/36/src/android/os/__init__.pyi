@@ -1,6 +1,5 @@
 import typing
 
-import android
 import android.content
 import android.icu.util
 import android.media
@@ -1537,7 +1536,7 @@ class Parcelable(java.lang.Object):
     class Creator(java.lang.Object, typing.Generic[_Parcelable__Creator__T]):
         def createFromParcel(self, arg1: Parcel, /) -> _Parcelable__Creator__T: ...
         def newArray(self, arg1: int | java.jint | java.lang.Integer, /) -> java.chaquopy.JavaArray[_Parcelable__Creator__T]: ...
-    class ClassLoaderCreator(android.os.Parcelable.Creator[_Parcelable__ClassLoaderCreator__T], typing.Generic[_Parcelable__ClassLoaderCreator__T]):
+    class ClassLoaderCreator(Parcelable.Creator[_Parcelable__ClassLoaderCreator__T], typing.Generic[_Parcelable__ClassLoaderCreator__T]):
         def createFromParcel(self, arg1: Parcel, arg2: java.lang.ClassLoader, /) -> _Parcelable__ClassLoaderCreator__T: ...
 
 class PatternMatcher(Parcelable):

@@ -5,7 +5,6 @@ import android.graphics
 import android.os
 import android.view
 import android.view.accessibility
-import androidx
 import java
 import java.lang
 import java.util
@@ -77,7 +76,7 @@ class AccessibilityManagerCompat(java.lang.Object):
     class AccessibilityStateChangeListener(java.lang.Object):
         def onAccessibilityStateChanged(self, arg1: bool | java.jboolean | java.lang.Boolean, /) -> None: ...
 
-    class AccessibilityStateChangeListenerCompat(androidx.core.view.accessibility.AccessibilityManagerCompat.AccessibilityStateChangeListener):
+    class AccessibilityStateChangeListenerCompat(AccessibilityManagerCompat.AccessibilityStateChangeListener):
         def __init__(self) -> None: ...
 
 class AccessibilityNodeInfoCompat(java.lang.Object):

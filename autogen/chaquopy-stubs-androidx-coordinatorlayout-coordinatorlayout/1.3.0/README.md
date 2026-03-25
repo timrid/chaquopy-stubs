@@ -1,6 +1,6 @@
 # chaquopy-stubs-androidx-coordinatorlayout-coordinatorlayout
 
-Python type stubs for [`androidx.coordinatorlayout:coordinatorlayout:1.3.0`](https://mvnrepository.com/artifact/androidx.coordinatorlayout/coordinatorlayout/1.3.0), generated with [chaquopy-stubgen](https://github.com/chaquo/chaquopy) `0.2.1`.
+Python type stubs for [`androidx.coordinatorlayout:coordinatorlayout:1.3.0`](https://mvnrepository.com/artifact/androidx.coordinatorlayout/coordinatorlayout/1.3.0), generated with [chaquopy-stubgen](https://github.com/chaquo/chaquopy) `0.2.2`.
 
 ## Usage
 

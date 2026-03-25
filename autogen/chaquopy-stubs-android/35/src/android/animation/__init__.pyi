@@ -1,6 +1,5 @@
 import typing
 
-import android
 import android.content
 import android.graphics
 import android.util
@@ -62,7 +61,7 @@ class AnimatorInflater(java.lang.Object):
     @staticmethod
     def loadStateListAnimator(context: android.content.Context, id: int | java.jint | java.lang.Integer, /) -> StateListAnimator: ...
 
-class AnimatorListenerAdapter(android.animation.Animator.AnimatorListener, android.animation.Animator.AnimatorPauseListener):
+class AnimatorListenerAdapter(Animator.AnimatorListener, Animator.AnimatorPauseListener):
     def __init__(self) -> None: ...
     def onAnimationCancel(self, animation: Animator, /) -> None: ...
     def onAnimationEnd(self, animation: Animator, /) -> None: ...

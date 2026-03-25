@@ -10,7 +10,6 @@ import android.util
 import android.view
 import android.view.animation
 import android.widget
-import androidx
 import androidx.activity
 import androidx.collection
 import androidx.core.app
@@ -25,7 +24,7 @@ import java.lang
 import java.util
 import java.util.concurrent
 
-class BackStackRecord(FragmentTransaction, androidx.fragment.app.FragmentManager.BackStackEntry, androidx.fragment.app.FragmentManagerImpl.OpGenerator):
+class BackStackRecord(FragmentTransaction, FragmentManager.BackStackEntry, FragmentManagerImpl.OpGenerator):
     def __init__(self, manager: FragmentManagerImpl, /) -> None: ...
     def commit(self) -> int: ...
     def commitAllowingStateLoss(self) -> int: ...

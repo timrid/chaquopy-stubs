@@ -1,6 +1,6 @@
 # chaquopy-stubs-org-jetbrains-kotlinx-kotlinx-coroutines-core-jvm
 
-Python type stubs for [`org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.4.3`](https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.4.3), generated with [chaquopy-stubgen](https://github.com/chaquo/chaquopy) `0.2.1`.
+Python type stubs for [`org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.4.3`](https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.4.3), generated with [chaquopy-stubgen](https://github.com/chaquo/chaquopy) `0.2.2`.
 
 ## Usage
 

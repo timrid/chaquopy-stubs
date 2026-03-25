@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "chaquopy-stubs-org-jetbrains-kotlinx-kotlinx-coroutines-core-jvm"
-version = "1.7.2.20260324"
+version = "1.7.2.20260325"
 description = "Python type stubs for org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.7.2 generated with chaquopy-stubgen"
 readme = {file = "README.md", content-type = "text/markdown"}
 license = "MIT"

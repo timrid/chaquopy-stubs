@@ -1,6 +1,6 @@
 # chaquopy-stubs-androidx-lifecycle-lifecycle-process
 
-Python type stubs for [`androidx.lifecycle:lifecycle-process:2.8.4`](https://mvnrepository.com/artifact/androidx.lifecycle/lifecycle-process/2.8.4), generated with [chaquopy-stubgen](https://github.com/chaquo/chaquopy) `0.2.1`.
+Python type stubs for [`androidx.lifecycle:lifecycle-process:2.8.4`](https://mvnrepository.com/artifact/androidx.lifecycle/lifecycle-process/2.8.4), generated with [chaquopy-stubgen](https://github.com/chaquo/chaquopy) `0.2.2`.
 
 ## Usage
 

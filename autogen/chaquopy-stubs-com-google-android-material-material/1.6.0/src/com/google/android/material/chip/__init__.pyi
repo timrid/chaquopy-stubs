@@ -11,7 +11,6 @@ import android.view.accessibility
 import android.widget
 import androidx.appcompat.widget
 import androidx.core.graphics.drawable
-import com
 import com.google.android.material.animation
 import com.google.android.material.internal
 import com.google.android.material.resources
@@ -21,7 +20,7 @@ import java.chaquopy
 import java.lang
 import java.util
 
-class Chip(androidx.appcompat.widget.AppCompatCheckBox, com.google.android.material.chip.ChipDrawable.Delegate, com.google.android.material.shape.Shapeable, com.google.android.material.internal.MaterialCheckable[Chip]):
+class Chip(androidx.appcompat.widget.AppCompatCheckBox, ChipDrawable.Delegate, com.google.android.material.shape.Shapeable, com.google.android.material.internal.MaterialCheckable[Chip]):
     @typing.overload
     def __init__(self, context: android.content.Context, /) -> None: ...
     @typing.overload

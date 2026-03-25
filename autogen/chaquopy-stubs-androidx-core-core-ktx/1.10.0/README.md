@@ -1,6 +1,6 @@
 # chaquopy-stubs-androidx-core-core-ktx
 
-Python type stubs for [`androidx.core:core-ktx:1.10.0`](https://mvnrepository.com/artifact/androidx.core/core-ktx/1.10.0), generated with [chaquopy-stubgen](https://github.com/chaquo/chaquopy) `0.2.1`.
+Python type stubs for [`androidx.core:core-ktx:1.10.0`](https://mvnrepository.com/artifact/androidx.core/core-ktx/1.10.0), generated with [chaquopy-stubgen](https://github.com/chaquo/chaquopy) `0.2.2`.
 
 ## Usage
 

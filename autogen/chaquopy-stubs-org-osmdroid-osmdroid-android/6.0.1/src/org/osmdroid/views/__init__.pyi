@@ -11,7 +11,6 @@ import java
 import java.lang
 import java.util
 import java.util.concurrent.atomic
-import org
 import org.metalev.multitouch.controller
 import org.osmdroid.api
 import org.osmdroid.events
@@ -20,7 +19,7 @@ import org.osmdroid.tileprovider.tilesource
 import org.osmdroid.util
 import org.osmdroid.views.overlay
 
-class MapController(org.osmdroid.api.IMapController, org.osmdroid.views.MapView.OnFirstLayoutListener):
+class MapController(org.osmdroid.api.IMapController, MapView.OnFirstLayoutListener):
     mMapView: MapView = ...
     def __init__(self, mapView: MapView, /) -> None: ...
     @typing.overload

@@ -10,7 +10,6 @@ import java
 import java.chaquopy
 import java.lang
 import java.util
-import org
 import org.metalev.multitouch.controller
 import org.osmdroid
 import org.osmdroid.api
@@ -55,19 +54,19 @@ class MapController(org.osmdroid.api.IMapController, org.osmdroid.views.util.con
     @typing.overload
     def zoomToSpan(self, reqLatSpan: int | java.jint | java.lang.Integer, reqLonSpan: int | java.jint | java.lang.Integer, /) -> None: ...
 
-    class MiddlePeakSpeedAnimationRunner(org.osmdroid.views.MapController.CosinusalBasedAnimationRunner, org.osmdroid.views.util.constants.MathConstants):
+    class MiddlePeakSpeedAnimationRunner(MapController.CosinusalBasedAnimationRunner, org.osmdroid.views.util.constants.MathConstants):
         @typing.overload
         def __init__(self, arg1: MapController, aTargetLatitudeE6: int | java.jint | java.lang.Integer, aTargetLongitudeE6: int | java.jint | java.lang.Integer, /) -> None: ...
         @typing.overload
         def __init__(self, arg1: MapController, aTargetLatitudeE6: int | java.jint | java.lang.Integer, aTargetLongitudeE6: int | java.jint | java.lang.Integer, aSmoothness: int | java.jint | java.lang.Integer, aDuration: int | java.jint | java.lang.Integer, /) -> None: ...
 
-    class HalfCosinusalDeceleratingAnimationRunner(org.osmdroid.views.MapController.CosinusalBasedAnimationRunner, org.osmdroid.views.util.constants.MathConstants):
+    class HalfCosinusalDeceleratingAnimationRunner(MapController.CosinusalBasedAnimationRunner, org.osmdroid.views.util.constants.MathConstants):
         @typing.overload
         def __init__(self, arg1: MapController, aTargetLatitudeE6: int | java.jint | java.lang.Integer, aTargetLongitudeE6: int | java.jint | java.lang.Integer, /) -> None: ...
         @typing.overload
         def __init__(self, arg1: MapController, aTargetLatitudeE6: int | java.jint | java.lang.Integer, aTargetLongitudeE6: int | java.jint | java.lang.Integer, aSmoothness: int | java.jint | java.lang.Integer, aDuration: int | java.jint | java.lang.Integer, /) -> None: ...
 
-    class QuarterCosinusalDeceleratingAnimationRunner(org.osmdroid.views.MapController.CosinusalBasedAnimationRunner, org.osmdroid.views.util.constants.MathConstants):
+    class QuarterCosinusalDeceleratingAnimationRunner(MapController.CosinusalBasedAnimationRunner, org.osmdroid.views.util.constants.MathConstants):
         @typing.overload
         def __init__(self, arg1: MapController, aTargetLatitudeE6: int | java.jint | java.lang.Integer, aTargetLongitudeE6: int | java.jint | java.lang.Integer, /) -> None: ...
         @typing.overload

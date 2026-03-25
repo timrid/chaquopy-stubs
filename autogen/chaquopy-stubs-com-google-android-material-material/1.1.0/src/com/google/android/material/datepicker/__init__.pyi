@@ -11,7 +11,6 @@ import android.widget
 import androidx.core.util
 import androidx.fragment.app
 import androidx.recyclerview.widget
-import com
 import java
 import java.lang
 import java.util
@@ -59,7 +58,7 @@ class DateSelector(android.os.Parcelable, typing.Generic[_DateSelector__S]):
 
 class DateStrings(java.lang.Object): ...
 
-class DateValidatorPointForward(com.google.android.material.datepicker.CalendarConstraints.DateValidator):
+class DateValidatorPointForward(CalendarConstraints.DateValidator):
     CREATOR: typing.ClassVar[android.os.Parcelable.Creator[DateValidatorPointForward]] = ...
     def describeContents(self) -> int: ...
     def equals(self, o: java.lang.Object | int | bool | float | str, /) -> bool: ...

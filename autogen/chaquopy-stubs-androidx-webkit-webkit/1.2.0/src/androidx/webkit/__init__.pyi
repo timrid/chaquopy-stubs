@@ -5,7 +5,6 @@ import android.content.pm
 import android.net
 import android.os
 import android.webkit
-import androidx
 import java
 import java.chaquopy
 import java.io
@@ -215,15 +214,15 @@ class WebViewAssetLoader(java.lang.Object):
         def setDomain(self, domain: str | java.lang.String, /) -> WebViewAssetLoader.Builder: ...
         def setHttpAllowed(self, httpAllowed: bool | java.jboolean | java.lang.Boolean, /) -> WebViewAssetLoader.Builder: ...
 
-    class InternalStoragePathHandler(androidx.webkit.WebViewAssetLoader.PathHandler):
+    class InternalStoragePathHandler(WebViewAssetLoader.PathHandler):
         def __init__(self, context: android.content.Context, directory: java.io.File, /) -> None: ...
         def handle(self, path: str | java.lang.String, /) -> android.webkit.WebResourceResponse: ...
 
-    class ResourcesPathHandler(androidx.webkit.WebViewAssetLoader.PathHandler):
+    class ResourcesPathHandler(WebViewAssetLoader.PathHandler):
         def __init__(self, context: android.content.Context, /) -> None: ...
         def handle(self, path: str | java.lang.String, /) -> android.webkit.WebResourceResponse: ...
 
-    class AssetsPathHandler(androidx.webkit.WebViewAssetLoader.PathHandler):
+    class AssetsPathHandler(WebViewAssetLoader.PathHandler):
         def __init__(self, context: android.content.Context, /) -> None: ...
         def handle(self, path: str | java.lang.String, /) -> android.webkit.WebResourceResponse: ...
 

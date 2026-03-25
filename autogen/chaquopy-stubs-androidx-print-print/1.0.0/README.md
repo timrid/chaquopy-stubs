@@ -1,6 +1,6 @@
 # chaquopy-stubs-androidx-print-print
 
-Python type stubs for [`androidx.print:print:1.0.0`](https://mvnrepository.com/artifact/androidx.print/print/1.0.0), generated with [chaquopy-stubgen](https://github.com/chaquo/chaquopy) `0.2.1`.
+Python type stubs for [`androidx.print:print:1.0.0`](https://mvnrepository.com/artifact/androidx.print/print/1.0.0), generated with [chaquopy-stubgen](https://github.com/chaquo/chaquopy) `0.2.2`.
 
 ## Usage
 

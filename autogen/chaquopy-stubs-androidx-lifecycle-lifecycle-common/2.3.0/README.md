@@ -1,6 +1,6 @@
 # chaquopy-stubs-androidx-lifecycle-lifecycle-common
 
-Python type stubs for [`androidx.lifecycle:lifecycle-common:2.3.0`](https://mvnrepository.com/artifact/androidx.lifecycle/lifecycle-common/2.3.0), generated with [chaquopy-stubgen](https://github.com/chaquo/chaquopy) `0.2.1`.
+Python type stubs for [`androidx.lifecycle:lifecycle-common:2.3.0`](https://mvnrepository.com/artifact/androidx.lifecycle/lifecycle-common/2.3.0), generated with [chaquopy-stubgen](https://github.com/chaquo/chaquopy) `0.2.2`.
 
 ## Usage
 

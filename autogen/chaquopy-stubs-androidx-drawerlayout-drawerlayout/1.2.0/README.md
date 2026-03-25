@@ -1,6 +1,6 @@
 # chaquopy-stubs-androidx-drawerlayout-drawerlayout
 
-Python type stubs for [`androidx.drawerlayout:drawerlayout:1.2.0`](https://mvnrepository.com/artifact/androidx.drawerlayout/drawerlayout/1.2.0), generated with [chaquopy-stubgen](https://github.com/chaquo/chaquopy) `0.2.1`.
+Python type stubs for [`androidx.drawerlayout:drawerlayout:1.2.0`](https://mvnrepository.com/artifact/androidx.drawerlayout/drawerlayout/1.2.0), generated with [chaquopy-stubgen](https://github.com/chaquo/chaquopy) `0.2.2`.
 
 ## Usage
 

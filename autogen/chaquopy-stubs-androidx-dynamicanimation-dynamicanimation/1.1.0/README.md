@@ -1,6 +1,6 @@
 # chaquopy-stubs-androidx-dynamicanimation-dynamicanimation
 
-Python type stubs for [`androidx.dynamicanimation:dynamicanimation:1.1.0`](https://mvnrepository.com/artifact/androidx.dynamicanimation/dynamicanimation/1.1.0), generated with [chaquopy-stubgen](https://github.com/chaquo/chaquopy) `0.2.1`.
+Python type stubs for [`androidx.dynamicanimation:dynamicanimation:1.1.0`](https://mvnrepository.com/artifact/androidx.dynamicanimation/dynamicanimation/1.1.0), generated with [chaquopy-stubgen](https://github.com/chaquo/chaquopy) `0.2.2`.
 
 ## Usage
 

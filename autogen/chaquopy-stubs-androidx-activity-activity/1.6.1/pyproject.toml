@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "chaquopy-stubs-androidx-activity-activity"
-version = "1.6.1.20260324"
+version = "1.6.1.20260325"
 description = "Python type stubs for androidx.activity:activity:1.6.1 generated with chaquopy-stubgen"
 readme = {file = "README.md", content-type = "text/markdown"}
 license = "MIT"

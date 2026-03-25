@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "chaquopy-stubs-org-jetbrains-kotlin-kotlin-stdlib"
-version = "2.3.10.20260324"
+version = "2.3.10.20260325"
 description = "Python type stubs for org.jetbrains.kotlin:kotlin-stdlib:2.3.10 generated with chaquopy-stubgen"
 readme = {file = "README.md", content-type = "text/markdown"}
 license = "MIT"

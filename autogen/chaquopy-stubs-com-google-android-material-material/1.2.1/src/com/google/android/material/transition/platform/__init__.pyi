@@ -7,7 +7,6 @@ import android.graphics
 import android.os
 import android.transition
 import android.view
-import com
 import com.google.android.material.shape
 import java
 import java.chaquopy
@@ -143,7 +142,7 @@ class MaterialContainerTransformSharedElementCallback(android.app.SharedElementC
     def setSharedElementReenterTransitionEnabled(self, sharedElementReenterTransitionEnabled: bool | java.jboolean | java.lang.Boolean, /) -> None: ...
     def setTransparentWindowBackgroundEnabled(self, transparentWindowBackgroundEnabled: bool | java.jboolean | java.lang.Boolean, /) -> None: ...
 
-    class ShapeableViewShapeProvider(com.google.android.material.transition.platform.MaterialContainerTransformSharedElementCallback.ShapeProvider):
+    class ShapeableViewShapeProvider(MaterialContainerTransformSharedElementCallback.ShapeProvider):
         def __init__(self) -> None: ...
         def provideShape(self, sharedElement: android.view.View, /) -> com.google.android.material.shape.ShapeAppearanceModel: ...
 

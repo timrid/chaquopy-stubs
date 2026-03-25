@@ -1,6 +1,5 @@
 import typing
 
-import androidx
 import java
 import java.chaquopy
 import java.io
@@ -78,11 +77,11 @@ _Pools__SimplePool__T = typing.TypeVar('_Pools__SimplePool__T')  # <T>
 
 _Pools__Pool__T = typing.TypeVar('_Pools__Pool__T')  # <T>
 class Pools(java.lang.Object):
-    class SynchronizedPool(androidx.core.util.Pools.SimplePool[_Pools__SynchronizedPool__T], typing.Generic[_Pools__SynchronizedPool__T]):
+    class SynchronizedPool(Pools.SimplePool[_Pools__SynchronizedPool__T], typing.Generic[_Pools__SynchronizedPool__T]):
         def __init__(self, maxPoolSize: int | java.jint | java.lang.Integer, /) -> None: ...
         def acquire(self) -> _Pools__SynchronizedPool__T: ...
         def release(self, instance: _Pools__SynchronizedPool__T, /) -> bool: ...
-    class SimplePool(androidx.core.util.Pools.Pool[_Pools__SimplePool__T], typing.Generic[_Pools__SimplePool__T]):
+    class SimplePool(Pools.Pool[_Pools__SimplePool__T], typing.Generic[_Pools__SimplePool__T]):
         def __init__(self, maxPoolSize: int | java.jint | java.lang.Integer, /) -> None: ...
         def acquire(self) -> _Pools__SimplePool__T: ...
         def release(self, instance: _Pools__SimplePool__T, /) -> bool: ...

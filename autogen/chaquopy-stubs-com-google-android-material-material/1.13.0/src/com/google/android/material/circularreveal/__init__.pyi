@@ -6,7 +6,6 @@ import android.graphics
 import android.graphics.drawable
 import android.util
 import android.widget
-import com
 import java
 import java.lang
 import java.lang.annotation
@@ -116,7 +115,7 @@ class CircularRevealRelativeLayout(android.widget.RelativeLayout, CircularReveal
     def setCircularRevealScrimColor(self, color: int | java.jint | java.lang.Integer, /) -> None: ...
     def setRevealInfo(self, revealInfo: CircularRevealWidget.RevealInfo, /) -> None: ...
 
-class CircularRevealWidget(com.google.android.material.circularreveal.CircularRevealHelper.Delegate):
+class CircularRevealWidget(CircularRevealHelper.Delegate):
     def buildCircularRevealCache(self) -> None: ...
     def destroyCircularRevealCache(self) -> None: ...
     def draw(self, arg1: android.graphics.Canvas, /) -> None: ...

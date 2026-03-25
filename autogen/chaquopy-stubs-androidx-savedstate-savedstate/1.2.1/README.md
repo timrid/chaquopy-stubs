@@ -1,6 +1,6 @@
 # chaquopy-stubs-androidx-savedstate-savedstate
 
-Python type stubs for [`androidx.savedstate:savedstate:1.2.1`](https://mvnrepository.com/artifact/androidx.savedstate/savedstate/1.2.1), generated with [chaquopy-stubgen](https://github.com/chaquo/chaquopy) `0.2.1`.
+Python type stubs for [`androidx.savedstate:savedstate:1.2.1`](https://mvnrepository.com/artifact/androidx.savedstate/savedstate/1.2.1), generated with [chaquopy-stubgen](https://github.com/chaquo/chaquopy) `0.2.2`.
 
 ## Usage
 

@@ -10,7 +10,6 @@ import android.view
 import android.widget
 import androidx.appcompat.widget
 import androidx.core.graphics.drawable
-import com
 import com.google.android.material.animation
 import com.google.android.material.internal
 import com.google.android.material.resources
@@ -18,7 +17,7 @@ import java
 import java.chaquopy
 import java.lang
 
-class Chip(androidx.appcompat.widget.AppCompatCheckBox, com.google.android.material.chip.ChipDrawable.Delegate):
+class Chip(androidx.appcompat.widget.AppCompatCheckBox, ChipDrawable.Delegate):
     @typing.overload
     def __init__(self, context: android.content.Context, /) -> None: ...
     @typing.overload

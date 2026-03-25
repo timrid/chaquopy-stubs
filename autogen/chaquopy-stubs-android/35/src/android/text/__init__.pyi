@@ -1,6 +1,5 @@
 import typing
 
-import android
 import android.content
 import android.graphics
 import android.graphics.drawable
@@ -105,7 +104,7 @@ class BidiFormatter(java.lang.Object):
         def setTextDirectionHeuristic(self, heuristic: TextDirectionHeuristic, /) -> BidiFormatter.Builder: ...
         def stereoReset(self, stereoReset: bool | java.jboolean | java.lang.Boolean, /) -> BidiFormatter.Builder: ...
 
-class BoringLayout(Layout, android.text.TextUtils.EllipsizeCallback):
+class BoringLayout(Layout, TextUtils.EllipsizeCallback):
     @typing.overload
     def __init__(self, source: java.lang.CharSequence, paint: TextPaint, outerwidth: int | java.jint | java.lang.Integer, align: Layout.Alignment, spacingMult: float | java.jfloat | java.lang.Float, spacingAdd: float | java.jfloat | java.lang.Float, metrics: BoringLayout.Metrics, includePad: bool | java.jboolean | java.lang.Boolean, /) -> None: ...
     @typing.overload
@@ -967,7 +966,7 @@ class TextUtils(java.lang.Object):
     class StringSplitter(java.lang.Iterable[java.lang.String]):
         def setString(self, arg1: str | java.lang.String, /) -> None: ...
 
-    class SimpleStringSplitter(android.text.TextUtils.StringSplitter, java.util.Iterator[java.lang.String]):
+    class SimpleStringSplitter(TextUtils.StringSplitter, java.util.Iterator[java.lang.String]):
         def __init__(self, delimiter: str | java.jchar | java.lang.Character, /) -> None: ...
         def hasNext(self) -> bool: ...
         def iterator(self) -> java.util.Iterator[java.lang.String]: ...

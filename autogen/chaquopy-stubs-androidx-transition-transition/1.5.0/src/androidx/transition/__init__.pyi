@@ -6,7 +6,6 @@ import android.graphics
 import android.util
 import android.view
 import android.widget
-import androidx
 import androidx.core.os
 import androidx.core.util
 import androidx.fragment.app
@@ -362,7 +361,7 @@ class TransitionInflater(java.lang.Object):
     def inflateTransition(self, resource: int | java.jint | java.lang.Integer, /) -> Transition: ...
     def inflateTransitionManager(self, resource: int | java.jint | java.lang.Integer, sceneRoot: android.view.ViewGroup, /) -> TransitionManager: ...
 
-class TransitionListenerAdapter(androidx.transition.Transition.TransitionListener):
+class TransitionListenerAdapter(Transition.TransitionListener):
     def __init__(self) -> None: ...
     def onTransitionCancel(self, transition: Transition, /) -> None: ...
     def onTransitionEnd(self, transition: Transition, /) -> None: ...

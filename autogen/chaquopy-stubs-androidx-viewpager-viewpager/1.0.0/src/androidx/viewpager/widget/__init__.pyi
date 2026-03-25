@@ -8,7 +8,6 @@ import android.os
 import android.util
 import android.view
 import android.view.accessibility
-import androidx
 import androidx.customview.view
 import java
 import java.lang
@@ -178,7 +177,7 @@ class ViewPager(android.view.ViewGroup):
     class PageTransformer(java.lang.Object):
         def transformPage(self, arg1: android.view.View, arg2: float | java.jfloat | java.lang.Float, /) -> None: ...
 
-    class SimpleOnPageChangeListener(androidx.viewpager.widget.ViewPager.OnPageChangeListener):
+    class SimpleOnPageChangeListener(ViewPager.OnPageChangeListener):
         def __init__(self) -> None: ...
         def onPageScrollStateChanged(self, state: int | java.jint | java.lang.Integer, /) -> None: ...
         def onPageScrolled(self, position: int | java.jint | java.lang.Integer, positionOffset: float | java.jfloat | java.lang.Float, positionOffsetPixels: int | java.jint | java.lang.Integer, /) -> None: ...

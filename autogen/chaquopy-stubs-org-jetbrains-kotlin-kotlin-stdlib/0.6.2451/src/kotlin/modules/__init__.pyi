@@ -1,12 +1,9 @@
-import typing
-
 import java.lang
 import java.util
 import jet
 import jet.modules
 
 class AllModules(java.lang.ThreadLocal[java.util.ArrayList[Module]], jet.JetObject):
-    instance$: typing.ClassVar[AllModules] = ...
     def initialValue(self) -> java.util.ArrayList[Module]: ...
 
 class AnnotationsPathBuilder(jet.JetObject):

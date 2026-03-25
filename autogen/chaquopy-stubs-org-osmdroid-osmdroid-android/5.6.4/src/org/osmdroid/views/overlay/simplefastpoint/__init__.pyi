@@ -8,7 +8,6 @@ import java
 import java.chaquopy
 import java.lang
 import java.util
-import org
 import org.osmdroid.api
 import org.osmdroid.util
 import org.osmdroid.views
@@ -117,7 +116,7 @@ class SimpleFastPointOverlayOptions(java.lang.Object):
         @staticmethod
         def values() -> java.chaquopy.JavaArray[SimpleFastPointOverlayOptions.RenderingAlgorithm]: ...
 
-class SimplePointTheme(org.osmdroid.views.overlay.simplefastpoint.SimpleFastPointOverlay.PointAdapter):
+class SimplePointTheme(SimpleFastPointOverlay.PointAdapter):
     def __init__(self, pPoints: java.util.List[org.osmdroid.api.IGeoPoint], labelled: bool | java.jboolean | java.lang.Boolean, /) -> None: ...
     def get(self, i: int | java.jint | java.lang.Integer, /) -> org.osmdroid.api.IGeoPoint: ...
     def isLabelled(self) -> bool: ...

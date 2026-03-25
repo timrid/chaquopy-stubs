@@ -1,6 +1,6 @@
 # chaquopy-stubs-org-osmdroid-osmdroid-android
 
-Python type stubs for [`org.osmdroid:osmdroid-android:6.1.2`](https://mvnrepository.com/artifact/org.osmdroid/osmdroid-android/6.1.2), generated with [chaquopy-stubgen](https://github.com/chaquo/chaquopy) `0.2.1`.
+Python type stubs for [`org.osmdroid:osmdroid-android:6.1.2`](https://mvnrepository.com/artifact/org.osmdroid/osmdroid-android/6.1.2), generated with [chaquopy-stubgen](https://github.com/chaquo/chaquopy) `0.2.2`.
 
 ## Usage
 

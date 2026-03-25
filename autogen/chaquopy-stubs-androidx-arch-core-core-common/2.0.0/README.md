@@ -1,6 +1,6 @@
 # chaquopy-stubs-androidx-arch-core-core-common
 
-Python type stubs for [`androidx.arch.core:core-common:2.0.0`](https://mvnrepository.com/artifact/androidx.arch.core/core-common/2.0.0), generated with [chaquopy-stubgen](https://github.com/chaquo/chaquopy) `0.2.1`.
+Python type stubs for [`androidx.arch.core:core-common:2.0.0`](https://mvnrepository.com/artifact/androidx.arch.core/core-common/2.0.0), generated with [chaquopy-stubgen](https://github.com/chaquo/chaquopy) `0.2.2`.
 
 ## Usage
 

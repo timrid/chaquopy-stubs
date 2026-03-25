@@ -13,7 +13,6 @@ import java.chaquopy
 import java.lang
 import java.util
 import java.util.concurrent.atomic
-import org
 import org.metalev.multitouch.controller
 import org.osmdroid.api
 import org.osmdroid.events
@@ -78,7 +77,7 @@ class CustomZoomButtonsDisplay(java.lang.Object):
         @staticmethod
         def values() -> java.chaquopy.JavaArray[CustomZoomButtonsDisplay.HorizontalPosition]: ...
 
-class MapController(org.osmdroid.api.IMapController, org.osmdroid.views.MapView.OnFirstLayoutListener):
+class MapController(org.osmdroid.api.IMapController, MapView.OnFirstLayoutListener):
     mMapView: MapView = ...
     def __init__(self, mapView: MapView, /) -> None: ...
     @typing.overload

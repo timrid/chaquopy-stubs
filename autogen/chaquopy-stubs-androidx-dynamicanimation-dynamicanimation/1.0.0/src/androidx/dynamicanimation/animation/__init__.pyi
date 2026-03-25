@@ -2,7 +2,6 @@ import typing
 
 import android.util
 import android.view
-import androidx
 import java
 import java.lang
 
@@ -17,7 +16,7 @@ class AnimationHandler(java.lang.Object):
     def setProvider(self, provider: AnimationHandler.AnimationFrameCallbackProvider, /) -> None: ...
 
 _DynamicAnimation__T = typing.TypeVar('_DynamicAnimation__T', bound=DynamicAnimation[T])  # <T>
-class DynamicAnimation(androidx.dynamicanimation.animation.AnimationHandler.AnimationFrameCallback, typing.Generic[_DynamicAnimation__T]):
+class DynamicAnimation(AnimationHandler.AnimationFrameCallback, typing.Generic[_DynamicAnimation__T]):
     TRANSLATION_X: typing.ClassVar[DynamicAnimation.ViewProperty] = ...
     TRANSLATION_Y: typing.ClassVar[DynamicAnimation.ViewProperty] = ...
     TRANSLATION_Z: typing.ClassVar[DynamicAnimation.ViewProperty] = ...

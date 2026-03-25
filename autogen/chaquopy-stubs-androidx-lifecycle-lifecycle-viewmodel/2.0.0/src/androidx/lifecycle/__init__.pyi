@@ -1,7 +1,6 @@
 import typing
 
 import android.app
-import androidx
 import java.lang
 
 class AndroidViewModel(ViewModel):
@@ -24,14 +23,14 @@ class ViewModelProvider(java.lang.Object):
     @typing.overload
     def get(self, key: str | java.lang.String, modelClass: typing.Type[_get_1__T], /) -> _get_1__T: ...
 
-    class AndroidViewModelFactory(androidx.lifecycle.ViewModelProvider.NewInstanceFactory):
+    class AndroidViewModelFactory(ViewModelProvider.NewInstanceFactory):
         def __init__(self, application: android.app.Application, /) -> None: ...
         _create__T = typing.TypeVar('_create__T', bound=ViewModel)  # <T>
         def create(self, modelClass: typing.Type[_create__T], /) -> _create__T: ...
         @staticmethod
         def getInstance(application: android.app.Application, /) -> ViewModelProvider.AndroidViewModelFactory: ...
 
-    class NewInstanceFactory(androidx.lifecycle.ViewModelProvider.Factory):
+    class NewInstanceFactory(ViewModelProvider.Factory):
         def __init__(self) -> None: ...
         _create__T = typing.TypeVar('_create__T', bound=ViewModel)  # <T>
         def create(self, modelClass: typing.Type[_create__T], /) -> _create__T: ...

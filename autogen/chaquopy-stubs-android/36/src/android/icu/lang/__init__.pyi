@@ -1,6 +1,5 @@
 import typing
 
-import android
 import android.icu.text
 import android.icu.util
 import java
@@ -8,7 +7,7 @@ import java.chaquopy
 import java.lang
 import java.util
 
-class UCharacter(android.icu.lang.UCharacterEnums.ECharacterCategory, android.icu.lang.UCharacterEnums.ECharacterDirection):
+class UCharacter(UCharacterEnums.ECharacterCategory, UCharacterEnums.ECharacterDirection):
     FOLD_CASE_DEFAULT: typing.ClassVar[int] = ...
     FOLD_CASE_EXCLUDE_SPECIAL_I: typing.ClassVar[int] = ...
     MAX_CODE_POINT: typing.ClassVar[int] = ...
@@ -1318,11 +1317,11 @@ class UCharacter(android.icu.lang.UCharacterEnums.ECharacterCategory, android.ic
         NONE: typing.ClassVar[int] = ...
         OPEN: typing.ClassVar[int] = ...
 
-class UCharacterCategory(android.icu.lang.UCharacterEnums.ECharacterCategory):
+class UCharacterCategory(UCharacterEnums.ECharacterCategory):
     @staticmethod
     def toString(category: int | java.jint | java.lang.Integer, /) -> str: ...
 
-class UCharacterDirection(android.icu.lang.UCharacterEnums.ECharacterDirection):
+class UCharacterDirection(UCharacterEnums.ECharacterDirection):
     @staticmethod
     def toString(dir: int | java.jint | java.lang.Integer, /) -> str: ...
 

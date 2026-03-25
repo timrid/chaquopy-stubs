@@ -4,12 +4,11 @@ import android.content
 import android.database
 import android.view
 import android.widget
-import androidx
 import java
 import java.chaquopy
 import java.lang
 
-class CursorAdapter(android.widget.BaseAdapter, android.widget.Filterable, androidx.cursoradapter.widget.CursorFilter.CursorFilterClient):
+class CursorAdapter(android.widget.BaseAdapter, android.widget.Filterable, CursorFilter.CursorFilterClient):
     mDataValid: bool = ...
     mAutoRequery: bool = ...
     mCursor: android.database.Cursor = ...

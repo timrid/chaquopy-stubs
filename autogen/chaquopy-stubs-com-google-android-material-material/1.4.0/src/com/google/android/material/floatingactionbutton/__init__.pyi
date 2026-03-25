@@ -11,7 +11,6 @@ import android.view
 import androidx.coordinatorlayout.widget
 import androidx.core.view
 import androidx.core.widget
-import com
 import com.google.android.material.animation
 import com.google.android.material.button
 import com.google.android.material.expandable
@@ -252,7 +251,7 @@ class FloatingActionButton(com.google.android.material.internal.VisibilityAwareI
         def setAutoHideEnabled(self, autoHide: bool | java.jboolean | java.lang.Boolean, /) -> None: ...
         def setInternalAutoHideListener(self, listener: FloatingActionButton.OnVisibilityChangedListener, /) -> None: ...
 
-    class Behavior(com.google.android.material.floatingactionbutton.FloatingActionButton.BaseBehavior[FloatingActionButton]):
+    class Behavior(FloatingActionButton.BaseBehavior[FloatingActionButton]):
         @typing.overload
         def __init__(self) -> None: ...
         @typing.overload

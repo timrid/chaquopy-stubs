@@ -18,7 +18,6 @@ import android.view.accessibility
 import android.view.inputmethod
 import android.view.textclassifier
 import android.widget
-import androidx
 import androidx.appcompat.app
 import androidx.appcompat.view
 import androidx.appcompat.view.menu
@@ -303,7 +302,7 @@ class ActionMenuView(LinearLayoutCompat, androidx.appcompat.view.menu.MenuBuilde
     class OnMenuItemClickListener(java.lang.Object):
         def onMenuItemClick(self, arg1: android.view.MenuItem, /) -> bool: ...
 
-    class LayoutParams(androidx.appcompat.widget.LinearLayoutCompat.LayoutParams):
+    class LayoutParams(LinearLayoutCompat.LayoutParams):
         isOverflowButton: bool = ...
         cellsUsed: int = ...
         extraPixels: int = ...
@@ -371,7 +370,7 @@ class ActivityChooserModel(android.database.DataSetObservable):
     class ActivityChooserModelClient(java.lang.Object):
         def setActivityChooserModel(self, arg1: ActivityChooserModel, /) -> None: ...
 
-class ActivityChooserView(android.view.ViewGroup, androidx.appcompat.widget.ActivityChooserModel.ActivityChooserModelClient):
+class ActivityChooserView(android.view.ViewGroup, ActivityChooserModel.ActivityChooserModelClient):
     @typing.overload
     def __init__(self, context: android.content.Context, /) -> None: ...
     @typing.overload

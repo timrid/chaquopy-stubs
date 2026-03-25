@@ -1,6 +1,6 @@
 # chaquopy-stubs-org-jetbrains-kotlin-kotlin-stdlib-jdk7
 
-Python type stubs for [`org.jetbrains.kotlin:kotlin-stdlib-jdk7:2.0.0`](https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-stdlib-jdk7/2.0.0), generated with [chaquopy-stubgen](https://github.com/chaquo/chaquopy) `0.2.1`.
+Python type stubs for [`org.jetbrains.kotlin:kotlin-stdlib-jdk7:2.0.0`](https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-stdlib-jdk7/2.0.0), generated with [chaquopy-stubgen](https://github.com/chaquo/chaquopy) `0.2.2`.
 
 ## Usage
 

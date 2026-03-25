@@ -1,6 +1,6 @@
 # chaquopy-stubs-androidx-lifecycle-lifecycle-viewmodel-savedstate
 
-Python type stubs for [`androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.2`](https://mvnrepository.com/artifact/androidx.lifecycle/lifecycle-viewmodel-savedstate/2.8.2), generated with [chaquopy-stubgen](https://github.com/chaquo/chaquopy) `0.2.1`.
+Python type stubs for [`androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.2`](https://mvnrepository.com/artifact/androidx.lifecycle/lifecycle-viewmodel-savedstate/2.8.2), generated with [chaquopy-stubgen](https://github.com/chaquo/chaquopy) `0.2.2`.
 
 ## Usage
 

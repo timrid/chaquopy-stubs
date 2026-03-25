@@ -14,7 +14,6 @@ import android.widget
 import androidx.appcompat.widget
 import androidx.coordinatorlayout.widget
 import androidx.customview.view
-import com
 import com.google.android.material.internal
 import com.google.android.material.shape
 import java
@@ -132,13 +131,13 @@ class AppBarLayout(android.widget.LinearLayout, androidx.coordinatorlayout.widge
 
         class ScrollFlags(java.lang.annotation.Annotation): ...
 
-    class Behavior(com.google.android.material.appbar.AppBarLayout.BaseBehavior[AppBarLayout]):
+    class Behavior(AppBarLayout.BaseBehavior[AppBarLayout]):
         @typing.overload
         def __init__(self) -> None: ...
         @typing.overload
         def __init__(self, context: android.content.Context, attrs: android.util.AttributeSet, /) -> None: ...
 
-        class DragCallback(com.google.android.material.appbar.AppBarLayout.BaseBehavior.BaseDragCallback[AppBarLayout]):
+        class DragCallback(AppBarLayout.BaseBehavior.BaseDragCallback[AppBarLayout]):
             def __init__(self) -> None: ...
     class BaseBehavior(HeaderBehavior[_AppBarLayout__BaseBehavior__T], typing.Generic[_AppBarLayout__BaseBehavior__T]):
         @typing.overload
@@ -173,7 +172,7 @@ class AppBarLayout(android.widget.LinearLayout, androidx.coordinatorlayout.widge
         def __init__(self) -> None: ...
         def onUpdate(self, arg1: float | java.jfloat | java.lang.Float, arg2: int | java.jint | java.lang.Integer, arg3: float | java.jfloat | java.lang.Float, /) -> None: ...
 
-    class CompressChildScrollEffect(com.google.android.material.appbar.AppBarLayout.ChildScrollEffect):
+    class CompressChildScrollEffect(AppBarLayout.ChildScrollEffect):
         def __init__(self) -> None: ...
         def onOffsetChanged(self, appBarLayout: AppBarLayout, child: android.view.View, offset: float | java.jfloat | java.lang.Float, /) -> None: ...
 
@@ -191,7 +190,7 @@ class AppBarLayout(android.widget.LinearLayout, androidx.coordinatorlayout.widge
         def onDependentViewRemoved(self, parent: androidx.coordinatorlayout.widget.CoordinatorLayout, child: android.view.View, dependency: android.view.View, /) -> None: ...
         def onRequestChildRectangleOnScreen(self, parent: androidx.coordinatorlayout.widget.CoordinatorLayout, child: android.view.View, rectangle: android.graphics.Rect, immediate: bool | java.jboolean | java.lang.Boolean, /) -> bool: ...
 
-    class OnOffsetChangedListener(com.google.android.material.appbar.AppBarLayout.BaseOnOffsetChangedListener[AppBarLayout]):
+    class OnOffsetChangedListener(AppBarLayout.BaseOnOffsetChangedListener[AppBarLayout]):
         def onOffsetChanged(self, arg1: AppBarLayout, arg2: int | java.jint | java.lang.Integer, /) -> None: ...
 
 class CollapsingToolbarLayout(android.widget.FrameLayout):

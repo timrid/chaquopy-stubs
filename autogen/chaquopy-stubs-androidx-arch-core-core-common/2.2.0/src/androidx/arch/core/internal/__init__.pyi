@@ -1,6 +1,5 @@
 import typing
 
-import androidx
 import java.lang
 import java.util
 
@@ -36,6 +35,6 @@ class SafeIterableMap(java.lang.Iterable[java.util.Map.Entry[_SafeIterableMap__K
     class SupportRemove(java.lang.Object, typing.Generic[_SafeIterableMap__SupportRemove__K, _SafeIterableMap__SupportRemove__V]):
         def __init__(self) -> None: ...
 
-    class IteratorWithAdditions(androidx.arch.core.internal.SafeIterableMap.SupportRemove[_SafeIterableMap__K, _SafeIterableMap__V], java.util.Iterator[java.util.Map.Entry[_SafeIterableMap__K, _SafeIterableMap__V]]):
+    class IteratorWithAdditions(SafeIterableMap.SupportRemove[_SafeIterableMap__K, _SafeIterableMap__V], java.util.Iterator[java.util.Map.Entry[_SafeIterableMap__K, _SafeIterableMap__V]]):
         def hasNext(self) -> bool: ...
         def next(self) -> java.util.Map.Entry[_SafeIterableMap__K, _SafeIterableMap__V]: ...

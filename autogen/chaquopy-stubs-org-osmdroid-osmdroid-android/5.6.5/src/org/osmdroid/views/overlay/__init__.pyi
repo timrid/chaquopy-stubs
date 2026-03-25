@@ -12,7 +12,6 @@ import java
 import java.chaquopy
 import java.lang
 import java.util
-import org
 import org.osmdroid.api
 import org.osmdroid.events
 import org.osmdroid.tileprovider
@@ -180,7 +179,7 @@ class ItemizedIconOverlay(ItemizedOverlay[_ItemizedIconOverlay__Item], typing.Ge
         def onItemSingleTapUp(self, arg1: int | java.jint | java.lang.Integer, arg2: _ItemizedIconOverlay__OnItemGestureListener__T, /) -> bool: ...
 
 _ItemizedOverlay__Item = typing.TypeVar('_ItemizedOverlay__Item', bound=OverlayItem)  # <Item>
-class ItemizedOverlay(Overlay, org.osmdroid.views.overlay.Overlay.Snappable, typing.Generic[_ItemizedOverlay__Item]):
+class ItemizedOverlay(Overlay, Overlay.Snappable, typing.Generic[_ItemizedOverlay__Item]):
     mDefaultMarker: android.graphics.drawable.Drawable = ...
     mDrawFocusedItem: bool = ...
     scaleX: float = ...

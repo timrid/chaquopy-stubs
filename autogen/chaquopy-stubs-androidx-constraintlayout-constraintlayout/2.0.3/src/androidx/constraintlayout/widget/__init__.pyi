@@ -4,7 +4,6 @@ import android.content
 import android.graphics
 import android.util
 import android.view
-import androidx
 import androidx.constraintlayout.motion.widget
 import androidx.constraintlayout.solver
 import androidx.constraintlayout.solver.widgets
@@ -618,7 +617,7 @@ class Constraints(android.view.ViewGroup):
     def getConstraintSet(self) -> ConstraintSet: ...
     def onLayout(self, changed: bool | java.jboolean | java.lang.Boolean, l: int | java.jint | java.lang.Integer, t: int | java.jint | java.lang.Integer, r: int | java.jint | java.lang.Integer, b: int | java.jint | java.lang.Integer, /) -> None: ...
 
-    class LayoutParams(androidx.constraintlayout.widget.ConstraintLayout.LayoutParams):
+    class LayoutParams(ConstraintLayout.LayoutParams):
         alpha: float = ...
         applyElevation: bool = ...
         elevation: float = ...

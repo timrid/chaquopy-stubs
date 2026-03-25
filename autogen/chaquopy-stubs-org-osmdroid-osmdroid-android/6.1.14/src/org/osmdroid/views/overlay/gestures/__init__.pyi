@@ -4,7 +4,6 @@ import android.content
 import android.view
 import java
 import java.lang
-import org
 import org.osmdroid.views
 import org.osmdroid.views.overlay
 
@@ -18,7 +17,7 @@ class RotationGestureDetector(java.lang.Object):
     class RotationListener(java.lang.Object):
         def onRotate(self, arg1: float | java.jfloat | java.lang.Float, /) -> None: ...
 
-class RotationGestureOverlay(org.osmdroid.views.overlay.Overlay, org.osmdroid.views.overlay.gestures.RotationGestureDetector.RotationListener, org.osmdroid.views.overlay.IOverlayMenuProvider):
+class RotationGestureOverlay(org.osmdroid.views.overlay.Overlay, RotationGestureDetector.RotationListener, org.osmdroid.views.overlay.IOverlayMenuProvider):
     @typing.overload
     def __init__(self, mapView: org.osmdroid.views.MapView, /) -> None: ...
     @typing.overload

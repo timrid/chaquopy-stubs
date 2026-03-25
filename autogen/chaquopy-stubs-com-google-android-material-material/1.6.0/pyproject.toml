@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "chaquopy-stubs-com-google-android-material-material"
-version = "1.6.0.20260324"
+version = "1.6.0.20260325"
 description = "Python type stubs for com.google.android.material:material:1.6.0 generated with chaquopy-stubgen"
 readme = {file = "README.md", content-type = "text/markdown"}
 license = "MIT"

@@ -10,7 +10,6 @@ import android.util
 import android.view
 import android.view.animation
 import android.widget
-import androidx
 import androidx.collection
 import androidx.core.app
 import androidx.lifecycle
@@ -22,7 +21,7 @@ import java.io
 import java.lang
 import java.util
 
-class BackStackRecord(FragmentTransaction, androidx.fragment.app.FragmentManager.BackStackEntry, androidx.fragment.app.FragmentManagerImpl.OpGenerator):
+class BackStackRecord(FragmentTransaction, FragmentManager.BackStackEntry, FragmentManagerImpl.OpGenerator):
     def __init__(self, manager: FragmentManagerImpl, /) -> None: ...
     @typing.overload
     def add(self, containerViewId: int | java.jint | java.lang.Integer, fragment: Fragment, /) -> FragmentTransaction: ...

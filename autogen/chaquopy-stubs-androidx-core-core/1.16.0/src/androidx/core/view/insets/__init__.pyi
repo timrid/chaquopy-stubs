@@ -5,7 +5,6 @@ import android.graphics
 import android.util
 import android.view
 import android.widget
-import androidx
 import androidx.core.graphics
 import java
 import java.lang
@@ -39,7 +38,7 @@ class Protection(java.lang.Object):
     def setAlpha(self, alpha: float | java.jfloat | java.lang.Float, /) -> None: ...
     def setInsetAmount(self, insetAmount: float | java.jfloat | java.lang.Float, /) -> None: ...
 
-class ProtectionGroup(androidx.core.view.insets.SystemBarStateMonitor.Callback):
+class ProtectionGroup(SystemBarStateMonitor.Callback):
     def onAnimationEnd(self) -> None: ...
     def onAnimationProgress(self, sides: int | java.jint | java.lang.Integer, insets: androidx.core.graphics.Insets, alpha: android.graphics.RectF, /) -> None: ...
     def onAnimationStart(self) -> None: ...

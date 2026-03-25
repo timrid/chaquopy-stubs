@@ -13,7 +13,6 @@ import android.widget
 import androidx.appcompat.widget
 import androidx.coordinatorlayout.widget
 import androidx.customview.view
-import com
 import java
 import java.chaquopy
 import java.lang
@@ -82,7 +81,7 @@ class AppBarLayout(android.widget.LinearLayout, androidx.coordinatorlayout.widge
     def setVisibility(self, visibility: int | java.jint | java.lang.Integer, /) -> None: ...
     def verifyDrawable(self, who: android.graphics.drawable.Drawable, /) -> bool: ...
 
-    class CompressChildScrollEffect(com.google.android.material.appbar.AppBarLayout.ChildScrollEffect):
+    class CompressChildScrollEffect(AppBarLayout.ChildScrollEffect):
         def __init__(self) -> None: ...
         def onOffsetChanged(self, appBarLayout: AppBarLayout, child: android.view.View, offset: float | java.jfloat | java.lang.Float, /) -> None: ...
 
@@ -125,13 +124,13 @@ class AppBarLayout(android.widget.LinearLayout, androidx.coordinatorlayout.widge
             def __init__(self) -> None: ...
             def canDrag(self, arg1: _AppBarLayout__BaseBehavior__BaseDragCallback__T, /) -> bool: ...
 
-    class Behavior(com.google.android.material.appbar.AppBarLayout.BaseBehavior[AppBarLayout]):
+    class Behavior(AppBarLayout.BaseBehavior[AppBarLayout]):
         @typing.overload
         def __init__(self) -> None: ...
         @typing.overload
         def __init__(self, context: android.content.Context, attrs: android.util.AttributeSet, /) -> None: ...
 
-        class DragCallback(com.google.android.material.appbar.AppBarLayout.BaseBehavior.BaseDragCallback[AppBarLayout]):
+        class DragCallback(AppBarLayout.BaseBehavior.BaseDragCallback[AppBarLayout]):
             def __init__(self) -> None: ...
 
     class LayoutParams(android.widget.LinearLayout.LayoutParams):
@@ -168,7 +167,7 @@ class AppBarLayout(android.widget.LinearLayout, androidx.coordinatorlayout.widge
     class LiftOnScrollListener(java.lang.Object):
         def onUpdate(self, arg1: float | java.jfloat | java.lang.Float, arg2: int | java.jint | java.lang.Integer, /) -> None: ...
 
-    class OnOffsetChangedListener(com.google.android.material.appbar.AppBarLayout.BaseOnOffsetChangedListener[AppBarLayout]):
+    class OnOffsetChangedListener(AppBarLayout.BaseOnOffsetChangedListener[AppBarLayout]):
         def onOffsetChanged(self, arg1: AppBarLayout, arg2: int | java.jint | java.lang.Integer, /) -> None: ...
     class BaseOnOffsetChangedListener(java.lang.Object, typing.Generic[_AppBarLayout__BaseOnOffsetChangedListener__T]):
         def onOffsetChanged(self, arg1: _AppBarLayout__BaseOnOffsetChangedListener__T, arg2: int | java.jint | java.lang.Integer, /) -> None: ...

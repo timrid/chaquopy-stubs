@@ -7,7 +7,6 @@ import java
 import java.io
 import java.lang
 import java.util
-import org
 import org.osmdroid.tileprovider
 import org.osmdroid.tileprovider.modules
 import org.osmdroid.tileprovider.tilesource
@@ -110,7 +109,7 @@ class CacheManager(java.lang.Object):
         def preCheck(self) -> bool: ...
         def tileAction(self, arg1: int | java.jlong | java.lang.Long, /) -> bool: ...
 
-    class CacheManagerDialog(org.osmdroid.tileprovider.cachemanager.CacheManager.CacheManagerCallback):
+    class CacheManagerDialog(CacheManager.CacheManagerCallback):
         def __init__(self, pCtx: android.content.Context, pTask: CacheManager.CacheManagerTask, /) -> None: ...
         def downloadStarted(self) -> None: ...
         def getUITitle(self) -> str: ...

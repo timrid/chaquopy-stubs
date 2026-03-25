@@ -5,7 +5,6 @@ import android.content.res
 import android.view
 import android.view.accessibility
 import android.view.animation
-import androidx
 import androidx.appcompat.view.menu
 import androidx.appcompat.widget
 import androidx.core.view
@@ -127,7 +126,7 @@ class SupportActionModeWrapper(android.view.ActionMode):
     def setTitle(self, title: java.lang.CharSequence, /) -> None: ...
     def setTitleOptionalHint(self, titleOptional: bool | java.jboolean | java.lang.Boolean, /) -> None: ...
 
-    class CallbackWrapper(androidx.appcompat.view.ActionMode.Callback):
+    class CallbackWrapper(ActionMode.Callback):
         def __init__(self, context: android.content.Context, supportCallback: android.view.ActionMode.Callback, /) -> None: ...
         def getActionModeWrapper(self, mode: ActionMode, /) -> android.view.ActionMode: ...
         def onActionItemClicked(self, mode: ActionMode, item: android.view.MenuItem, /) -> bool: ...

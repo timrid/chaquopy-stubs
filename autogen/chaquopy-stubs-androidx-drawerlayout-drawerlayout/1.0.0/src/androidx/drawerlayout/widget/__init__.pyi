@@ -6,7 +6,6 @@ import android.graphics.drawable
 import android.os
 import android.util
 import android.view
-import androidx
 import androidx.customview.view
 import java
 import java.lang
@@ -129,7 +128,7 @@ class DrawerLayout(android.view.ViewGroup):
         def __init__(self, in_: android.os.Parcel, loader: java.lang.ClassLoader, /) -> None: ...
         def writeToParcel(self, dest: android.os.Parcel, flags: int | java.jint | java.lang.Integer, /) -> None: ...
 
-    class SimpleDrawerListener(androidx.drawerlayout.widget.DrawerLayout.DrawerListener):
+    class SimpleDrawerListener(DrawerLayout.DrawerListener):
         def __init__(self) -> None: ...
         def onDrawerClosed(self, drawerView: android.view.View, /) -> None: ...
         def onDrawerOpened(self, drawerView: android.view.View, /) -> None: ...

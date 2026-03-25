@@ -1,12 +1,9 @@
-import typing
-
 import java.lang
 import java.util
 import kotlin
 import kotlin.jvm.internal
 
 class AllModules(java.lang.ThreadLocal[java.util.ArrayList[Module]], kotlin.jvm.internal.KObject):
-    INSTANCE$: typing.ClassVar[AllModules] = ...
     def initialValue(self) -> java.util.ArrayList[Module]: ...
 
 class AnnotationsPathBuilder(kotlin.jvm.internal.KObject):

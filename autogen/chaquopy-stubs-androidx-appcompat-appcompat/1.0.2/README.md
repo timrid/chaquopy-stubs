@@ -1,6 +1,6 @@
 # chaquopy-stubs-androidx-appcompat-appcompat
 
-Python type stubs for [`androidx.appcompat:appcompat:1.0.2`](https://mvnrepository.com/artifact/androidx.appcompat/appcompat/1.0.2), generated with [chaquopy-stubgen](https://github.com/chaquo/chaquopy) `0.2.1`.
+Python type stubs for [`androidx.appcompat:appcompat:1.0.2`](https://mvnrepository.com/artifact/androidx.appcompat/appcompat/1.0.2), generated with [chaquopy-stubgen](https://github.com/chaquo/chaquopy) `0.2.2`.
 
 ## Usage
 

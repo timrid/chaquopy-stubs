@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "chaquopy-stubs-androidx-profileinstaller-profileinstaller"
-version = "1.3.1.20260324"
+version = "1.3.1.20260325"
 description = "Python type stubs for androidx.profileinstaller:profileinstaller:1.3.1 generated with chaquopy-stubgen"
 readme = {file = "README.md", content-type = "text/markdown"}
 license = "MIT"
