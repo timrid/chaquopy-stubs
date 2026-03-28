@@ -24,14 +24,14 @@ jobs:
       - name: Compute build matrix
         id: set-matrix
         run: |
-          mapfile -t all_pkgs < <(find autogen -mindepth 3 -maxdepth 3 -name pyproject.toml | sort | xargs -I{} dirname {})
           python3 -c "
-          import json, sys
-          pkgs = sys.argv[1:]
-          chunks = [pkgs[i:i+100] for i in range(0, len(pkgs), 100)]
+          import json, pathlib
+          pkgs = sorted(str(p.parent) for p in pathlib.Path('autogen').glob('*/*/*/pyproject.toml'))
+          chunk_size = 100
+          chunks = [pkgs[i:i+chunk_size] for i in range(0, len(pkgs), chunk_size)]
           print('matrix=' + json.dumps(list(range(len(chunks)))))
           print('include=' + json.dumps([{'chunk': i, 'packages': c} for i, c in enumerate(chunks)]))
-          " "${all_pkgs[@]}" >> "$GITHUB_OUTPUT"
+          " >> "$GITHUB_OUTPUT"
 
   build:
     name: Build chunk ${{ matrix.chunk }}
