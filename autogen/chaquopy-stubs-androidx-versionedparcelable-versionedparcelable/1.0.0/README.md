@@ -7,5 +7,5 @@ Python type stubs for [`androidx.versionedparcelable:versionedparcelable:1.0.0`]
 These are stub-only packages ([PEP 561](https://peps.python.org/pep-0561/)). Install them alongside your project to get type checking support for `androidx.versionedparcelable:versionedparcelable:1.0.0` when using [Chaquopy](https://chaquo.com/chaquopy/).
 
 ```bash
-pip install chaquopy-stubs-androidx-versionedparcelable-versionedparcelable==1.0.*
+pip install chaquopy-stubs-androidx-versionedparcelable-versionedparcelable~=1.0.0
 ```

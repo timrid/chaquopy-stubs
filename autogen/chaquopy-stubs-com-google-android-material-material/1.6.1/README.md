@@ -7,5 +7,5 @@ Python type stubs for [`com.google.android.material:material:1.6.1`](https://mvn
 These are stub-only packages ([PEP 561](https://peps.python.org/pep-0561/)). Install them alongside your project to get type checking support for `com.google.android.material:material:1.6.1` when using [Chaquopy](https://chaquo.com/chaquopy/).
 
 ```bash
-pip install chaquopy-stubs-com-google-android-material-material==1.6.*
+pip install chaquopy-stubs-com-google-android-material-material~=1.6.0
 ```

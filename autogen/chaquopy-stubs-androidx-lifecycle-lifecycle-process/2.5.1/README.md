@@ -7,5 +7,5 @@ Python type stubs for [`androidx.lifecycle:lifecycle-process:2.5.1`](https://mvn
 These are stub-only packages ([PEP 561](https://peps.python.org/pep-0561/)). Install them alongside your project to get type checking support for `androidx.lifecycle:lifecycle-process:2.5.1` when using [Chaquopy](https://chaquo.com/chaquopy/).
 
 ```bash
-pip install chaquopy-stubs-androidx-lifecycle-lifecycle-process==2.5.*
+pip install chaquopy-stubs-androidx-lifecycle-lifecycle-process~=2.5.0
 ```

@@ -7,5 +7,5 @@ Python type stubs for [`androidx.profileinstaller:profileinstaller:1.2.2`](https
 These are stub-only packages ([PEP 561](https://peps.python.org/pep-0561/)). Install them alongside your project to get type checking support for `androidx.profileinstaller:profileinstaller:1.2.2` when using [Chaquopy](https://chaquo.com/chaquopy/).
 
 ```bash
-pip install chaquopy-stubs-androidx-profileinstaller-profileinstaller==1.2.*
+pip install chaquopy-stubs-androidx-profileinstaller-profileinstaller~=1.2.0
 ```

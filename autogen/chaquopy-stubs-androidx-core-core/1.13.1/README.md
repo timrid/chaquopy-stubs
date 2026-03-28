@@ -7,5 +7,5 @@ Python type stubs for [`androidx.core:core:1.13.1`](https://mvnrepository.com/ar
 These are stub-only packages ([PEP 561](https://peps.python.org/pep-0561/)). Install them alongside your project to get type checking support for `androidx.core:core:1.13.1` when using [Chaquopy](https://chaquo.com/chaquopy/).
 
 ```bash
-pip install chaquopy-stubs-androidx-core-core==1.13.*
+pip install chaquopy-stubs-androidx-core-core~=1.13.0
 ```

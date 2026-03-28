@@ -7,5 +7,5 @@ Python type stubs for [`androidx.tracing:tracing:1.1.0`](https://mvnrepository.c
 These are stub-only packages ([PEP 561](https://peps.python.org/pep-0561/)). Install them alongside your project to get type checking support for `androidx.tracing:tracing:1.1.0` when using [Chaquopy](https://chaquo.com/chaquopy/).
 
 ```bash
-pip install chaquopy-stubs-androidx-tracing-tracing==1.1.*
+pip install chaquopy-stubs-androidx-tracing-tracing~=1.1.0
 ```

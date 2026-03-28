@@ -7,5 +7,5 @@ Python type stubs for [`androidx.startup:startup-runtime:1.1.1`](https://mvnrepo
 These are stub-only packages ([PEP 561](https://peps.python.org/pep-0561/)). Install them alongside your project to get type checking support for `androidx.startup:startup-runtime:1.1.1` when using [Chaquopy](https://chaquo.com/chaquopy/).
 
 ```bash
-pip install chaquopy-stubs-androidx-startup-startup-runtime==1.1.*
+pip install chaquopy-stubs-androidx-startup-startup-runtime~=1.1.0
 ```
