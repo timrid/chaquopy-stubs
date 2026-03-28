@@ -7,5 +7,5 @@ Python type stubs for [`androidx.constraintlayout:constraintlayout:2.1.4`](https
 These are stub-only packages ([PEP 561](https://peps.python.org/pep-0561/)). Install them alongside your project to get type checking support for `androidx.constraintlayout:constraintlayout:2.1.4` when using [Chaquopy](https://chaquo.com/chaquopy/).
 
 ```bash
-pip install chaquopy-stubs-androidx-constraintlayout-constraintlayout==2.1.4
+pip install chaquopy-stubs-androidx-constraintlayout-constraintlayout==2.1.*
 ```

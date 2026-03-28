@@ -7,5 +7,5 @@ Python type stubs for [`androidx.collection:collection-jvm:1.4.5`](https://mvnre
 These are stub-only packages ([PEP 561](https://peps.python.org/pep-0561/)). Install them alongside your project to get type checking support for `androidx.collection:collection-jvm:1.4.5` when using [Chaquopy](https://chaquo.com/chaquopy/).
 
 ```bash
-pip install chaquopy-stubs-androidx-collection-collection-jvm==1.4.5
+pip install chaquopy-stubs-androidx-collection-collection-jvm==1.4.*
 ```

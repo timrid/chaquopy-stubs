@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "chaquopy-stubs-androidx-emoji2-emoji2"
-version = "1.6.0.20260325"
+version = "1.6.0.20260328"
 description = "Python type stubs for androidx.emoji2:emoji2:1.6.0 generated with chaquopy-stubgen"
 readme = {file = "README.md", content-type = "text/markdown"}
 license = "MIT"

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "chaquopy-stubs-androidx-lifecycle-lifecycle-viewmodel"
-version = "2.4.1.20260325"
+version = "2.4.1.20260328"
 description = "Python type stubs for androidx.lifecycle:lifecycle-viewmodel:2.4.1 generated with chaquopy-stubgen"
 readme = {file = "README.md", content-type = "text/markdown"}
 license = "MIT"

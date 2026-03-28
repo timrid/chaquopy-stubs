@@ -7,5 +7,5 @@ Python type stubs for [`com.google.errorprone:error_prone_annotations:2.0.21`](h
 These are stub-only packages ([PEP 561](https://peps.python.org/pep-0561/)). Install them alongside your project to get type checking support for `com.google.errorprone:error_prone_annotations:2.0.21` when using [Chaquopy](https://chaquo.com/chaquopy/).
 
 ```bash
-pip install chaquopy-stubs-com-google-errorprone-error_prone_annotations==2.0.21
+pip install chaquopy-stubs-com-google-errorprone-error_prone_annotations==2.0.*
 ```

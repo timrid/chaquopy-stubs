@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "chaquopy-stubs-org-jspecify-jspecify"
-version = "0.3.0.20260325"
+version = "0.3.0.20260328"
 description = "Python type stubs for org.jspecify:jspecify:0.3.0 generated with chaquopy-stubgen"
 readme = {file = "README.md", content-type = "text/markdown"}
 license = "MIT"

@@ -1,3 +1,0 @@
-import java.lang
-
-class MonitorKt(java.lang.Object): ...

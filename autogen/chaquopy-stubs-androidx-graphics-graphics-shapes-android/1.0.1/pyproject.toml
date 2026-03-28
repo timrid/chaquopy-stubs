@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "chaquopy-stubs-androidx-graphics-graphics-shapes-android"
-version = "1.0.1.20260325"
+version = "1.0.1.20260328"
 description = "Python type stubs for androidx.graphics:graphics-shapes-android:1.0.1 generated with chaquopy-stubgen"
 readme = {file = "README.md", content-type = "text/markdown"}
 license = "MIT"

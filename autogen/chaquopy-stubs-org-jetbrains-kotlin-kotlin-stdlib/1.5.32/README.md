@@ -7,5 +7,5 @@ Python type stubs for [`org.jetbrains.kotlin:kotlin-stdlib:1.5.32`](https://mvnr
 These are stub-only packages ([PEP 561](https://peps.python.org/pep-0561/)). Install them alongside your project to get type checking support for `org.jetbrains.kotlin:kotlin-stdlib:1.5.32` when using [Chaquopy](https://chaquo.com/chaquopy/).
 
 ```bash
-pip install chaquopy-stubs-org-jetbrains-kotlin-kotlin-stdlib==1.5.32
+pip install chaquopy-stubs-org-jetbrains-kotlin-kotlin-stdlib==1.5.*
 ```

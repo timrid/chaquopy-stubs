@@ -1,9 +1,0 @@
-import androidx.core.graphics.drawable
-import androidx.versionedparcelable
-
-class IconCompatParcelizer(androidx.core.graphics.drawable.IconCompatParcelizer):
-    def __init__(self) -> None: ...
-    @staticmethod
-    def read(parcel: androidx.versionedparcelable.VersionedParcel, /) -> androidx.core.graphics.drawable.IconCompat: ...
-    @staticmethod
-    def write(obj: androidx.core.graphics.drawable.IconCompat, parcel: androidx.versionedparcelable.VersionedParcel, /) -> None: ...

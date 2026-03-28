@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "chaquopy-stubs-com-google-errorprone-error_prone_annotations"
-version = "2.19.1.20260325"
+version = "2.19.1.20260328"
 description = "Python type stubs for com.google.errorprone:error_prone_annotations:2.19.1 generated with chaquopy-stubgen"
 readme = {file = "README.md", content-type = "text/markdown"}
 license = "MIT"

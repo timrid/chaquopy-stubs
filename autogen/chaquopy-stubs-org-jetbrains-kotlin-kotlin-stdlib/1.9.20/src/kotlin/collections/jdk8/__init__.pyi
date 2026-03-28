@@ -1,3 +1,0 @@
-import java.lang
-
-class CollectionsJDK8Kt(java.lang.Object): ...

@@ -1,6 +1,0 @@
-import java.lang.annotation
-
-class platformName(java.lang.annotation.Annotation):
-    def name(self) -> str: ...
-
-class platformStatic(java.lang.annotation.Annotation): ...

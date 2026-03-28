@@ -1,3 +1,0 @@
-import java.lang
-
-class DurationConversionsJDK8Kt(java.lang.Object): ...
