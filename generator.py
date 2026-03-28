@@ -386,6 +386,19 @@ def cmd_resolve(args: argparse.Namespace) -> None:
 # Stage 2 – versions
 # ===========================================================================
 
+def latest_patch_versions(versions: list[str]) -> list[str]:
+    """Return only the latest patch release per major.minor, preserving order (newest first)."""
+    seen: set[tuple[str, ...]] = set()
+    result: list[str] = []
+    for v in versions:
+        parts = v.split(".")
+        minor_key = tuple(parts[:2])
+        if minor_key not in seen:
+            seen.add(minor_key)
+            result.append(v)
+    return result
+
+
 def cmd_versions(args: argparse.Namespace) -> None:
     base_file = Path(args.base)
     out_file = Path(args.out)
@@ -406,7 +419,8 @@ def cmd_versions(args: argparse.Namespace) -> None:
             continue
         log.info("[%d/%d] Fetching versions for %s:%s…", i, len(packages), coord.group_id, coord.artifact_id)
         versions = fetch_all_stable_versions(coord.group_id, coord.artifact_id)
-        log.info(" → %d stable versions found", len(versions))
+        versions = latest_patch_versions(versions)
+        log.info(" → %d stable versions found (after patch filter)", len(versions))
         for v in versions:
             lines.append(f"{coord.group_id}:{coord.artifact_id}:{v}")
 
@@ -428,8 +442,11 @@ def render_template(
     """Render the cookiecutter template into target_dir."""
     if isinstance(coord, PlatformCoord):
         group_id, artifact_id = "", coord.name
+        install_version = f"{coord.version}.*"
     else:
         group_id, artifact_id = coord.group_id, coord.artifact_id
+        minor = ".".join(coord.version.split(".")[:2])
+        install_version = f"{minor}.*"
     with tempfile.TemporaryDirectory() as tmp:
         # Cookiecutter is not thread-safe, because it uses os.chdir() internally. 
         with _COOKIECUTTER_LOCK:
@@ -442,7 +459,7 @@ def render_template(
                     "artifact_id": artifact_id,
                     "readable_name": coord.readable_name,
                     "maven_url": coord.maven_url,
-                    "version": coord.version,
+                    "install_version": install_version,
                     "stub_version": stub_version,
                     "stubgen_version": stubgen_version,
                 },
