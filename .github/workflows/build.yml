@@ -6,25 +6,51 @@ on:
       - main
   workflow_dispatch:
   workflow_call:
+    outputs:
+      matrix:
+        description: "JSON array of chunk indices"
+        value: ${{ jobs.prepare.outputs.matrix }}
 
 jobs:
-  build:
-    name: Build packages
+  prepare:
+    name: Prepare build matrix
     runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Compute chunk indices
+        id: set-matrix
+        run: |
+          count=$(find autogen -mindepth 3 -maxdepth 3 -name pyproject.toml | wc -l)
+          chunks=$(( (count + 99) / 100 ))
+          matrix=$(python3 -c "import json, sys; print(json.dumps(list(range(int(sys.argv[1])))))" "$chunks")
+          echo "matrix=$matrix" >> "$GITHUB_OUTPUT"
+
+  build:
+    name: Build chunk ${{ matrix.chunk }}
+    needs: prepare
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        chunk: ${{ fromJson(needs.prepare.outputs.matrix) }}
     steps:
       - uses: actions/checkout@v4
 
       - uses: astral-sh/setup-uv@v5
 
-      - name: Build all packages
+      - name: Build packages (chunk ${{ matrix.chunk }})
         run: |
           mkdir -p dist
-          for pkg_dir in autogen/*/*; do
-            [ -f "$pkg_dir/pyproject.toml" ] || continue
+          mapfile -t all_pkgs < <(find autogen -mindepth 3 -maxdepth 3 -name pyproject.toml | sort | xargs -I{} dirname {})
+          start=$(( ${{ matrix.chunk }} * 100 ))
+          slice=("${all_pkgs[@]:$start:100}")
+          for pkg_dir in "${slice[@]}"; do
             uv build "$pkg_dir" --out-dir dist
           done
 
       - uses: actions/upload-artifact@v4
         with:
-          name: dist
+          name: dist-${{ matrix.chunk }}
           path: dist/

@@ -8,16 +8,19 @@ jobs:
     uses: ./.github/workflows/build.yml
 
   publish:
-    name: Publish to TestPyPI
+    name: Publish chunk ${{ matrix.chunk }} to TestPyPI
     needs: build
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        chunk: ${{ fromJson(needs.build.outputs.matrix) }}
     environment:
       name: testpypi
       url: https://test.pypi.org/
     steps:
       - uses: actions/download-artifact@v4
         with:
-          name: dist
+          name: dist-${{ matrix.chunk }}
           path: dist/
 
       - uses: pypa/gh-action-pypi-publish@release/v1
