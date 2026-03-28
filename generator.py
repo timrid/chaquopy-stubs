@@ -442,11 +442,11 @@ def render_template(
     """Render the cookiecutter template into target_dir."""
     if isinstance(coord, PlatformCoord):
         group_id, artifact_id = "", coord.name
-        install_version = f"{coord.version}.*"
+        install_version = f"{coord.version}.0"
     else:
         group_id, artifact_id = coord.group_id, coord.artifact_id
         minor = ".".join(coord.version.split(".")[:2])
-        install_version = f"{minor}.*"
+        install_version = f"{minor}.0"
     with tempfile.TemporaryDirectory() as tmp:
         # Cookiecutter is not thread-safe, because it uses os.chdir() internally. 
         with _COOKIECUTTER_LOCK:

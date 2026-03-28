@@ -7,5 +7,5 @@ Python type stubs for {% if cookiecutter.maven_url %}[`{{ cookiecutter.readable_
 These are stub-only packages ([PEP 561](https://peps.python.org/pep-0561/)). Install them alongside your project to get type checking support for `{{ cookiecutter.readable_name }}` when using [Chaquopy](https://chaquo.com/chaquopy/).
 
 ```bash
-pip install {{ cookiecutter.stub_name }}=={{ cookiecutter.install_version }}
+pip install {{ cookiecutter.stub_name }}~={{ cookiecutter.install_version }}
 ```
