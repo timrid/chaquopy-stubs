@@ -26,7 +26,7 @@ jobs:
         run: |
           python3 -c "
           import json, pathlib
-          pkgs = sorted(str(p.parent) for p in pathlib.Path('autogen').glob('*/*/*/pyproject.toml'))
+          pkgs = sorted(str(p.parent) for p in pathlib.Path('autogen').glob('*/*/pyproject.toml'))
           chunk_size = 100
           chunks = [pkgs[i:i+chunk_size] for i in range(0, len(pkgs), chunk_size)]
           print('matrix=' + json.dumps(list(range(len(chunks)))))
