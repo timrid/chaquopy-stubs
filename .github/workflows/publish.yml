@@ -12,6 +12,7 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         chunk: ${{ fromJson(needs.build.outputs.matrix) }}
     environment:
@@ -29,3 +30,4 @@ jobs:
           password: ${{ secrets.TEST_PYPI_API_TOKEN }}
           skip-existing: true
           attestations: false
+          verbose: true
