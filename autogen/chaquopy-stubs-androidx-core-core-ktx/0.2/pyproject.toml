@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "chaquopy-stubs-androidx-core-core-ktx"
-version = "0.2.20260328"
+version = "0.2.20260329"
 description = "Python type stubs for androidx.core:core-ktx:0.2 generated with chaquopy-stubgen"
 readme = {file = "README.md", content-type = "text/markdown"}
 license = "MIT"

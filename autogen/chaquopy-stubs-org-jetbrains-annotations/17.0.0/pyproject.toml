@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "chaquopy-stubs-org-jetbrains-annotations"
-version = "17.0.0.20260328"
+version = "17.0.0.20260329"
 description = "Python type stubs for org.jetbrains:annotations:17.0.0 generated with chaquopy-stubgen"
 readme = {file = "README.md", content-type = "text/markdown"}
 license = "MIT"
