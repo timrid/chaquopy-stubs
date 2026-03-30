@@ -479,6 +479,7 @@ def run_stubgen(coordinate: str, output_dir: Path) -> bool:
         coordinate,
         "--output-dir", str(output_dir),
         "--cache-dir", str(CACHE_DIR_STUBGEN),
+        "--stub-only-package-marker",
     ]
     log.debug("Running: %s", " ".join(cmd))
     result = subprocess.run(cmd, capture_output=True, text=True)
