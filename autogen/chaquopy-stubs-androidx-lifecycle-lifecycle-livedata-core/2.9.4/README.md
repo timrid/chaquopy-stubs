@@ -1,6 +1,6 @@
 # chaquopy-stubs-androidx-lifecycle-lifecycle-livedata-core
 
-Python type stubs for [`androidx.lifecycle:lifecycle-livedata-core:2.9.4`](https://mvnrepository.com/artifact/androidx.lifecycle/lifecycle-livedata-core/2.9.4), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.2.2`.
+Python type stubs for [`androidx.lifecycle:lifecycle-livedata-core:2.9.4`](https://mvnrepository.com/artifact/androidx.lifecycle/lifecycle-livedata-core/2.9.4), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.3.0`.
 
 ## Usage
 

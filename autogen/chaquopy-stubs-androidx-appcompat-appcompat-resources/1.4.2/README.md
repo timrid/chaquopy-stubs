@@ -1,6 +1,6 @@
 # chaquopy-stubs-androidx-appcompat-appcompat-resources
 
-Python type stubs for [`androidx.appcompat:appcompat-resources:1.4.2`](https://mvnrepository.com/artifact/androidx.appcompat/appcompat-resources/1.4.2), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.2.2`.
+Python type stubs for [`androidx.appcompat:appcompat-resources:1.4.2`](https://mvnrepository.com/artifact/androidx.appcompat/appcompat-resources/1.4.2), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.3.0`.
 
 ## Usage
 

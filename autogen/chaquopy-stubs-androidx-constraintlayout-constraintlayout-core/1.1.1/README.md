@@ -1,6 +1,6 @@
 # chaquopy-stubs-androidx-constraintlayout-constraintlayout-core
 
-Python type stubs for [`androidx.constraintlayout:constraintlayout-core:1.1.1`](https://mvnrepository.com/artifact/androidx.constraintlayout/constraintlayout-core/1.1.1), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.2.2`.
+Python type stubs for [`androidx.constraintlayout:constraintlayout-core:1.1.1`](https://mvnrepository.com/artifact/androidx.constraintlayout/constraintlayout-core/1.1.1), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.3.0`.
 
 ## Usage
 

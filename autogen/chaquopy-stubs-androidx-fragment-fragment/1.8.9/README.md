@@ -1,6 +1,6 @@
 # chaquopy-stubs-androidx-fragment-fragment
 
-Python type stubs for [`androidx.fragment:fragment:1.8.9`](https://mvnrepository.com/artifact/androidx.fragment/fragment/1.8.9), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.2.2`.
+Python type stubs for [`androidx.fragment:fragment:1.8.9`](https://mvnrepository.com/artifact/androidx.fragment/fragment/1.8.9), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.3.0`.
 
 ## Usage
 

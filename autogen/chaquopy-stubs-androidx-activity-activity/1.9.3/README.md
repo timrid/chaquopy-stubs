@@ -1,6 +1,6 @@
 # chaquopy-stubs-androidx-activity-activity
 
-Python type stubs for [`androidx.activity:activity:1.9.3`](https://mvnrepository.com/artifact/androidx.activity/activity/1.9.3), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.2.2`.
+Python type stubs for [`androidx.activity:activity:1.9.3`](https://mvnrepository.com/artifact/androidx.activity/activity/1.9.3), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.3.0`.
 
 ## Usage
 

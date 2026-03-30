@@ -1,6 +1,6 @@
 # chaquopy-stubs-androidx-profileinstaller-profileinstaller
 
-Python type stubs for [`androidx.profileinstaller:profileinstaller:1.2.2`](https://mvnrepository.com/artifact/androidx.profileinstaller/profileinstaller/1.2.2), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.2.2`.
+Python type stubs for [`androidx.profileinstaller:profileinstaller:1.2.2`](https://mvnrepository.com/artifact/androidx.profileinstaller/profileinstaller/1.2.2), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.3.0`.
 
 ## Usage
 

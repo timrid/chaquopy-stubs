@@ -1,6 +1,6 @@
 # chaquopy-stubs-androidx-lifecycle-lifecycle-runtime
 
-Python type stubs for [`androidx.lifecycle:lifecycle-runtime:2.4.1`](https://mvnrepository.com/artifact/androidx.lifecycle/lifecycle-runtime/2.4.1), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.2.2`.
+Python type stubs for [`androidx.lifecycle:lifecycle-runtime:2.4.1`](https://mvnrepository.com/artifact/androidx.lifecycle/lifecycle-runtime/2.4.1), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.3.0`.
 
 ## Usage
 

@@ -1,6 +1,6 @@
 # chaquopy-stubs-com-google-android-material-material
 
-Python type stubs for [`com.google.android.material:material:1.9.0`](https://mvnrepository.com/artifact/com.google.android.material/material/1.9.0), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.2.2`.
+Python type stubs for [`com.google.android.material:material:1.9.0`](https://mvnrepository.com/artifact/com.google.android.material/material/1.9.0), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.3.0`.
 
 ## Usage
 

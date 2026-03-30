@@ -1,6 +1,6 @@
 # chaquopy-stubs-androidx-transition-transition
 
-Python type stubs for [`androidx.transition:transition:1.5.1`](https://mvnrepository.com/artifact/androidx.transition/transition/1.5.1), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.2.2`.
+Python type stubs for [`androidx.transition:transition:1.5.1`](https://mvnrepository.com/artifact/androidx.transition/transition/1.5.1), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.3.0`.
 
 ## Usage
 

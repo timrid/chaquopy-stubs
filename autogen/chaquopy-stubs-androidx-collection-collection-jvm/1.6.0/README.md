@@ -1,6 +1,6 @@
 # chaquopy-stubs-androidx-collection-collection-jvm
 
-Python type stubs for [`androidx.collection:collection-jvm:1.6.0`](https://mvnrepository.com/artifact/androidx.collection/collection-jvm/1.6.0), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.2.2`.
+Python type stubs for [`androidx.collection:collection-jvm:1.6.0`](https://mvnrepository.com/artifact/androidx.collection/collection-jvm/1.6.0), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.3.0`.
 
 ## Usage
 

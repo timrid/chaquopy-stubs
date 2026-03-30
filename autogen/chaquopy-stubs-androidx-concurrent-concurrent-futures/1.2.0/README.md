@@ -1,6 +1,6 @@
 # chaquopy-stubs-androidx-concurrent-concurrent-futures
 
-Python type stubs for [`androidx.concurrent:concurrent-futures:1.2.0`](https://mvnrepository.com/artifact/androidx.concurrent/concurrent-futures/1.2.0), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.2.2`.
+Python type stubs for [`androidx.concurrent:concurrent-futures:1.2.0`](https://mvnrepository.com/artifact/androidx.concurrent/concurrent-futures/1.2.0), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.3.0`.
 
 ## Usage
 

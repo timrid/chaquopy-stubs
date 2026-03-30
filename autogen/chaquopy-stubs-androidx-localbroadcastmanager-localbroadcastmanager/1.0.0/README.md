@@ -1,6 +1,6 @@
 # chaquopy-stubs-androidx-localbroadcastmanager-localbroadcastmanager
 
-Python type stubs for [`androidx.localbroadcastmanager:localbroadcastmanager:1.0.0`](https://mvnrepository.com/artifact/androidx.localbroadcastmanager/localbroadcastmanager/1.0.0), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.2.2`.
+Python type stubs for [`androidx.localbroadcastmanager:localbroadcastmanager:1.0.0`](https://mvnrepository.com/artifact/androidx.localbroadcastmanager/localbroadcastmanager/1.0.0), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.3.0`.
 
 ## Usage
 

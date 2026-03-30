@@ -1,6 +1,6 @@
 # chaquopy-stubs-org-jspecify-jspecify
 
-Python type stubs for [`org.jspecify:jspecify:1.0.0`](https://mvnrepository.com/artifact/org.jspecify/jspecify/1.0.0), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.2.2`.
+Python type stubs for [`org.jspecify:jspecify:1.0.0`](https://mvnrepository.com/artifact/org.jspecify/jspecify/1.0.0), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.3.0`.
 
 ## Usage
 

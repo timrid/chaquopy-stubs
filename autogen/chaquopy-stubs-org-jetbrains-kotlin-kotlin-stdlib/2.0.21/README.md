@@ -1,6 +1,6 @@
 # chaquopy-stubs-org-jetbrains-kotlin-kotlin-stdlib
 
-Python type stubs for [`org.jetbrains.kotlin:kotlin-stdlib:2.0.21`](https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-stdlib/2.0.21), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.2.2`.
+Python type stubs for [`org.jetbrains.kotlin:kotlin-stdlib:2.0.21`](https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-stdlib/2.0.21), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.3.0`.
 
 ## Usage
 

@@ -1,6 +1,6 @@
 # chaquopy-stubs-androidx-versionedparcelable-versionedparcelable
 
-Python type stubs for [`androidx.versionedparcelable:versionedparcelable:1.0.0`](https://mvnrepository.com/artifact/androidx.versionedparcelable/versionedparcelable/1.0.0), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.2.2`.
+Python type stubs for [`androidx.versionedparcelable:versionedparcelable:1.0.0`](https://mvnrepository.com/artifact/androidx.versionedparcelable/versionedparcelable/1.0.0), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.3.0`.
 
 ## Usage
 

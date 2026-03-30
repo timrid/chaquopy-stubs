@@ -1,6 +1,6 @@
 # chaquopy-stubs-androidx-graphics-graphics-shapes-android
 
-Python type stubs for [`androidx.graphics:graphics-shapes-android:1.0.1`](https://mvnrepository.com/artifact/androidx.graphics/graphics-shapes-android/1.0.1), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.2.2`.
+Python type stubs for [`androidx.graphics:graphics-shapes-android:1.0.1`](https://mvnrepository.com/artifact/androidx.graphics/graphics-shapes-android/1.0.1), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.3.0`.
 
 ## Usage
 

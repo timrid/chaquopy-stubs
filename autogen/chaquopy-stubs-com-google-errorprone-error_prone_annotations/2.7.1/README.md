@@ -1,6 +1,6 @@
 # chaquopy-stubs-com-google-errorprone-error_prone_annotations
 
-Python type stubs for [`com.google.errorprone:error_prone_annotations:2.7.1`](https://mvnrepository.com/artifact/com.google.errorprone/error_prone_annotations/2.7.1), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.2.2`.
+Python type stubs for [`com.google.errorprone:error_prone_annotations:2.7.1`](https://mvnrepository.com/artifact/com.google.errorprone/error_prone_annotations/2.7.1), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.3.0`.
 
 ## Usage
 
