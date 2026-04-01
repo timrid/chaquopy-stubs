@@ -2,6 +2,8 @@
 
 Python type stubs for {% if cookiecutter.maven_url %}[`{{ cookiecutter.readable_name }}`]({{ cookiecutter.maven_url }}){% else %}{{ cookiecutter.readable_name }}{% endif %}, generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `{{ cookiecutter.stubgen_version }}`.
 
+> **⚠️ Disclaimer:** This is **not** an official tool of the [Chaquopy](https://github.com/chaquo/chaquopy) project. It is an independent, community-maintained project.
+
 ## Usage
 
 These are stub-only packages ([PEP 561](https://peps.python.org/pep-0561/)). Install them alongside your project to get type checking support for `{{ cookiecutter.readable_name }}` when using [Chaquopy](https://github.com/chaquo/chaquopy).

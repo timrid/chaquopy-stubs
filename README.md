@@ -3,6 +3,8 @@ Python type stubs for Android/Maven libraries, generated with [chaquopy-stubgen]
 
 Each stub package corresponds to a Maven artifact and provides `.pyi` type annotations for use with [Chaquopy](https://github.com/chaquo/chaquopy) — the Python SDK for Android.
 
+> **⚠️ Disclaimer:** This is **not** an official tool of the [Chaquopy](https://github.com/chaquo/chaquopy) project. It is an independent, community-maintained project.
+
 ## Installation
 
 ### Android platform stubs
