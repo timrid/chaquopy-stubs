@@ -12,7 +12,7 @@ import java
 import java.chaquopy
 import java.lang
 
-class MaterialCardView(androidx.cardview.widget.CardView, android.widget.Checkable, com.google.android.material.shape.Shapeable):
+class MaterialCardView(android.widget.Checkable, androidx.cardview.widget.CardView, com.google.android.material.shape.Shapeable):
     @typing.overload
     def __init__(self, context: android.content.Context, /) -> None: ...
     @typing.overload

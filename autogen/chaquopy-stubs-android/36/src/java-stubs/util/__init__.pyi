@@ -139,7 +139,7 @@ class AbstractSet(AbstractCollection[_AbstractSet__E], Set[_AbstractSet__E], typ
     def removeAll(self, c: Collection[java.lang.Object], /) -> bool: ...
 
 _ArrayDeque__E = typing.TypeVar('_ArrayDeque__E')  # <E>
-class ArrayDeque(AbstractCollection[_ArrayDeque__E], java.lang.Cloneable, Deque[_ArrayDeque__E], java.io.Serializable, typing.Generic[_ArrayDeque__E]):
+class ArrayDeque(java.io.Serializable, java.lang.Cloneable, AbstractCollection[_ArrayDeque__E], Deque[_ArrayDeque__E], typing.Generic[_ArrayDeque__E]):
     @typing.overload
     def __init__(self) -> None: ...
     @typing.overload
@@ -191,7 +191,7 @@ class ArrayDeque(AbstractCollection[_ArrayDeque__E], java.lang.Cloneable, Deque[
     def toArray(self, a: java.chaquopy.JavaArray[_toArray_1__T], /) -> java.chaquopy.JavaArray[_toArray_1__T]: ...
 
 _ArrayList__E = typing.TypeVar('_ArrayList__E')  # <E>
-class ArrayList(AbstractList[_ArrayList__E], java.lang.Cloneable, List[_ArrayList__E], RandomAccess, java.io.Serializable, typing.Generic[_ArrayList__E]):
+class ArrayList(AbstractList[_ArrayList__E], java.io.Serializable, java.lang.Cloneable, List[_ArrayList__E], RandomAccess, typing.Generic[_ArrayList__E]):
     @typing.overload
     def __init__(self) -> None: ...
     @typing.overload
@@ -956,7 +956,7 @@ class Base64(java.lang.Object):
         def decode(self, src: java.chaquopy.JavaArrayJByte, dst: java.chaquopy.JavaArrayJByte, /) -> int: ...
         def wrap(self, is_: java.io.InputStream, /) -> java.io.InputStream: ...
 
-class BitSet(java.lang.Cloneable, java.io.Serializable):
+class BitSet(java.io.Serializable, java.lang.Cloneable):
     @typing.overload
     def __init__(self) -> None: ...
     @typing.overload
@@ -1016,7 +1016,7 @@ class BitSet(java.lang.Cloneable, java.io.Serializable):
     def valueOf(longs: java.chaquopy.JavaArrayJLong, /) -> BitSet: ...
     def xor(self, set: BitSet, /) -> None: ...
 
-class Calendar(java.lang.Cloneable, java.lang.Comparable[Calendar], java.io.Serializable):
+class Calendar(java.io.Serializable, java.lang.Cloneable, java.lang.Comparable[Calendar]):
     ALL_STYLES: typing.ClassVar[int] = ...
     AM: typing.ClassVar[int] = ...
     AM_PM: typing.ClassVar[int] = ...
@@ -1495,7 +1495,7 @@ class Currency(java.io.Serializable):
     def getSymbol(self, locale: Locale, /) -> str: ...
     def toString(self) -> str: ...
 
-class Date(java.lang.Cloneable, java.lang.Comparable[Date], java.io.Serializable):
+class Date(java.io.Serializable, java.lang.Cloneable, java.lang.Comparable[Date]):
     @typing.overload
     def __init__(self) -> None: ...
     @typing.overload
@@ -1611,7 +1611,7 @@ class EmptyStackException(java.lang.RuntimeException):
 
 _EnumMap__K = typing.TypeVar('_EnumMap__K', bound=java.lang.Enum[K])  # <K>
 _EnumMap__V = typing.TypeVar('_EnumMap__V')  # <V>
-class EnumMap(AbstractMap[_EnumMap__K, _EnumMap__V], java.lang.Cloneable, java.io.Serializable, typing.Generic[_EnumMap__K, _EnumMap__V]):
+class EnumMap(java.io.Serializable, java.lang.Cloneable, AbstractMap[_EnumMap__K, _EnumMap__V], typing.Generic[_EnumMap__K, _EnumMap__V]):
     @typing.overload
     def __init__(self, keyType: typing.Type[_EnumMap__K], /) -> None: ...
     @typing.overload
@@ -1634,7 +1634,7 @@ class EnumMap(AbstractMap[_EnumMap__K, _EnumMap__V], java.lang.Cloneable, java.i
     def values(self) -> Collection[_EnumMap__V]: ...
 
 _EnumSet__E = typing.TypeVar('_EnumSet__E', bound=java.lang.Enum[E])  # <E>
-class EnumSet(AbstractSet[_EnumSet__E], java.lang.Cloneable, java.io.Serializable, typing.Generic[_EnumSet__E]):
+class EnumSet(java.io.Serializable, java.lang.Cloneable, AbstractSet[_EnumSet__E], typing.Generic[_EnumSet__E]):
     _allOf__E = typing.TypeVar('_allOf__E', bound=java.lang.Enum[E])  # <E>
     @staticmethod
     def allOf(elementType: typing.Type[_allOf__E], /) -> EnumSet[_allOf__E]: ...
@@ -1820,7 +1820,7 @@ class GregorianCalendar(Calendar):
 
 _HashMap__K = typing.TypeVar('_HashMap__K')  # <K>
 _HashMap__V = typing.TypeVar('_HashMap__V')  # <V>
-class HashMap(AbstractMap[_HashMap__K, _HashMap__V], java.lang.Cloneable, Map[_HashMap__K, _HashMap__V], java.io.Serializable, typing.Generic[_HashMap__K, _HashMap__V]):
+class HashMap(AbstractMap[_HashMap__K, _HashMap__V], java.io.Serializable, java.lang.Cloneable, Map[_HashMap__K, _HashMap__V], typing.Generic[_HashMap__K, _HashMap__V]):
     @typing.overload
     def __init__(self) -> None: ...
     @typing.overload
@@ -1861,7 +1861,7 @@ class HashMap(AbstractMap[_HashMap__K, _HashMap__V], java.lang.Cloneable, Map[_H
     def values(self) -> Collection[_HashMap__V]: ...
 
 _HashSet__E = typing.TypeVar('_HashSet__E')  # <E>
-class HashSet(AbstractSet[_HashSet__E], java.lang.Cloneable, java.io.Serializable, Set[_HashSet__E], typing.Generic[_HashSet__E]):
+class HashSet(AbstractSet[_HashSet__E], java.io.Serializable, java.lang.Cloneable, Set[_HashSet__E], typing.Generic[_HashSet__E]):
     @typing.overload
     def __init__(self) -> None: ...
     @typing.overload
@@ -1889,7 +1889,7 @@ class HashSet(AbstractSet[_HashSet__E], java.lang.Cloneable, java.io.Serializabl
 
 _Hashtable__K = typing.TypeVar('_Hashtable__K')  # <K>
 _Hashtable__V = typing.TypeVar('_Hashtable__V')  # <V>
-class Hashtable(Dictionary[_Hashtable__K, _Hashtable__V], java.lang.Cloneable, Map[_Hashtable__K, _Hashtable__V], java.io.Serializable, typing.Generic[_Hashtable__K, _Hashtable__V]):
+class Hashtable(java.io.Serializable, java.lang.Cloneable, Dictionary[_Hashtable__K, _Hashtable__V], Map[_Hashtable__K, _Hashtable__V], typing.Generic[_Hashtable__K, _Hashtable__V]):
     @typing.overload
     def __init__(self) -> None: ...
     @typing.overload
@@ -2003,7 +2003,7 @@ class HexFormat(java.lang.Object):
 
 _IdentityHashMap__K = typing.TypeVar('_IdentityHashMap__K')  # <K>
 _IdentityHashMap__V = typing.TypeVar('_IdentityHashMap__V')  # <V>
-class IdentityHashMap(AbstractMap[_IdentityHashMap__K, _IdentityHashMap__V], java.lang.Cloneable, Map[_IdentityHashMap__K, _IdentityHashMap__V], java.io.Serializable, typing.Generic[_IdentityHashMap__K, _IdentityHashMap__V]):
+class IdentityHashMap(AbstractMap[_IdentityHashMap__K, _IdentityHashMap__V], java.io.Serializable, java.lang.Cloneable, Map[_IdentityHashMap__K, _IdentityHashMap__V], typing.Generic[_IdentityHashMap__K, _IdentityHashMap__V]):
     @typing.overload
     def __init__(self) -> None: ...
     @typing.overload
@@ -2104,7 +2104,7 @@ class Iterator(java.lang.Object, typing.Generic[_Iterator__E]):
 
 _LinkedHashMap__K = typing.TypeVar('_LinkedHashMap__K')  # <K>
 _LinkedHashMap__V = typing.TypeVar('_LinkedHashMap__V')  # <V>
-class LinkedHashMap(HashMap[_LinkedHashMap__K, _LinkedHashMap__V], Map[_LinkedHashMap__K, _LinkedHashMap__V], SequencedMap[_LinkedHashMap__K, _LinkedHashMap__V], typing.Generic[_LinkedHashMap__K, _LinkedHashMap__V]):
+class LinkedHashMap(HashMap[_LinkedHashMap__K, _LinkedHashMap__V], SequencedMap[_LinkedHashMap__K, _LinkedHashMap__V], Map[_LinkedHashMap__K, _LinkedHashMap__V], typing.Generic[_LinkedHashMap__K, _LinkedHashMap__V]):
     @typing.overload
     def __init__(self) -> None: ...
     @typing.overload
@@ -2135,7 +2135,7 @@ class LinkedHashMap(HashMap[_LinkedHashMap__K, _LinkedHashMap__V], Map[_LinkedHa
     def values(self) -> Collection[_LinkedHashMap__V]: ...
 
 _LinkedHashSet__E = typing.TypeVar('_LinkedHashSet__E')  # <E>
-class LinkedHashSet(HashSet[_LinkedHashSet__E], java.lang.Cloneable, SequencedSet[_LinkedHashSet__E], java.io.Serializable, Set[_LinkedHashSet__E], typing.Generic[_LinkedHashSet__E]):
+class LinkedHashSet(HashSet[_LinkedHashSet__E], SequencedSet[_LinkedHashSet__E], java.io.Serializable, java.lang.Cloneable, Set[_LinkedHashSet__E], typing.Generic[_LinkedHashSet__E]):
     @typing.overload
     def __init__(self) -> None: ...
     @typing.overload
@@ -2156,7 +2156,7 @@ class LinkedHashSet(HashSet[_LinkedHashSet__E], java.lang.Cloneable, SequencedSe
     def spliterator(self) -> Spliterator[_LinkedHashSet__E]: ...
 
 _LinkedList__E = typing.TypeVar('_LinkedList__E')  # <E>
-class LinkedList(AbstractSequentialList[_LinkedList__E], java.lang.Cloneable, Deque[_LinkedList__E], List[_LinkedList__E], java.io.Serializable, typing.Generic[_LinkedList__E]):
+class LinkedList(AbstractSequentialList[_LinkedList__E], java.io.Serializable, java.lang.Cloneable, Deque[_LinkedList__E], List[_LinkedList__E], typing.Generic[_LinkedList__E]):
     @typing.overload
     def __init__(self) -> None: ...
     @typing.overload
@@ -2214,7 +2214,7 @@ class LinkedList(AbstractSequentialList[_LinkedList__E], java.lang.Cloneable, De
     def toArray(self, a: java.chaquopy.JavaArray[_toArray_1__T], /) -> java.chaquopy.JavaArray[_toArray_1__T]: ...
 
 _List__E = typing.TypeVar('_List__E')  # <E>
-class List(Collection[_List__E], SequencedCollection[_List__E], typing.Generic[_List__E]):
+class List(SequencedCollection[_List__E], Collection[_List__E], typing.Generic[_List__E]):
     @typing.overload
     def add(self, arg1: _List__E, /) -> bool: ...
     @typing.overload
@@ -2331,7 +2331,7 @@ class ListResourceBundle(ResourceBundle):
     def handleGetObject(self, key: str | java.lang.String, /) -> java.lang.Object: ...
     def handleKeySet(self) -> Set[java.lang.String]: ...
 
-class Locale(java.lang.Cloneable, java.io.Serializable):
+class Locale(java.io.Serializable, java.lang.Cloneable):
     CANADA: typing.ClassVar[Locale] = ...
     CANADA_FRENCH: typing.ClassVar[Locale] = ...
     CHINA: typing.ClassVar[Locale] = ...
@@ -2946,7 +2946,7 @@ class PrimitiveIterator(Iterator[_PrimitiveIterator__T], typing.Generic[_Primiti
         def nextDouble(self) -> float: ...
 
 _PriorityQueue__E = typing.TypeVar('_PriorityQueue__E')  # <E>
-class PriorityQueue(AbstractQueue[_PriorityQueue__E], java.io.Serializable, typing.Generic[_PriorityQueue__E]):
+class PriorityQueue(java.io.Serializable, AbstractQueue[_PriorityQueue__E], typing.Generic[_PriorityQueue__E]):
     @typing.overload
     def __init__(self) -> None: ...
     @typing.overload
@@ -3074,7 +3074,7 @@ class Queue(Collection[_Queue__E], typing.Generic[_Queue__E]):
     def poll(self) -> _Queue__E | None: ...
     def remove(self) -> _Queue__E: ...
 
-class Random(java.util.random.RandomGenerator, java.io.Serializable):
+class Random(java.io.Serializable, java.util.random.RandomGenerator):
     @typing.overload
     def __init__(self) -> None: ...
     @typing.overload
@@ -3179,7 +3179,7 @@ class ResourceBundle(java.lang.Object):
         def toBundleName(self, baseName: str | java.lang.String, locale: Locale, /) -> str: ...
         def toResourceName(self, bundleName: str | java.lang.String, suffix: str | java.lang.String, /) -> str: ...
 
-class Scanner(java.io.Closeable, Iterator[java.lang.String]):
+class Scanner(Iterator[java.lang.String], java.io.Closeable):
     @typing.overload
     def __init__(self, source: java.io.File, /) -> None: ...
     @typing.overload
@@ -3477,7 +3477,7 @@ class SimpleTimeZone(TimeZone):
 
 _SortedMap__K = typing.TypeVar('_SortedMap__K')  # <K>
 _SortedMap__V = typing.TypeVar('_SortedMap__V')  # <V>
-class SortedMap(Map[_SortedMap__K, _SortedMap__V], SequencedMap[_SortedMap__K, _SortedMap__V], typing.Generic[_SortedMap__K, _SortedMap__V]):
+class SortedMap(SequencedMap[_SortedMap__K, _SortedMap__V], Map[_SortedMap__K, _SortedMap__V], typing.Generic[_SortedMap__K, _SortedMap__V]):
     def comparator(self) -> Comparator[_SortedMap__K]: ...
     def entrySet(self) -> Set[Map.Entry[_SortedMap__K, _SortedMap__V]]: ...
     def firstKey(self) -> _SortedMap__K | None: ...
@@ -3751,7 +3751,7 @@ class StringTokenizer(Enumeration[java.lang.Object]):
     @typing.overload
     def nextToken(self, delim: str | java.lang.String, /) -> str: ...
 
-class TimeZone(java.lang.Cloneable, java.io.Serializable):
+class TimeZone(java.io.Serializable, java.lang.Cloneable):
     LONG: typing.ClassVar[int] = ...
     SHORT: typing.ClassVar[int] = ...
     def __init__(self) -> None: ...
@@ -3833,7 +3833,7 @@ class TooManyListenersException(java.lang.Exception):
 
 _TreeMap__K = typing.TypeVar('_TreeMap__K')  # <K>
 _TreeMap__V = typing.TypeVar('_TreeMap__V')  # <V>
-class TreeMap(AbstractMap[_TreeMap__K, _TreeMap__V], java.lang.Cloneable, NavigableMap[_TreeMap__K, _TreeMap__V], java.io.Serializable, typing.Generic[_TreeMap__K, _TreeMap__V]):
+class TreeMap(java.io.Serializable, java.lang.Cloneable, AbstractMap[_TreeMap__K, _TreeMap__V], NavigableMap[_TreeMap__K, _TreeMap__V], typing.Generic[_TreeMap__K, _TreeMap__V]):
     @typing.overload
     def __init__(self) -> None: ...
     @typing.overload
@@ -3899,7 +3899,7 @@ class TreeMap(AbstractMap[_TreeMap__K, _TreeMap__V], java.lang.Cloneable, Naviga
     def values(self) -> Collection[_TreeMap__V]: ...
 
 _TreeSet__E = typing.TypeVar('_TreeSet__E')  # <E>
-class TreeSet(AbstractSet[_TreeSet__E], java.lang.Cloneable, NavigableSet[_TreeSet__E], java.io.Serializable, typing.Generic[_TreeSet__E]):
+class TreeSet(java.io.Serializable, java.lang.Cloneable, AbstractSet[_TreeSet__E], NavigableSet[_TreeSet__E], typing.Generic[_TreeSet__E]):
     @typing.overload
     def __init__(self) -> None: ...
     @typing.overload
@@ -3944,7 +3944,7 @@ class TreeSet(AbstractSet[_TreeSet__E], java.lang.Cloneable, NavigableSet[_TreeS
     @typing.overload
     def tailSet(self, fromElement: _TreeSet__E, inclusive: bool | java.jboolean | java.lang.Boolean, /) -> NavigableSet[_TreeSet__E]: ...
 
-class UUID(java.lang.Comparable[UUID], java.io.Serializable):
+class UUID(java.io.Serializable, java.lang.Comparable[UUID]):
     def __init__(self, mostSigBits: int | java.jlong | java.lang.Long, leastSigBits: int | java.jlong | java.lang.Long, /) -> None: ...
     def clockSequence(self) -> int: ...
     def compareTo(self, val: UUID, /) -> int: ...
@@ -3975,7 +3975,7 @@ class UnknownFormatFlagsException(IllegalFormatException):
     def getMessage(self) -> str: ...
 
 _Vector__E = typing.TypeVar('_Vector__E')  # <E>
-class Vector(AbstractList[_Vector__E], java.lang.Cloneable, List[_Vector__E], RandomAccess, java.io.Serializable, typing.Generic[_Vector__E]):
+class Vector(AbstractList[_Vector__E], java.io.Serializable, java.lang.Cloneable, List[_Vector__E], RandomAccess, typing.Generic[_Vector__E]):
     capacityIncrement: int = ...
     elementCount: int = ...
     elementData: java.chaquopy.JavaArray[java.lang.Object] = ...

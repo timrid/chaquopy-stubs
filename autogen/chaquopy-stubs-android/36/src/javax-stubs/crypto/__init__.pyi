@@ -388,7 +388,7 @@ class SealedObject(java.io.Serializable):
     @typing.overload
     def getObject(self, key: java.security.Key, provider: str | java.lang.String, /) -> java.lang.Object: ...
 
-class SecretKey(javax.security.auth.Destroyable, java.security.Key):
+class SecretKey(java.security.Key, javax.security.auth.Destroyable):
     serialVersionUID: typing.ClassVar[int] = ...
 
 class SecretKeyFactory(java.lang.Object):

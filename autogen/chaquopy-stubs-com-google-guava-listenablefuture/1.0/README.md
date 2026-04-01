@@ -1,6 +1,8 @@
 # chaquopy-stubs-com-google-guava-listenablefuture
 
-Python type stubs for [`com.google.guava:listenablefuture:1.0`](https://mvnrepository.com/artifact/com.google.guava/listenablefuture/1.0), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.3.0`.
+Python type stubs for [`com.google.guava:listenablefuture:1.0`](https://mvnrepository.com/artifact/com.google.guava/listenablefuture/1.0), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.3.1`.
+
+> **⚠️ Disclaimer:** This is **not** an official tool of the [Chaquopy](https://github.com/chaquo/chaquopy) project. It is an independent, community-maintained project.
 
 ## Usage
 

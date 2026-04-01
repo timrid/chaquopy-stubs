@@ -20,7 +20,7 @@ import java.chaquopy
 import java.lang
 import java.util
 
-class Chip(androidx.appcompat.widget.AppCompatCheckBox, ChipDrawable.Delegate, com.google.android.material.shape.Shapeable, com.google.android.material.internal.MaterialCheckable[Chip]):
+class Chip(androidx.appcompat.widget.AppCompatCheckBox, ChipDrawable.Delegate, com.google.android.material.internal.MaterialCheckable[Chip], com.google.android.material.shape.Shapeable):
     @typing.overload
     def __init__(self, context: android.content.Context, /) -> None: ...
     @typing.overload
@@ -195,7 +195,7 @@ class Chip(androidx.appcompat.widget.AppCompatCheckBox, ChipDrawable.Delegate, c
     def setTextStartPaddingResource(self, id: int | java.jint | java.lang.Integer, /) -> None: ...
     def shouldEnsureMinTouchTargetSize(self) -> bool: ...
 
-class ChipDrawable(com.google.android.material.shape.MaterialShapeDrawable, androidx.core.graphics.drawable.TintAwareDrawable, android.graphics.drawable.Drawable.Callback, com.google.android.material.internal.TextDrawableHelper.TextDrawableDelegate):
+class ChipDrawable(android.graphics.drawable.Drawable.Callback, androidx.core.graphics.drawable.TintAwareDrawable, com.google.android.material.internal.TextDrawableHelper.TextDrawableDelegate, com.google.android.material.shape.MaterialShapeDrawable):
     @staticmethod
     def createFromAttributes(context: android.content.Context, attrs: android.util.AttributeSet, defStyleAttr: int | java.jint | java.lang.Integer, defStyleRes: int | java.jint | java.lang.Integer, /) -> ChipDrawable: ...
     @staticmethod

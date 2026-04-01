@@ -41,7 +41,7 @@ class AbstractExecutorService(ExecutorService):
     def submit(self, task: java.lang.Runnable, result: _submit_2__T, /) -> Future[_submit_2__T]: ...
 
 _ArrayBlockingQueue__E = typing.TypeVar('_ArrayBlockingQueue__E')  # <E>
-class ArrayBlockingQueue(java.util.AbstractQueue[_ArrayBlockingQueue__E], BlockingQueue[_ArrayBlockingQueue__E], java.io.Serializable, typing.Generic[_ArrayBlockingQueue__E]):
+class ArrayBlockingQueue(java.io.Serializable, java.util.AbstractQueue[_ArrayBlockingQueue__E], BlockingQueue[_ArrayBlockingQueue__E], typing.Generic[_ArrayBlockingQueue__E]):
     @typing.overload
     def __init__(self, capacity: int | java.jint | java.lang.Integer, /) -> None: ...
     @typing.overload
@@ -441,7 +441,7 @@ _ConcurrentHashMap__V = typing.TypeVar('_ConcurrentHashMap__V')  # <V>
 
 _ConcurrentHashMap__KeySetView__K = typing.TypeVar('_ConcurrentHashMap__KeySetView__K')  # <K>
 _ConcurrentHashMap__KeySetView__V = typing.TypeVar('_ConcurrentHashMap__KeySetView__V')  # <V>
-class ConcurrentHashMap(java.util.AbstractMap[_ConcurrentHashMap__K, _ConcurrentHashMap__V], ConcurrentMap[_ConcurrentHashMap__K, _ConcurrentHashMap__V], java.io.Serializable, typing.Generic[_ConcurrentHashMap__K, _ConcurrentHashMap__V]):
+class ConcurrentHashMap(java.io.Serializable, java.util.AbstractMap[_ConcurrentHashMap__K, _ConcurrentHashMap__V], ConcurrentMap[_ConcurrentHashMap__K, _ConcurrentHashMap__V], typing.Generic[_ConcurrentHashMap__K, _ConcurrentHashMap__V]):
     @typing.overload
     def __init__(self) -> None: ...
     @typing.overload
@@ -553,7 +553,7 @@ class ConcurrentHashMap(java.util.AbstractMap[_ConcurrentHashMap__K, _Concurrent
     def size(self) -> int: ...
     def toString(self) -> str: ...
     def values(self) -> java.util.Collection[_ConcurrentHashMap__V]: ...
-    class KeySetView(java.util.Collection[_ConcurrentHashMap__KeySetView__K], java.io.Serializable, java.util.Set[_ConcurrentHashMap__KeySetView__K], typing.Generic[_ConcurrentHashMap__KeySetView__K, _ConcurrentHashMap__KeySetView__V]):
+    class KeySetView(java.io.Serializable, java.util.Collection[_ConcurrentHashMap__KeySetView__K], java.util.Set[_ConcurrentHashMap__KeySetView__K], typing.Generic[_ConcurrentHashMap__KeySetView__K, _ConcurrentHashMap__KeySetView__V]):
         def add(self, e: _ConcurrentHashMap__KeySetView__K, /) -> bool: ...
         def addAll(self, c: java.util.Collection[_ConcurrentHashMap__KeySetView__K], /) -> bool: ...
         def clear(self) -> None: ...
@@ -579,7 +579,7 @@ class ConcurrentHashMap(java.util.AbstractMap[_ConcurrentHashMap__K, _Concurrent
         def toString(self) -> str: ...
 
 _ConcurrentLinkedDeque__E = typing.TypeVar('_ConcurrentLinkedDeque__E')  # <E>
-class ConcurrentLinkedDeque(java.util.AbstractCollection[_ConcurrentLinkedDeque__E], java.util.Deque[_ConcurrentLinkedDeque__E], java.io.Serializable, typing.Generic[_ConcurrentLinkedDeque__E]):
+class ConcurrentLinkedDeque(java.io.Serializable, java.util.AbstractCollection[_ConcurrentLinkedDeque__E], java.util.Deque[_ConcurrentLinkedDeque__E], typing.Generic[_ConcurrentLinkedDeque__E]):
     @typing.overload
     def __init__(self) -> None: ...
     @typing.overload
@@ -629,7 +629,7 @@ class ConcurrentLinkedDeque(java.util.AbstractCollection[_ConcurrentLinkedDeque_
     def toString(self) -> str: ...
 
 _ConcurrentLinkedQueue__E = typing.TypeVar('_ConcurrentLinkedQueue__E')  # <E>
-class ConcurrentLinkedQueue(java.util.AbstractQueue[_ConcurrentLinkedQueue__E], java.util.Queue[_ConcurrentLinkedQueue__E], java.io.Serializable, typing.Generic[_ConcurrentLinkedQueue__E]):
+class ConcurrentLinkedQueue(java.io.Serializable, java.util.AbstractQueue[_ConcurrentLinkedQueue__E], java.util.Queue[_ConcurrentLinkedQueue__E], typing.Generic[_ConcurrentLinkedQueue__E]):
     @typing.overload
     def __init__(self) -> None: ...
     @typing.overload
@@ -696,7 +696,7 @@ class ConcurrentNavigableMap(ConcurrentMap[_ConcurrentNavigableMap__K, _Concurre
 
 _ConcurrentSkipListMap__K = typing.TypeVar('_ConcurrentSkipListMap__K')  # <K>
 _ConcurrentSkipListMap__V = typing.TypeVar('_ConcurrentSkipListMap__V')  # <V>
-class ConcurrentSkipListMap(java.util.AbstractMap[_ConcurrentSkipListMap__K, _ConcurrentSkipListMap__V], java.lang.Cloneable, ConcurrentNavigableMap[_ConcurrentSkipListMap__K, _ConcurrentSkipListMap__V], java.io.Serializable, typing.Generic[_ConcurrentSkipListMap__K, _ConcurrentSkipListMap__V]):
+class ConcurrentSkipListMap(java.io.Serializable, java.lang.Cloneable, java.util.AbstractMap[_ConcurrentSkipListMap__K, _ConcurrentSkipListMap__V], ConcurrentNavigableMap[_ConcurrentSkipListMap__K, _ConcurrentSkipListMap__V], typing.Generic[_ConcurrentSkipListMap__K, _ConcurrentSkipListMap__V]):
     @typing.overload
     def __init__(self) -> None: ...
     @typing.overload
@@ -767,7 +767,7 @@ class ConcurrentSkipListMap(java.util.AbstractMap[_ConcurrentSkipListMap__K, _Co
     def values(self) -> java.util.Collection[_ConcurrentSkipListMap__V]: ...
 
 _ConcurrentSkipListSet__E = typing.TypeVar('_ConcurrentSkipListSet__E')  # <E>
-class ConcurrentSkipListSet(java.util.AbstractSet[_ConcurrentSkipListSet__E], java.lang.Cloneable, java.util.NavigableSet[_ConcurrentSkipListSet__E], java.io.Serializable, typing.Generic[_ConcurrentSkipListSet__E]):
+class ConcurrentSkipListSet(java.io.Serializable, java.lang.Cloneable, java.util.AbstractSet[_ConcurrentSkipListSet__E], java.util.NavigableSet[_ConcurrentSkipListSet__E], typing.Generic[_ConcurrentSkipListSet__E]):
     @typing.overload
     def __init__(self) -> None: ...
     @typing.overload
@@ -814,7 +814,7 @@ class ConcurrentSkipListSet(java.util.AbstractSet[_ConcurrentSkipListSet__E], ja
     def tailSet(self, fromElement: _ConcurrentSkipListSet__E, inclusive: bool | java.jboolean | java.lang.Boolean, /) -> java.util.NavigableSet[_ConcurrentSkipListSet__E]: ...
 
 _CopyOnWriteArrayList__E = typing.TypeVar('_CopyOnWriteArrayList__E')  # <E>
-class CopyOnWriteArrayList(java.lang.Cloneable, java.util.List[_CopyOnWriteArrayList__E], java.util.RandomAccess, java.io.Serializable, typing.Generic[_CopyOnWriteArrayList__E]):
+class CopyOnWriteArrayList(java.io.Serializable, java.lang.Cloneable, java.util.List[_CopyOnWriteArrayList__E], java.util.RandomAccess, typing.Generic[_CopyOnWriteArrayList__E]):
     @typing.overload
     def __init__(self) -> None: ...
     @typing.overload
@@ -881,7 +881,7 @@ class CopyOnWriteArrayList(java.lang.Cloneable, java.util.List[_CopyOnWriteArray
     def toString(self) -> str: ...
 
 _CopyOnWriteArraySet__E = typing.TypeVar('_CopyOnWriteArraySet__E')  # <E>
-class CopyOnWriteArraySet(java.util.AbstractSet[_CopyOnWriteArraySet__E], java.io.Serializable, typing.Generic[_CopyOnWriteArraySet__E]):
+class CopyOnWriteArraySet(java.io.Serializable, java.util.AbstractSet[_CopyOnWriteArraySet__E], typing.Generic[_CopyOnWriteArraySet__E]):
     @typing.overload
     def __init__(self) -> None: ...
     @typing.overload
@@ -1036,7 +1036,7 @@ class ExecutorCompletionService(CompletionService[_ExecutorCompletionService__V]
     def submit(self, task: java.lang.Runnable, result: _ExecutorCompletionService__V, /) -> Future[_ExecutorCompletionService__V]: ...
     def take(self) -> Future[_ExecutorCompletionService__V]: ...
 
-class ExecutorService(java.lang.AutoCloseable, Executor):
+class ExecutorService(Executor, java.lang.AutoCloseable):
     def awaitTermination(self, arg1: int | java.jlong | java.lang.Long, arg2: TimeUnit, /) -> bool: ...
     def close(self) -> None: ...
     _invokeAll_0__T = typing.TypeVar('_invokeAll_0__T')  # <T>
@@ -1375,7 +1375,7 @@ class FutureTask(RunnableFuture[_FutureTask__V], typing.Generic[_FutureTask__V])
     def toString(self) -> str: ...
 
 _LinkedBlockingDeque__E = typing.TypeVar('_LinkedBlockingDeque__E')  # <E>
-class LinkedBlockingDeque(java.util.AbstractQueue[_LinkedBlockingDeque__E], BlockingDeque[_LinkedBlockingDeque__E], java.io.Serializable, typing.Generic[_LinkedBlockingDeque__E]):
+class LinkedBlockingDeque(java.io.Serializable, java.util.AbstractQueue[_LinkedBlockingDeque__E], BlockingDeque[_LinkedBlockingDeque__E], typing.Generic[_LinkedBlockingDeque__E]):
     @typing.overload
     def __init__(self) -> None: ...
     @typing.overload
@@ -1455,7 +1455,7 @@ class LinkedBlockingDeque(java.util.AbstractQueue[_LinkedBlockingDeque__E], Bloc
     def toString(self) -> str: ...
 
 _LinkedBlockingQueue__E = typing.TypeVar('_LinkedBlockingQueue__E')  # <E>
-class LinkedBlockingQueue(java.util.AbstractQueue[_LinkedBlockingQueue__E], BlockingQueue[_LinkedBlockingQueue__E], java.io.Serializable, typing.Generic[_LinkedBlockingQueue__E]):
+class LinkedBlockingQueue(java.io.Serializable, java.util.AbstractQueue[_LinkedBlockingQueue__E], BlockingQueue[_LinkedBlockingQueue__E], typing.Generic[_LinkedBlockingQueue__E]):
     @typing.overload
     def __init__(self) -> None: ...
     @typing.overload
@@ -1496,7 +1496,7 @@ class LinkedBlockingQueue(java.util.AbstractQueue[_LinkedBlockingQueue__E], Bloc
     def toString(self) -> str: ...
 
 _LinkedTransferQueue__E = typing.TypeVar('_LinkedTransferQueue__E')  # <E>
-class LinkedTransferQueue(java.util.AbstractQueue[_LinkedTransferQueue__E], java.io.Serializable, TransferQueue[_LinkedTransferQueue__E], typing.Generic[_LinkedTransferQueue__E]):
+class LinkedTransferQueue(java.io.Serializable, java.util.AbstractQueue[_LinkedTransferQueue__E], TransferQueue[_LinkedTransferQueue__E], typing.Generic[_LinkedTransferQueue__E]):
     @typing.overload
     def __init__(self) -> None: ...
     @typing.overload
@@ -1574,7 +1574,7 @@ class Phaser(java.lang.Object):
     def toString(self) -> str: ...
 
 _PriorityBlockingQueue__E = typing.TypeVar('_PriorityBlockingQueue__E')  # <E>
-class PriorityBlockingQueue(java.util.AbstractQueue[_PriorityBlockingQueue__E], BlockingQueue[_PriorityBlockingQueue__E], java.io.Serializable, typing.Generic[_PriorityBlockingQueue__E]):
+class PriorityBlockingQueue(java.io.Serializable, java.util.AbstractQueue[_PriorityBlockingQueue__E], BlockingQueue[_PriorityBlockingQueue__E], typing.Generic[_PriorityBlockingQueue__E]):
     @typing.overload
     def __init__(self) -> None: ...
     @typing.overload
@@ -1666,7 +1666,7 @@ class ScheduledExecutorService(ExecutorService):
 _ScheduledFuture__V = typing.TypeVar('_ScheduledFuture__V')  # <V>
 class ScheduledFuture(Delayed, Future[_ScheduledFuture__V], typing.Generic[_ScheduledFuture__V]): ...
 
-class ScheduledThreadPoolExecutor(ThreadPoolExecutor, ScheduledExecutorService):
+class ScheduledThreadPoolExecutor(ScheduledExecutorService, ThreadPoolExecutor):
     @typing.overload
     def __init__(self, corePoolSize: int | java.jint | java.lang.Integer, /) -> None: ...
     @typing.overload
@@ -1742,7 +1742,7 @@ class Semaphore(java.io.Serializable):
     def tryAcquire(self, permits: int | java.jint | java.lang.Integer, timeout: int | java.jlong | java.lang.Long, unit: TimeUnit, /) -> bool: ...
 
 _SubmissionPublisher__T = typing.TypeVar('_SubmissionPublisher__T')  # <T>
-class SubmissionPublisher(java.lang.AutoCloseable, Flow.Publisher[_SubmissionPublisher__T], typing.Generic[_SubmissionPublisher__T]):
+class SubmissionPublisher(Flow.Publisher[_SubmissionPublisher__T], java.lang.AutoCloseable, typing.Generic[_SubmissionPublisher__T]):
     @typing.overload
     def __init__(self) -> None: ...
     @typing.overload
@@ -1770,7 +1770,7 @@ class SubmissionPublisher(java.lang.AutoCloseable, Flow.Publisher[_SubmissionPub
     def subscribe(self, subscriber: Flow.Subscriber[_SubmissionPublisher__T], /) -> None: ...
 
 _SynchronousQueue__E = typing.TypeVar('_SynchronousQueue__E')  # <E>
-class SynchronousQueue(java.util.AbstractQueue[_SynchronousQueue__E], BlockingQueue[_SynchronousQueue__E], java.io.Serializable, typing.Generic[_SynchronousQueue__E]):
+class SynchronousQueue(java.io.Serializable, java.util.AbstractQueue[_SynchronousQueue__E], BlockingQueue[_SynchronousQueue__E], typing.Generic[_SynchronousQueue__E]):
     @typing.overload
     def __init__(self) -> None: ...
     @typing.overload

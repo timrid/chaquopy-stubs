@@ -11,7 +11,7 @@ import java.util
 import java.util.stream
 import java.util.zip
 
-class Attributes(java.util.Map[java.lang.Object, java.lang.Object], java.lang.Cloneable):
+class Attributes(java.lang.Cloneable, java.util.Map[java.lang.Object, java.lang.Object]):
     map: java.util.Map[java.lang.Object, java.lang.Object] = ...
     @typing.overload
     def __init__(self) -> None: ...

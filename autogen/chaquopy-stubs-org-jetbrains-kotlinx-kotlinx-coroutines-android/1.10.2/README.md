@@ -1,6 +1,8 @@
 # chaquopy-stubs-org-jetbrains-kotlinx-kotlinx-coroutines-android
 
-Python type stubs for [`org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2`](https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-coroutines-android/1.10.2), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.3.0`.
+Python type stubs for [`org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2`](https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-coroutines-android/1.10.2), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.3.1`.
+
+> **⚠️ Disclaimer:** This is **not** an official tool of the [Chaquopy](https://github.com/chaquo/chaquopy) project. It is an independent, community-maintained project.
 
 ## Usage
 

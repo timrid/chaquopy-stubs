@@ -22,7 +22,7 @@ import java.lang
 class Cancellable(java.lang.Object):
     def cancel(self) -> None: ...
 
-class ComponentActivity(androidx.core.app.ComponentActivity, androidx.activity.contextaware.ContextAware, androidx.lifecycle.LifecycleOwner, androidx.lifecycle.ViewModelStoreOwner, androidx.lifecycle.HasDefaultViewModelProviderFactory, androidx.savedstate.SavedStateRegistryOwner, OnBackPressedDispatcherOwner, androidx.activity.result.ActivityResultRegistryOwner, androidx.activity.result.ActivityResultCaller, androidx.core.content.OnConfigurationChangedProvider, androidx.core.content.OnTrimMemoryProvider, androidx.core.app.OnNewIntentProvider, androidx.core.app.OnMultiWindowModeChangedProvider, androidx.core.app.OnPictureInPictureModeChangedProvider, androidx.core.view.MenuHost):
+class ComponentActivity(OnBackPressedDispatcherOwner, androidx.activity.contextaware.ContextAware, androidx.activity.result.ActivityResultCaller, androidx.activity.result.ActivityResultRegistryOwner, androidx.core.app.ComponentActivity, androidx.core.app.OnMultiWindowModeChangedProvider, androidx.core.app.OnNewIntentProvider, androidx.core.app.OnPictureInPictureModeChangedProvider, androidx.core.content.OnConfigurationChangedProvider, androidx.core.content.OnTrimMemoryProvider, androidx.core.view.MenuHost, androidx.lifecycle.HasDefaultViewModelProviderFactory, androidx.lifecycle.LifecycleOwner, androidx.lifecycle.ViewModelStoreOwner, androidx.savedstate.SavedStateRegistryOwner):
     @typing.overload
     def __init__(self) -> None: ...
     @typing.overload
@@ -103,7 +103,7 @@ class ComponentActivity(androidx.core.app.ComponentActivity, androidx.activity.c
     @typing.overload
     def startIntentSenderForResult(self, intent: android.content.IntentSender, requestCode: int | java.jint | java.lang.Integer, fillInIntent: android.content.Intent, flagsMask: int | java.jint | java.lang.Integer, flagsValues: int | java.jint | java.lang.Integer, extraFlags: int | java.jint | java.lang.Integer, options: android.os.Bundle, /) -> None: ...
 
-class ComponentDialog(android.app.Dialog, androidx.lifecycle.LifecycleOwner, OnBackPressedDispatcherOwner):
+class ComponentDialog(OnBackPressedDispatcherOwner, android.app.Dialog, androidx.lifecycle.LifecycleOwner):
     @typing.overload
     def __init__(self, context: android.content.Context, /) -> None: ...
     @typing.overload

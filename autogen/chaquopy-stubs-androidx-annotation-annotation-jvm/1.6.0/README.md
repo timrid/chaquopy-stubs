@@ -1,6 +1,8 @@
 # chaquopy-stubs-androidx-annotation-annotation-jvm
 
-Python type stubs for [`androidx.annotation:annotation-jvm:1.6.0`](https://mvnrepository.com/artifact/androidx.annotation/annotation-jvm/1.6.0), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.3.0`.
+Python type stubs for [`androidx.annotation:annotation-jvm:1.6.0`](https://mvnrepository.com/artifact/androidx.annotation/annotation-jvm/1.6.0), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.3.1`.
+
+> **⚠️ Disclaimer:** This is **not** an official tool of the [Chaquopy](https://github.com/chaquo/chaquopy) project. It is an independent, community-maintained project.
 
 ## Usage
 

@@ -11,7 +11,7 @@ import java
 import java.chaquopy
 import java.lang
 
-class TooltipDrawable(com.google.android.material.shape.MaterialShapeDrawable, com.google.android.material.internal.TextDrawableHelper.TextDrawableDelegate):
+class TooltipDrawable(com.google.android.material.internal.TextDrawableHelper.TextDrawableDelegate, com.google.android.material.shape.MaterialShapeDrawable):
     @staticmethod
     def create(context: android.content.Context, /) -> TooltipDrawable: ...
     @typing.overload

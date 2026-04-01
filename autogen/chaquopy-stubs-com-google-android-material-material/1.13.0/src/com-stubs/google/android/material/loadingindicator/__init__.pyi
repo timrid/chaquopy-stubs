@@ -10,7 +10,7 @@ import java
 import java.chaquopy
 import java.lang
 
-class LoadingIndicator(android.view.View, android.graphics.drawable.Drawable.Callback):
+class LoadingIndicator(android.graphics.drawable.Drawable.Callback, android.view.View):
     @typing.overload
     def __init__(self, context: android.content.Context, /) -> None: ...
     @typing.overload

@@ -1,5 +1,5 @@
 import java.lang.annotation
 import kotlin
 
-class Intrinsic(kotlin.jvm.internal.KObject, java.lang.annotation.Annotation):
+class Intrinsic(java.lang.annotation.Annotation, kotlin.jvm.internal.KObject):
     def value(self) -> str: ...

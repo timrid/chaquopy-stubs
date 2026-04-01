@@ -10,7 +10,7 @@ import kotlin.coroutines
 import kotlin.jvm.functions
 import kotlin.jvm.internal
 
-class BaseContinuationImpl(kotlin.coroutines.Continuation[java.lang.Object], CoroutineStackFrame, java.io.Serializable):
+class BaseContinuationImpl(CoroutineStackFrame, java.io.Serializable, kotlin.coroutines.Continuation[java.lang.Object]):
     def __init__(self, completion: kotlin.coroutines.Continuation[java.lang.Object], /) -> None: ...
     @typing.overload
     def create(self, completion: kotlin.coroutines.Continuation[java.lang.Object], /) -> kotlin.coroutines.Continuation[kotlin.Unit]: ...
@@ -113,7 +113,7 @@ class RestrictedContinuationImpl(BaseContinuationImpl):
     def __init__(self, completion: kotlin.coroutines.Continuation[java.lang.Object], /) -> None: ...
     def getContext(self) -> kotlin.coroutines.CoroutineContext: ...
 
-class RestrictedSuspendLambda(RestrictedContinuationImpl, kotlin.jvm.internal.FunctionBase[java.lang.Object], SuspendFunction):
+class RestrictedSuspendLambda(RestrictedContinuationImpl, SuspendFunction, kotlin.jvm.internal.FunctionBase[java.lang.Object]):
     @typing.overload
     def __init__(self, arity: int | java.jint | java.lang.Integer, /) -> None: ...
     @typing.overload
@@ -138,7 +138,7 @@ class SpillingKt(java.lang.Object):
 
 class SuspendFunction(java.lang.Object): ...
 
-class SuspendLambda(ContinuationImpl, kotlin.jvm.internal.FunctionBase[java.lang.Object], SuspendFunction):
+class SuspendLambda(ContinuationImpl, SuspendFunction, kotlin.jvm.internal.FunctionBase[java.lang.Object]):
     @typing.overload
     def __init__(self, arity: int | java.jint | java.lang.Integer, /) -> None: ...
     @typing.overload

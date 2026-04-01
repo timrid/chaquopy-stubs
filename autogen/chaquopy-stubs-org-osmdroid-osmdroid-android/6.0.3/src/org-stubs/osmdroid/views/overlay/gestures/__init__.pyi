@@ -16,7 +16,7 @@ class RotationGestureDetector(java.lang.Object):
     class RotationListener(java.lang.Object):
         def onRotate(self, arg1: float | java.jfloat | java.lang.Float, /) -> None: ...
 
-class RotationGestureOverlay(org.osmdroid.views.overlay.Overlay, RotationGestureDetector.RotationListener, org.osmdroid.views.overlay.IOverlayMenuProvider):
+class RotationGestureOverlay(org.osmdroid.views.overlay.IOverlayMenuProvider, org.osmdroid.views.overlay.Overlay, RotationGestureDetector.RotationListener):
     @typing.overload
     def __init__(self, mapView: org.osmdroid.views.MapView, /) -> None: ...
     @typing.overload

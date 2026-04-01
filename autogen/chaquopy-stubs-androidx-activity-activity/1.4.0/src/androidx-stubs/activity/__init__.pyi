@@ -17,7 +17,7 @@ import java.lang
 class Cancellable(java.lang.Object):
     def cancel(self) -> None: ...
 
-class ComponentActivity(androidx.core.app.ComponentActivity, androidx.activity.contextaware.ContextAware, androidx.lifecycle.LifecycleOwner, androidx.lifecycle.ViewModelStoreOwner, androidx.lifecycle.HasDefaultViewModelProviderFactory, androidx.savedstate.SavedStateRegistryOwner, OnBackPressedDispatcherOwner, androidx.activity.result.ActivityResultRegistryOwner, androidx.activity.result.ActivityResultCaller, androidx.core.view.MenuHost):
+class ComponentActivity(OnBackPressedDispatcherOwner, androidx.activity.contextaware.ContextAware, androidx.activity.result.ActivityResultCaller, androidx.activity.result.ActivityResultRegistryOwner, androidx.core.app.ComponentActivity, androidx.core.view.MenuHost, androidx.lifecycle.HasDefaultViewModelProviderFactory, androidx.lifecycle.LifecycleOwner, androidx.lifecycle.ViewModelStoreOwner, androidx.savedstate.SavedStateRegistryOwner):
     @typing.overload
     def __init__(self) -> None: ...
     @typing.overload

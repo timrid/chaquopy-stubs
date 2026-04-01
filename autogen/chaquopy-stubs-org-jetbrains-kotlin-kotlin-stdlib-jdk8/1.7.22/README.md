@@ -1,6 +1,8 @@
 # chaquopy-stubs-org-jetbrains-kotlin-kotlin-stdlib-jdk8
 
-Python type stubs for [`org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.22`](https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.7.22), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.3.0`.
+Python type stubs for [`org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.22`](https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.7.22), generated with [chaquopy-stubgen](https://github.com/timrid/chaquopy-stubgen) `0.3.1`.
+
+> **⚠️ Disclaimer:** This is **not** an official tool of the [Chaquopy](https://github.com/chaquo/chaquopy) project. It is an independent, community-maintained project.
 
 ## Usage
 

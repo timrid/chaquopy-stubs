@@ -10,7 +10,7 @@ import java.lang
 class Cancellable(java.lang.Object):
     def cancel(self) -> None: ...
 
-class ComponentActivity(androidx.core.app.ComponentActivity, androidx.lifecycle.LifecycleOwner, androidx.lifecycle.ViewModelStoreOwner, androidx.savedstate.SavedStateRegistryOwner, OnBackPressedDispatcherOwner):
+class ComponentActivity(OnBackPressedDispatcherOwner, androidx.core.app.ComponentActivity, androidx.lifecycle.LifecycleOwner, androidx.lifecycle.ViewModelStoreOwner, androidx.savedstate.SavedStateRegistryOwner):
     @typing.overload
     def __init__(self) -> None: ...
     @typing.overload
