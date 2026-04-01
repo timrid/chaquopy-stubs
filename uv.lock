@@ -35,14 +35,14 @@ wheels = [
 
 [[package]]
 name = "chaquopy-stubgen"
-version = "0.3.0"
+version = "0.3.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "jpype1" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/cd/3c/7c661f5f63f7c2d2ebd4bc2f5419bdc40e58239184855adca2167208f862/chaquopy_stubgen-0.3.0.tar.gz", hash = "sha256:bb952050002b4379ecf84e240ed606155a75bf2a92f3fca335e1cf2fedfad202", size = 26826794, upload-time = "2026-03-30T20:34:42.385Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/f2/c0/51435f1b109049949630cf675b279186b8865709bc08950340186778a32b/chaquopy_stubgen-0.3.1.tar.gz", hash = "sha256:5bd6e5eed64941faa5e16275e503672b4bc3fa6766b5a458fde915057dd60868", size = 26829371, upload-time = "2026-04-01T17:55:36.647Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/76/12/f1c64ca8e86555f7880e16e71e533950884270d3b0bd03dd74aec75f5e81/chaquopy_stubgen-0.3.0-py3-none-any.whl", hash = "sha256:4a59ac271cfef9cd8388b60c754f6c456e64af9f993aaa794f9c565de0e58aaa", size = 225675, upload-time = "2026-03-30T20:34:40.676Z" },
+    { url = "https://files.pythonhosted.org/packages/a0/7d/26dafd9f5d22532280f504f4d78d18aa15c898f7a483860eb1773939be7b/chaquopy_stubgen-0.3.1-py3-none-any.whl", hash = "sha256:1f28e00034d6de54739ab83799f32282bf8de613028d3f841c827b28619ddb32", size = 226569, upload-time = "2026-04-01T17:55:33.996Z" },
 ]
 
 [[package]]
@@ -59,7 +59,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "chaquopy-stubgen", specifier = "==0.3.0" },
+    { name = "chaquopy-stubgen", specifier = "==0.3.1" },
     { name = "cookiecutter", specifier = ">=2.6" },
     { name = "lxml", specifier = ">=5.0" },
     { name = "requests", specifier = ">=2.32" },
